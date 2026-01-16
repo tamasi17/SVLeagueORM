@@ -4,10 +4,15 @@
              version="3.1">
     <!-- Persistence Unit -->
     <persistence-unit name="svLeague" transaction-type="RESOURCE_LOCAL">
+
         <!-- Provider -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
         <!-- Clase -->
         <class>com.dam.model.Jugador</class>
+        <class>com.dam.model.Equipo</class>
+        <class>com.dam.model.Entrenador</class>
+        <class>com.dam.model.Sponsor</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc"
