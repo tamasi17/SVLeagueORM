@@ -4,6 +4,13 @@ target/
 !**/src/test/**/target/
 .kotlin
 
+### Java & Maven ###
+target/
+*.class
+*.jar
+*.war
+*.ear
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
@@ -37,3 +44,16 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Base de Datos / Hibernate ---
+# Ignorar archivos temporales o locales de la DB si los hubiera
+*.sql.log
+*.hprof
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
