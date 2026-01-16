@@ -3,7 +3,7 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
              version="3.1">
     <!-- Persistence Unit -->
-    <persistence-unit name="musicaPersistencia" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="svLeague" transaction-type="RESOURCE_LOCAL">
         <!-- Provider -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Clase -->
