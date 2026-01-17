@@ -9,10 +9,14 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Clase -->
-        <class>com.dam.model.Jugador</class>
-        <class>com.dam.model.Equipo</class>
         <class>com.dam.model.Entrenador</class>
+        <class>com.dam.model.Equipo</class>
+        <class>com.dam.model.Estadio</class>
+        <class>com.dam.model.Jugador</class>
+        <class>com.dam.model.Partido</class>
+        <class>com.dam.model.Posicion</class>
         <class>com.dam.model.Sponsor</class>
+        <class>com.dam.model.StatsPartido</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc"
