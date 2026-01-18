@@ -3,6 +3,7 @@ package model;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 /**
  * Clase que define un Estadio
@@ -79,5 +80,25 @@ public class Estadio {
 
     public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Estadio estadio = (Estadio) o;
+        return capacidad == estadio.capacidad && Objects.equals(id, estadio.id) && Objects.equals(nombre, estadio.nombre) && Objects.equals(ciudad, estadio.ciudad) && Objects.equals(equipo, estadio.equipo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombre, ciudad, capacidad, equipo);
+    }
+
+    @Override
+    public String toString() {
+        return  id +
+                " - " + nombre + ", " + ciudad +
+                "\nCapacidad: " + capacidad +
+                "\nEquipo: " + equipo;
     }
 }

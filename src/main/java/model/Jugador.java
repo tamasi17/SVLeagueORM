@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Clase que define un Jugador.
@@ -158,5 +159,29 @@ public class Jugador {
     public void addEstadistica(StatsPartido stat) {
         this.statsPartidos.add(stat);
         stat.setJugador(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Jugador jugador = (Jugador) o;
+        return dorsal == jugador.dorsal && Objects.equals(id, jugador.id) && Objects.equals(name, jugador.name) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && posicion == jugador.posicion && Objects.equals(equipo, jugador.equipo) && Objects.equals(statsPartidos, jugador.statsPartidos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, equipo, statsPartidos);
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + apellido + " #" + dorsal +
+                "\n" + fechaNacimiento + ", " + nacionalidad +
+                "\n" + posicion + ", " + equipo;
+    }
+
+    public String toStringStats(){
+        return "#" + dorsal + ", " + name + " " + apellido +
+                "\n" + posicion + ", " + equipo;
     }
 }

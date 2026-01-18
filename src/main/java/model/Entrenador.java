@@ -2,6 +2,8 @@ package model;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 @Entity
 @Table(name = "coaches")
 public class Entrenador {
@@ -73,5 +75,23 @@ public class Entrenador {
 
     public void setEquipo(Equipo equipo) {
         this.equipo = equipo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Entrenador that = (Entrenador) o;
+        return Objects.equals(id, that.id) && Objects.equals(nombre, that.nombre) && Objects.equals(apellido, that.apellido);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombre, apellido);
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " " + apellido + "("+ id + ") \n"
+                + nacionalidad + "\n" + equipo;
     }
 }

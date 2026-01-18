@@ -2,6 +2,8 @@ package model;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 /**
  * Clase que guarda las Estadisticas personales de un jugador en un partido
  * @author mati
@@ -183,5 +185,32 @@ public class StatsPartido {
 
     public void setRecepcionesIntentadas(int recepcionesIntentadas) {
         this.recepcionesIntentadas = recepcionesIntentadas;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        StatsPartido that = (StatsPartido) o;
+        return ataques == that.ataques && puntos == that.puntos && saques == that.saques && aces == that.aces && colocacionesIntentadas == that.colocacionesIntentadas && colocacionesConseguidas == that.colocacionesConseguidas && bloqueosIntentados == that.bloqueosIntentados && bloqueosConseguidos == that.bloqueosConseguidos && recepcionesConseguidas == that.recepcionesConseguidas && recepcionesIntentadas == that.recepcionesIntentadas && Objects.equals(id, that.id) && Objects.equals(jugador, that.jugador) && Objects.equals(partido, that.partido);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, jugador, partido, ataques, puntos, saques, aces, colocacionesIntentadas, colocacionesConseguidas, bloqueosIntentados, bloqueosConseguidos, recepcionesConseguidas, recepcionesIntentadas);
+    }
+
+    @Override
+    public String toString() {
+        return  jugador.toStringStats() + " \n " + partido.getEncuentroFormateado() +
+                "\nAtaques: " + ataques +
+                "\nPuntos: " + puntos +
+                "\nSaques: " + saques +
+                "\nAces: " + aces +
+                "\nColocaciones Intentadas: " + colocacionesIntentadas +
+                "\nColocaciones Conseguidas: " + colocacionesConseguidas +
+                "\nBloqueos Intentados: " + bloqueosIntentados +
+                "\nBloqueos Conseguidos: " + bloqueosConseguidos +
+                "\nRecepciones Intentadas: " + recepcionesIntentadas +
+                "\nRecepciones Conseguidas: " + recepcionesConseguidas;
     }
 }

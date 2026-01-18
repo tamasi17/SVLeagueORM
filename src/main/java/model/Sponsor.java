@@ -1,6 +1,8 @@
 package model;
 
 import jakarta.persistence.*;
+
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -79,5 +81,22 @@ public class Sponsor {
 
     public void setEquipos(Set<Equipo> equipos) {
         this.equipos = equipos;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Sponsor sponsor = (Sponsor) o;
+        return Double.compare(presupuestoAportado, sponsor.presupuestoAportado) == 0 && Objects.equals(id, sponsor.id) && Objects.equals(nombreComercial, sponsor.nombreComercial) && Objects.equals(sector, sponsor.sector) && Objects.equals(equipos, sponsor.equipos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombreComercial, sector, presupuestoAportado, equipos);
+    }
+
+    @Override
+    public String toString() {
+        return  nombreComercial + " (" + sector + ")";
     }
 }

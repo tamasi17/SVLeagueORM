@@ -3,6 +3,7 @@ package model;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -129,9 +130,15 @@ public class Equipo {
         return entrenador;
     }
 
+    // Helpers para la relacion bidireccional Equipo-Entrenador
     public void setEntrenador(Entrenador entrenador) {
         this.entrenador = entrenador;
         entrenador.setEquipo(this);
+    }
+
+    public void removeEntrenador(Entrenador entrenador) {
+        this.jugadores.remove(entrenador);
+        entrenador.setEquipo(null);
     }
 
     public Set<Jugador> getJugadores() {
@@ -142,10 +149,15 @@ public class Equipo {
         this.jugadores = jugadores;
     }
 
-    // Helper para la relacion bidireccional Equipo-Jugador
+    // Helpers para la relacion bidireccional Equipo-Jugador
     public void addJugador(Jugador j){
         this.jugadores.add(j);
         j.setEquipo(this);
+    }
+
+    public void removeJugador(Jugador j) {
+        this.jugadores.remove(j);
+        j.setEquipo(null);
     }
 
     public Set<Sponsor> getSponsors() {
@@ -156,8 +168,36 @@ public class Equipo {
         this.sponsors = sponsors;
     }
 
+    // Helpers para la relacion bidireccional ManyToMany Equipo-Sponsor
     public void addSponsor(Sponsor s){
         this.sponsors.add(s);
         s.getEquipos().add(this);
+    }
+
+    public void removeSponsor(Sponsor s){
+        this.sponsors.remove(s);
+        s.getEquipos().remove(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Equipo equipo = (Equipo) o;
+        return Objects.equals(id, equipo.id) && Objects.equals(nombre, equipo.nombre) && Objects.equals(ciudad, equipo.ciudad) && Objects.equals(web, equipo.web) && Objects.equals(fechaFundacion, equipo.fechaFundacion) && Objects.equals(estadio, equipo.estadio) && Objects.equals(entrenador, equipo.entrenador) && Objects.equals(jugadores, equipo.jugadores) && Objects.equals(sponsors, equipo.sponsors);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombre, ciudad, web, fechaFundacion, estadio, entrenador, jugadores, sponsors);
+    }
+
+    @Override
+    public String toString() {
+        return "> " + nombre + "(" + id + ") \n" + ciudad +
+                "\n" + web +
+                "\n" + fechaFundacion + ", " + estadio +
+                "\n" + entrenador +
+                "\n" + jugadores +
+                "\n" + sponsors;
     }
 }
