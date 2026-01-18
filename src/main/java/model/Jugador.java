@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Clase que define un Jugador.
@@ -83,6 +84,104 @@ public class Jugador {
         return 0;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public int getDorsal() {
+        return dorsal;
+    }
+
+    public void setDorsal(int dorsal) {
+        this.dorsal = dorsal;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    public Posicion getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(Posicion posicion) {
+        this.posicion = posicion;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+
+    public List<StatsPartido> getStatsPartidos() {
+        return statsPartidos;
+    }
+
+    public void setStatsPartidos(List<StatsPartido> statsPartidos) {
+        this.statsPartidos = statsPartidos;
+    }
+
+    public void addEstadistica(StatsPartido stat) {
+        this.statsPartidos.add(stat);
+        stat.setJugador(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Jugador jugador = (Jugador) o;
+        return dorsal == jugador.dorsal && Objects.equals(id, jugador.id) && Objects.equals(name, jugador.name) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && posicion == jugador.posicion && Objects.equals(equipo, jugador.equipo) && Objects.equals(statsPartidos, jugador.statsPartidos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, equipo, statsPartidos);
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + apellido + " #" + dorsal +
+                "\n" + fechaNacimiento + ", " + nacionalidad +
+                "\n" + posicion + ", " + equipo;
+    }
+
+    public String toStringStats(){
+        return "#" + dorsal + ", " + name + " " + apellido +
+                "\n" + posicion + ", " + equipo;
+    }
 }

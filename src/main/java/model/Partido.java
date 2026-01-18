@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Clase que define un Partido
@@ -19,6 +20,12 @@ public class Partido {
 
     @Column(name = "match_date")
     private LocalDateTime fecha;
+
+    @Column(name = "home_sets_won")
+    private int setsLocal;
+
+    @Column(name = "away_sets_won")
+    private int setsVisitante;
 
     // Relación ManyToOne: muchos partidos se juegan en un estadio
     @ManyToOne(fetch = FetchType.EAGER)
@@ -54,5 +61,99 @@ public class Partido {
         this.estadisticas = estadisticas;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+
+    public Estadio getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(Estadio lugar) {
+        this.lugar = lugar;
+    }
+
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
+    }
+
+    public void setEquipoLocal(Equipo equipoLocal) {
+        this.equipoLocal = equipoLocal;
+    }
+
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
+    }
+
+    public void setEquipoVisitante(Equipo equipoVisitante) {
+        this.equipoVisitante = equipoVisitante;
+    }
+
+    public int getSetsLocal() {
+        return setsLocal;
+    }
+
+    public void setSetsLocal(int setsLocal) {
+        this.setsLocal = setsLocal;
+    }
+
+    public int getSetsVisitante() {
+        return setsVisitante;
+    }
+
+    public void setSetsVisitante(int setsVisitante) {
+        this.setsVisitante = setsVisitante;
+    }
+
+    public List<StatsPartido> getEstadisticas() {
+        return estadisticas;
+    }
+
+    public void setEstadisticas(List<StatsPartido> estadisticas) {
+        this.estadisticas = estadisticas;
+    }
+
+    public void addEstadistica(StatsPartido stats){
+        this.estadisticas.add(stats);
+        stats.setPartido(this);
+    }
+
+
+    public String getEncuentroFormateado() {
+        return equipoLocal + " - " + equipoVisitante + "(" + fecha + ")";
+    }
+
+    public String getResultadoFormateado() {
+        return equipoLocal + " " + setsLocal + " - " + setsVisitante + " " + equipoVisitante;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Partido partido = (Partido) o;
+        return Objects.equals(id, partido.id) && Objects.equals(fecha, partido.fecha) && Objects.equals(lugar, partido.lugar) && Objects.equals(equipoLocal, partido.equipoLocal) && Objects.equals(equipoVisitante, partido.equipoVisitante) && Objects.equals(estadisticas, partido.estadisticas);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, fecha, lugar, equipoLocal, equipoVisitante, estadisticas);
+    }
+
+    @Override
+    public String toString() {
+        return getResultadoFormateado() +
+                "\n" + lugar + " - " + fecha;
+    }
 }

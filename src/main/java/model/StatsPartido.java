@@ -2,6 +2,8 @@ package model;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 /**
  * Clase que guarda las Estadisticas personales de un jugador en un partido
  * @author mati
@@ -79,5 +81,136 @@ public class StatsPartido {
         this.bloqueosConseguidos = bloqueosConseguidos;
         this.recepcionesConseguidas = recepcionesConseguidas;
         this.recepcionesIntentadas = recepcionesIntentadas;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Jugador getJugador() {
+        return jugador;
+    }
+
+    public void setJugador(Jugador jugador) {
+        this.jugador = jugador;
+    }
+
+    public Partido getPartido() {
+        return partido;
+    }
+
+    public void setPartido(Partido partido) {
+        this.partido = partido;
+    }
+
+    public int getAtaques() {
+        return ataques;
+    }
+
+    public void setAtaques(int ataques) {
+        this.ataques = ataques;
+    }
+
+    public int getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
+    }
+
+    public int getSaques() {
+        return saques;
+    }
+
+    public void setSaques(int saques) {
+        this.saques = saques;
+    }
+
+    public int getAces() {
+        return aces;
+    }
+
+    public void setAces(int aces) {
+        this.aces = aces;
+    }
+
+    public int getColocacionesIntentadas() {
+        return colocacionesIntentadas;
+    }
+
+    public void setColocacionesIntentadas(int colocacionesIntentadas) {
+        this.colocacionesIntentadas = colocacionesIntentadas;
+    }
+
+    public int getColocacionesConseguidas() {
+        return colocacionesConseguidas;
+    }
+
+    public void setColocacionesConseguidas(int colocacionesConseguidas) {
+        this.colocacionesConseguidas = colocacionesConseguidas;
+    }
+
+    public int getBloqueosIntentados() {
+        return bloqueosIntentados;
+    }
+
+    public void setBloqueosIntentados(int bloqueosIntentados) {
+        this.bloqueosIntentados = bloqueosIntentados;
+    }
+
+    public int getBloqueosConseguidos() {
+        return bloqueosConseguidos;
+    }
+
+    public void setBloqueosConseguidos(int bloqueosConseguidos) {
+        this.bloqueosConseguidos = bloqueosConseguidos;
+    }
+
+    public int getRecepcionesConseguidas() {
+        return recepcionesConseguidas;
+    }
+
+    public void setRecepcionesConseguidas(int recepcionesConseguidas) {
+        this.recepcionesConseguidas = recepcionesConseguidas;
+    }
+
+    public int getRecepcionesIntentadas() {
+        return recepcionesIntentadas;
+    }
+
+    public void setRecepcionesIntentadas(int recepcionesIntentadas) {
+        this.recepcionesIntentadas = recepcionesIntentadas;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        StatsPartido that = (StatsPartido) o;
+        return ataques == that.ataques && puntos == that.puntos && saques == that.saques && aces == that.aces && colocacionesIntentadas == that.colocacionesIntentadas && colocacionesConseguidas == that.colocacionesConseguidas && bloqueosIntentados == that.bloqueosIntentados && bloqueosConseguidos == that.bloqueosConseguidos && recepcionesConseguidas == that.recepcionesConseguidas && recepcionesIntentadas == that.recepcionesIntentadas && Objects.equals(id, that.id) && Objects.equals(jugador, that.jugador) && Objects.equals(partido, that.partido);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, jugador, partido, ataques, puntos, saques, aces, colocacionesIntentadas, colocacionesConseguidas, bloqueosIntentados, bloqueosConseguidos, recepcionesConseguidas, recepcionesIntentadas);
+    }
+
+    @Override
+    public String toString() {
+        return  jugador.toStringStats() + " \n " + partido.getEncuentroFormateado() +
+                "\nAtaques: " + ataques +
+                "\nPuntos: " + puntos +
+                "\nSaques: " + saques +
+                "\nAces: " + aces +
+                "\nColocaciones Intentadas: " + colocacionesIntentadas +
+                "\nColocaciones Conseguidas: " + colocacionesConseguidas +
+                "\nBloqueos Intentados: " + bloqueosIntentados +
+                "\nBloqueos Conseguidos: " + bloqueosConseguidos +
+                "\nRecepciones Intentadas: " + recepcionesIntentadas +
+                "\nRecepciones Conseguidas: " + recepcionesConseguidas;
     }
 }

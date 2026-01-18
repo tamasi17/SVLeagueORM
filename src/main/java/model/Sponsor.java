@@ -1,6 +1,8 @@
 package model;
 
 import jakarta.persistence.*;
+
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -41,5 +43,60 @@ public class Sponsor {
         this.equipos = equipos;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombreComercial() {
+        return nombreComercial;
+    }
+
+    public void setNombreComercial(String nombreComercial) {
+        this.nombreComercial = nombreComercial;
+    }
+
+    public String getSector() {
+        return sector;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
+    }
+
+    public double getPresupuestoAportado() {
+        return presupuestoAportado;
+    }
+
+    public void setPresupuestoAportado(double presupuestoAportado) {
+        this.presupuestoAportado = presupuestoAportado;
+    }
+
+    public Set<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void setEquipos(Set<Equipo> equipos) {
+        this.equipos = equipos;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Sponsor sponsor = (Sponsor) o;
+        return Double.compare(presupuestoAportado, sponsor.presupuestoAportado) == 0 && Objects.equals(id, sponsor.id) && Objects.equals(nombreComercial, sponsor.nombreComercial) && Objects.equals(sector, sponsor.sector) && Objects.equals(equipos, sponsor.equipos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombreComercial, sector, presupuestoAportado, equipos);
+    }
+
+    @Override
+    public String toString() {
+        return  nombreComercial + " (" + sector + ")";
+    }
 }
