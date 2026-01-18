@@ -54,5 +54,56 @@ public class Partido {
         this.estadisticas = estadisticas;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+
+    public Estadio getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(Estadio lugar) {
+        this.lugar = lugar;
+    }
+
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
+    }
+
+    public void setEquipoLocal(Equipo equipoLocal) {
+        this.equipoLocal = equipoLocal;
+    }
+
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
+    }
+
+    public void setEquipoVisitante(Equipo equipoVisitante) {
+        this.equipoVisitante = equipoVisitante;
+    }
+
+    public List<StatsPartido> getEstadisticas() {
+        return estadisticas;
+    }
+
+    public void setEstadisticas(List<StatsPartido> estadisticas) {
+        this.estadisticas = estadisticas;
+    }
+
+    public void addEstadistica(StatsPartido stats){
+        this.estadisticas.add(stats);
+        stats.setPartido(this);
+    }
 }

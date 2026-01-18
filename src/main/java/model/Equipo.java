@@ -77,5 +77,87 @@ public class Equipo {
         this.sponsors = sponsors;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getWeb() {
+        return web;
+    }
+
+    public void setWeb(String web) {
+        this.web = web;
+    }
+
+    public LocalDate getFechaFundacion() {
+        return fechaFundacion;
+    }
+
+    public void setFechaFundacion(LocalDate fechaFundacion) {
+        this.fechaFundacion = fechaFundacion;
+    }
+
+    public Estadio getEstadio() {
+        return estadio;
+    }
+
+    public void setEstadio(Estadio estadio) {
+        this.estadio = estadio;
+    }
+
+    public Entrenador getEntrenador() {
+        return entrenador;
+    }
+
+    public void setEntrenador(Entrenador entrenador) {
+        this.entrenador = entrenador;
+        entrenador.setEquipo(this);
+    }
+
+    public Set<Jugador> getJugadores() {
+        return jugadores;
+    }
+
+    public void setJugadores(Set<Jugador> jugadores) {
+        this.jugadores = jugadores;
+    }
+
+    // Helper para la relacion bidireccional Equipo-Jugador
+    public void addJugador(Jugador j){
+        this.jugadores.add(j);
+        j.setEquipo(this);
+    }
+
+    public Set<Sponsor> getSponsors() {
+        return sponsors;
+    }
+
+    public void setSponsors(Set<Sponsor> sponsors) {
+        this.sponsors = sponsors;
+    }
+
+    public void addSponsor(Sponsor s){
+        this.sponsors.add(s);
+        s.getEquipos().add(this);
+    }
 }

@@ -80,4 +80,108 @@ public class StatsPartido {
         this.recepcionesConseguidas = recepcionesConseguidas;
         this.recepcionesIntentadas = recepcionesIntentadas;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Jugador getJugador() {
+        return jugador;
+    }
+
+    public void setJugador(Jugador jugador) {
+        this.jugador = jugador;
+    }
+
+    public Partido getPartido() {
+        return partido;
+    }
+
+    public void setPartido(Partido partido) {
+        this.partido = partido;
+    }
+
+    public int getAtaques() {
+        return ataques;
+    }
+
+    public void setAtaques(int ataques) {
+        this.ataques = ataques;
+    }
+
+    public int getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
+    }
+
+    public int getSaques() {
+        return saques;
+    }
+
+    public void setSaques(int saques) {
+        this.saques = saques;
+    }
+
+    public int getAces() {
+        return aces;
+    }
+
+    public void setAces(int aces) {
+        this.aces = aces;
+    }
+
+    public int getColocacionesIntentadas() {
+        return colocacionesIntentadas;
+    }
+
+    public void setColocacionesIntentadas(int colocacionesIntentadas) {
+        this.colocacionesIntentadas = colocacionesIntentadas;
+    }
+
+    public int getColocacionesConseguidas() {
+        return colocacionesConseguidas;
+    }
+
+    public void setColocacionesConseguidas(int colocacionesConseguidas) {
+        this.colocacionesConseguidas = colocacionesConseguidas;
+    }
+
+    public int getBloqueosIntentados() {
+        return bloqueosIntentados;
+    }
+
+    public void setBloqueosIntentados(int bloqueosIntentados) {
+        this.bloqueosIntentados = bloqueosIntentados;
+    }
+
+    public int getBloqueosConseguidos() {
+        return bloqueosConseguidos;
+    }
+
+    public void setBloqueosConseguidos(int bloqueosConseguidos) {
+        this.bloqueosConseguidos = bloqueosConseguidos;
+    }
+
+    public int getRecepcionesConseguidas() {
+        return recepcionesConseguidas;
+    }
+
+    public void setRecepcionesConseguidas(int recepcionesConseguidas) {
+        this.recepcionesConseguidas = recepcionesConseguidas;
+    }
+
+    public int getRecepcionesIntentadas() {
+        return recepcionesIntentadas;
+    }
+
+    public void setRecepcionesIntentadas(int recepcionesIntentadas) {
+        this.recepcionesIntentadas = recepcionesIntentadas;
+    }
 }
