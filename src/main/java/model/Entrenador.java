@@ -15,7 +15,7 @@ public class Entrenador {
     @Column(name = "name", nullable = false, length = 100)
     private String nombre;
 
-    @Column(name = "name", nullable = false, length = 100)
+    @Column(name = "last_name", nullable = false, length = 100)
     private String apellido;
 
     @Column(name = "nationality")

@@ -9,19 +9,19 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Clase -->
-        <class>com.dam.model.Entrenador</class>
-        <class>com.dam.model.Equipo</class>
-        <class>com.dam.model.Estadio</class>
-        <class>com.dam.model.Jugador</class>
-        <class>com.dam.model.Partido</class>
-        <class>com.dam.model.Sponsor</class>
-        <class>com.dam.model.StatsPartido</class>
+        <class>model.Entrenador</class>
+        <class>model.Equipo</class>
+        <class>model.Estadio</class>
+        <class>model.Jugador</class>
+        <class>model.Partido</class>
+        <class>model.Sponsor</class>
+        <class>model.StatsPartido</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc"
                       value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/svleague?useSSL=false&amp;serverTimezone=UTC"/>
+                      value="jdbc:mysql://localhost:3306/orm_competicion?useSSL=false&amp;serverTimezone=UTC"/>
             <property name="jakarta.persistence.jdbc.user"
                       value="root"/>
             <property name="jakarta.persistence.jdbc.password"
@@ -33,7 +33,6 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
             <property name="hibernate.connection.pool_size" value="10"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
         </properties>
 
     </persistence-unit>

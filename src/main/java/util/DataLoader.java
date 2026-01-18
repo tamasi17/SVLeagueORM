@@ -5,20 +5,21 @@ import jakarta.persistence.EntityManager;
 import model.*;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Clase para generar la informacion que se utiliza en Simulacion o Main
+ * Clase para generar la información que se utiliza en Simulacion o Main
  * @author mati
  */
 public class DataLoader {
 
     private final EntityManager entityManager;
-    private DaoJpaEquipo daoJpaEquipo;
-    private DaoJpaJugador daoJpaJugador;
-    private DaoJpaEntrenador daoJpaEntrenador;
-    private DaoJpaEstadio daoJpaEstadio;
-    private DaoJpaSponsor daoJpaSponsor;
+    private final DaoJpaEntrenador daoJpaEntrenador;
+    private final DaoJpaEquipo daoJpaEquipo;
+    private final DaoJpaEstadio daoJpaEstadio;
+    private final DaoJpaJugador daoJpaJugador;
+    private final DaoJpaSponsor daoJpaSponsor;
 
 
     public DataLoader(EntityManager em) {
@@ -45,24 +46,35 @@ public class DataLoader {
         nishida.setApellido("Nishida");
         nishida.setDorsal(11);
         nishida.setPosicion(Posicion.HITTER);
+        Set<Jugador> jugadores = new HashSet<>();
+        jugadores.add(nishida);
 
         Sponsor panasonic = new Sponsor();
         panasonic.setNombreComercial("Panasonic");
+        Set<Sponsor> sponsors = new HashSet<>();
+        sponsors.add(panasonic);
 
-        createEquipo("Osaka Bluteon", "Osaka", panasonicArena, tuomas, nishida, panasonic);
+        Equipo bluteon = createEquipo("Osaka Bluteon", "Osaka", panasonicArena, tuomas, jugadores, sponsors);
+        Set<Equipo> equipos = new HashSet<>();
+        equipos.add(bluteon);
+
+        // Inicializar Set<Entidad> en constructores para usar directamente addJugador o addSponsor?
+        // Necesitarás helpers para relaciones bidireccionales
+        panasonic.setEquipos(equipos);
+        nishida.setEquipo(bluteon);
 
     }
 
 
     private Equipo createEquipo(String nombre, String ciudad, Estadio estadio,
-                                Entrenador entrenador, Jugador jugador, Sponsor sponsor){
+                                Entrenador entrenador, Set<Jugador> jugadores, Set<Sponsor> sponsors){
         Equipo equipo = new Equipo();
         equipo.setNombre(nombre);
         equipo.setCiudad(ciudad);
         equipo.setEstadio(estadio);
         equipo.setEntrenador(entrenador);
-        equipo.addSponsor(sponsor);
-        equipo.addJugador(jugador);
+        equipo.setSponsors(sponsors);
+        equipo.setJugadores(jugadores);
 
         daoJpaEquipo.save(equipo);
 
