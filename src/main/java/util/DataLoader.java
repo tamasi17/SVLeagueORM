@@ -40,11 +40,22 @@ public class DataLoader {
         panasonicArena.setCiudad("Osaka");
         daoJpaEstadio.save(panasonicArena);
 
+        Estadio asueArena = new Estadio();
+        asueArena.setNombre("Asue Arena Osaka");
+        asueArena.setCiudad("Osaka");
+        daoJpaEstadio.save(asueArena);
+
         Entrenador tuomas = new Entrenador();
         tuomas.setNombre("Tuomas");
         tuomas.setApellido("Sammelvuo");
         tuomas.setNacionalidad("Finland");
         daoJpaEntrenador.save(tuomas);
+
+        Entrenador lecat = new Entrenador();
+        lecat.setNombre("Olivier");
+        lecat.setApellido("Lecat");
+        lecat.setNacionalidad("France");
+        daoJpaEntrenador.save(lecat);
 
 
         Sponsor panasonic = new Sponsor();
@@ -54,25 +65,47 @@ public class DataLoader {
         sponsors.add(panasonic);
         daoJpaSponsor.save(panasonic);
 
+        Sponsor daido = new Sponsor();
+        daido.setNombreComercial("Daido Life");
+        daido.setSector("Insurance");
+        sponsors.add(daido);
+        daoJpaSponsor.save(daido);
+
         Equipo bluteon = createEquipo("Osaka Bluteon", "Osaka", panasonicArena,
                 tuomas, sponsors, LocalDate.ofYearDay(1951,12), "bluteon.com");
+
+        Equipo suntory = createEquipo("Suntory Sunbirds Osaka", "Osaka", asueArena,
+                lecat, sponsors, LocalDate.ofYearDay(1942, 10), "suntory.com");
+
         Set<Equipo> equipos = new HashSet<>();
         equipos.add(bluteon);
+        equipos.add(suntory);
 
         // Inicializar Set<Entidad> en constructores para usar directamente addJugador o addSponsor?
         // Necesitarás helpers para relaciones bidireccionales
         panasonic.setEquipos(equipos);
         daoJpaSponsor.update(panasonic);
 
+        // Players
         Jugador nishida = new Jugador();
         nishida.setName("Yuji");
         nishida.setApellido("Nishida");
         nishida.setDorsal(11);
         nishida.setPosicion(Posicion.HITTER);
         nishida.setEquipo(bluteon);
-        Set<Jugador> jugadores = new HashSet<>();
-        jugadores.add(nishida);
+        Set<Jugador> jugadoresBluteon = new HashSet<>();
+        jugadoresBluteon.add(nishida);
         daoJpaJugador.save(nishida);
+
+        Jugador ran = new Jugador();
+        ran.setName("Ran");
+        ran.setApellido("Takahashi");
+        ran.setDorsal(12);
+        ran.setPosicion(Posicion.HITTER);
+        ran.setEquipo(suntory);
+        Set<Jugador> jugadoresSuntory = new HashSet<>();
+        jugadoresSuntory.add(ran);
+        daoJpaJugador.save(ran);
 
 
     }
