@@ -143,12 +143,12 @@ public class Partido {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Partido partido = (Partido) o;
-        return Objects.equals(id, partido.id) && Objects.equals(fecha, partido.fecha) && Objects.equals(lugar, partido.lugar) && Objects.equals(equipoLocal, partido.equipoLocal) && Objects.equals(equipoVisitante, partido.equipoVisitante) && Objects.equals(estadisticas, partido.estadisticas);
+        return Objects.equals(id, partido.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, fecha, lugar, equipoLocal, equipoVisitante, estadisticas);
+        return Objects.hashCode(id);
     }
 
     @Override

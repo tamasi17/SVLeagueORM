@@ -87,12 +87,12 @@ public class Sponsor {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Sponsor sponsor = (Sponsor) o;
-        return Double.compare(presupuestoAportado, sponsor.presupuestoAportado) == 0 && Objects.equals(id, sponsor.id) && Objects.equals(nombreComercial, sponsor.nombreComercial) && Objects.equals(sector, sponsor.sector) && Objects.equals(equipos, sponsor.equipos);
+        return Objects.equals(id, sponsor.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombreComercial, sector, presupuestoAportado, equipos);
+        return Objects.hashCode(id);
     }
 
     @Override

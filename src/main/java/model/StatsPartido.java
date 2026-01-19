@@ -191,12 +191,12 @@ public class StatsPartido {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         StatsPartido that = (StatsPartido) o;
-        return ataques == that.ataques && puntos == that.puntos && saques == that.saques && aces == that.aces && colocacionesIntentadas == that.colocacionesIntentadas && colocacionesConseguidas == that.colocacionesConseguidas && bloqueosIntentados == that.bloqueosIntentados && bloqueosConseguidos == that.bloqueosConseguidos && recepcionesConseguidas == that.recepcionesConseguidas && recepcionesIntentadas == that.recepcionesIntentadas && Objects.equals(id, that.id) && Objects.equals(jugador, that.jugador) && Objects.equals(partido, that.partido);
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, jugador, partido, ataques, puntos, saques, aces, colocacionesIntentadas, colocacionesConseguidas, bloqueosIntentados, bloqueosConseguidos, recepcionesConseguidas, recepcionesIntentadas);
+        return Objects.hashCode(id);
     }
 
     @Override

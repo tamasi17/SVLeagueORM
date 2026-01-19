@@ -165,12 +165,12 @@ public class Jugador {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Jugador jugador = (Jugador) o;
-        return dorsal == jugador.dorsal && Objects.equals(id, jugador.id) && Objects.equals(name, jugador.name) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && posicion == jugador.posicion && Objects.equals(equipo, jugador.equipo) && Objects.equals(statsPartidos, jugador.statsPartidos);
+        return Objects.equals(id, jugador.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, equipo, statsPartidos);
+        return Objects.hashCode(id);
     }
 
     @Override

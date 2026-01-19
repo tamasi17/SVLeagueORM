@@ -183,12 +183,12 @@ public class Equipo {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Equipo equipo = (Equipo) o;
-        return Objects.equals(id, equipo.id) && Objects.equals(nombre, equipo.nombre) && Objects.equals(ciudad, equipo.ciudad) && Objects.equals(web, equipo.web) && Objects.equals(fechaFundacion, equipo.fechaFundacion) && Objects.equals(estadio, equipo.estadio) && Objects.equals(entrenador, equipo.entrenador) && Objects.equals(jugadores, equipo.jugadores) && Objects.equals(sponsors, equipo.sponsors);
+        return Objects.equals(id, equipo.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, ciudad, web, fechaFundacion, estadio, entrenador, jugadores, sponsors);
+        return Objects.hashCode(id);
     }
 
     @Override

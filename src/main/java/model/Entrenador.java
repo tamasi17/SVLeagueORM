@@ -81,12 +81,12 @@ public class Entrenador {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Entrenador that = (Entrenador) o;
-        return Objects.equals(id, that.id) && Objects.equals(nombre, that.nombre) && Objects.equals(apellido, that.apellido);
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, apellido);
+        return Objects.hashCode(id);
     }
 
     @Override

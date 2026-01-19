@@ -86,12 +86,12 @@ public class Estadio {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Estadio estadio = (Estadio) o;
-        return capacidad == estadio.capacidad && Objects.equals(id, estadio.id) && Objects.equals(nombre, estadio.nombre) && Objects.equals(ciudad, estadio.ciudad) && Objects.equals(equipo, estadio.equipo);
+        return Objects.equals(id, estadio.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, ciudad, capacidad, equipo);
+        return Objects.hashCode(id);
     }
 
     @Override
