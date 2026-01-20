@@ -72,7 +72,6 @@ public class SimulationV1 {
     private static StatsPartido fillStats(StatsPartido statsPartido, Partido partido, Random random) {
         statsPartido.setPartido(partido);
 
-        // FIXME: random not working - no suitable method for nextInt
         int ataques = random.nextInt(20,23);
         statsPartido.setAtaques(ataques);
         statsPartido.setPuntos(ataques - (random.nextInt(5)));
