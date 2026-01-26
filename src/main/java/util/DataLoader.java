@@ -5,9 +5,7 @@ import jakarta.persistence.EntityManager;
 import model.*;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Clase para generar la información que se utiliza en Simulacion o Main
@@ -22,6 +20,7 @@ public class DataLoader {
     private final DaoJpaJugador daoJpaJugador;
     private final DaoJpaSponsor daoJpaSponsor;
 
+    Map<Equipo, List<Jugador>> leagueData = new HashMap<>();
 
     public DataLoader(EntityManager em) {
         this.entityManager = em;
@@ -31,6 +30,61 @@ public class DataLoader {
         this.daoJpaSponsor = new DaoJpaSponsor(em);
         this.daoJpaEstadio = new DaoJpaEstadio(em);
     }
+
+    public Map<Equipo, List<Jugador>> prepareLeagueData() {
+        Map<Equipo, List<Jugador>> data = new HashMap<>();
+
+//        Sponsor globalSponsor = new Sponsor("Red Bull", "Energy");
+
+//        Equipo e1 = new Equipo("Osaka Bluteon");
+//        e1.addSponsor(globalSponsor); // Link it here!
+
+//        List<Jugador> players = new ArrayList<>();
+//        players.add(new Jugador("Nishida", 11));
+
+//        data.put(e1, players);
+        return data;
+    }
+
+    public void loadLeague(Map<Equipo, List<Jugador>> leagueData, List<Sponsor> allSponsors){
+
+        // First, save all sponsors
+        for (Sponsor s : allSponsors){
+            daoJpaSponsor.save(s);
+        }
+
+        // OUTER LOOP iterates through Team
+        for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()){
+
+            Equipo currentTeam = entry.getKey();
+            List<Jugador> roster = entry.getValue();
+
+            // Save team dependencies first
+            daoJpaEstadio.save(currentTeam.getEstadio());
+            daoJpaEntrenador.save(currentTeam.getEntrenador());
+
+
+            // Save team
+            daoJpaEquipo.save(currentTeam);
+            System.out.println("Saved Team: "+ currentTeam.getNombre());
+
+            // INNER LOOP iterates through players of currentTeam
+
+            for (Jugador p : roster){
+
+                // Helper !!
+                currentTeam.addJugador(p);
+                // Save it
+                daoJpaJugador.save(p);
+            }
+
+            System.out.println("Succesfully loaded "+ roster.size() +
+                    " players for "+ currentTeam.getNombre());
+
+            daoJpaEquipo.update(currentTeam);
+        }
+    }
+
 
     public void loadTest(){
         System.out.println("Test: Info Loading");
@@ -109,6 +163,7 @@ public class DataLoader {
 
 
     }
+
 
 
     private Equipo createEquipo(String nombre, String ciudad, Estadio estadio,
