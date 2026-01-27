@@ -1,0 +1,440 @@
+[
+  {
+    "nombre": "VOREAS HOKKAIDO",
+    "web": "https://voreas.co.jp/",
+    "entrenador": {
+      "nombre": "EDO",
+      "apellido": "KLEIN"
+    },
+    "estadio": {
+      "nombre": "Asahikawa Gymnasium Recruit Staffing RICK&SUE",
+      "ciudad": "Asahikawa"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "HottoMotto" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 2, "posicion": "OH", "name": "Manato", "apellido": "Nakamichi" },
+      { "dorsal": 5, "posicion": "MB", "name": "Jin", "apellido": "Inoue" },
+      { "dorsal": 6, "posicion": "S", "name": "Jun", "apellido": "Yamagishi" },
+      { "dorsal": 8, "posicion": "OH", "name": "Kyosuke", "apellido": "Higuruma" },
+      { "dorsal": 9, "posicion": "OH", "name": "Kota", "apellido": "Ikeda" },
+      { "dorsal": 10, "posicion": "OH", "name": "Mart", "apellido": "Tammearu" },
+      { "dorsal": 11, "posicion": "L", "name": "Kohei", "apellido": "Tonozaki" },
+      { "dorsal": 12, "posicion": "L", "name": "Reon", "apellido": "Arao" },
+      { "dorsal": 14, "posicion": "OP", "name": "Yu-Sheng", "apellido": "Chang" },
+      { "dorsal": 15, "posicion": "MB", "name": "Taisei", "apellido": "Deguchi" },
+      { "dorsal": 18, "posicion": "OP", "name": "Kenta", "apellido": "Koga" },
+      { "dorsal": 19, "posicion": "S", "name": "Shota", "apellido": "Hamada" },
+      { "dorsal": 20, "posicion": "OH", "name": "Hikaru", "apellido": "Someno" },
+      { "dorsal": 34, "posicion": "MB", "name": "Keisuke", "apellido": "Miyoshi" },
+      { "dorsal": 44, "posicion": "MB", "name": "Timo", "apellido": "Tammemaa" }
+    ]
+  },
+  {
+    "nombre": "TOKYO GREAT BEARS",
+    "web": "https://tokyo-greatbears.com/",
+    "entrenador": {
+      "nombre": "KASPER",
+      "apellido": "VUORINEN"
+    },
+    "estadio": {
+      "nombre": "Yoyogi National Stadium 2nd Gymnasium",
+      "ciudad": "Tokyo"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "JSports" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "name": "Bartosz", "apellido": "Kurek" },
+      { "dorsal": 3, "posicion": "S", "name": "Akihiro", "apellido": "Fukatsu" },
+      { "dorsal": 4, "posicion": "MB", "name": "Jan", "apellido": "Kozamernik" },
+      { "dorsal": 5, "posicion": "L", "name": "Wataru", "apellido": "Taniguchi" },
+      { "dorsal": 6, "posicion": "OH", "name": "Alex", "apellido": "Ferreira" },
+      { "dorsal": 8, "posicion": "OH", "name": "Masahiro", "apellido": "Yanagida" },
+      { "dorsal": 9, "posicion": "OH", "name": "Takahiro", "apellido": "Tozaki" },
+      { "dorsal": 10, "posicion": "L", "name": "Taichiro", "apellido": "Koga" },
+      { "dorsal": 12, "posicion": "MB", "name": "Go", "apellido": "Murayama" },
+      { "dorsal": 13, "posicion": "MB", "name": "Issei", "apellido": "Otake" },
+      { "dorsal": 15, "posicion": "S", "name": "Yuki", "apellido": "Imahashi" },
+      { "dorsal": 17, "posicion": "OH", "name": "Luciano", "apellido": "Vicentin" },
+      { "dorsal": 25, "posicion": "OH", "name": "Rikuto", "apellido": "Goto" },
+      { "dorsal": 26, "posicion": "MB", "name": "Riku", "apellido": "Ito" },
+      { "dorsal": 29, "posicion": "L", "name": "Ryuki", "apellido": "Ohmae" },
+      { "dorsal": 30, "posicion": "OH", "name": "Takuma", "apellido": "Kawano" },
+      { "dorsal": 32, "posicion": "S", "name": "Ranmaru", "apellido": "Kondo" },
+      { "dorsal": 39, "posicion": "OP", "name": "Yusaku", "apellido": "Takashima" }
+    ]
+  },
+  {
+    "nombre": "VC NAGANO TRIDENTS",
+    "web": "http://vcnagano.jp/",
+    "entrenador": {
+      "nombre": "SHINJI",
+      "apellido": "KAWAMURA"
+    },
+    "estadio": {
+      "nombre": "Air Water Arena Matsumoto",
+      "ciudad": "Matsumoto"
+    },
+    "sponsors": [
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "HottoMotto" },
+      { "nombreComercial": "Volz" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "name": "Koki", "apellido": "Yamada" },
+      { "dorsal": 2, "posicion": "L", "name": "Keiichiro", "apellido": "Fujisawa" },
+      { "dorsal": 3, "posicion": "OP", "name": "Shusuke", "apellido": "Sakai" },
+      { "dorsal": 5, "posicion": "L", "name": "Koji", "apellido": "Nanba" },
+      { "dorsal": 6, "posicion": "S", "name": "Shinjo", "apellido": "Akahoshi" },
+      { "dorsal": 7, "posicion": "L", "name": "Hiroki", "apellido": "Kotoh" },
+      { "dorsal": 8, "posicion": "S", "name": "Kento", "apellido": "Nakashima" },
+      { "dorsal": 9, "posicion": "OH", "name": "Shota", "apellido": "Fujiwara" },
+      { "dorsal": 10, "posicion": "MB", "name": "Dai", "apellido": "Yasuhara" },
+      { "dorsal": 11, "posicion": "OH", "name": "Yuji", "apellido": "Kudo" },
+      { "dorsal": 12, "posicion": "S", "name": "Yusuke", "apellido": "Hoshina" },
+      { "dorsal": 13, "posicion": "OP", "name": "Koga", "apellido": "Iida" },
+      { "dorsal": 14, "posicion": "OP", "name": "Matthew", "apellido": "Neaves" },
+      { "dorsal": 17, "posicion": "MB", "name": "Yoshihiko", "apellido": "Matsumoto" },
+      { "dorsal": 18, "posicion": "OH", "name": "Ryuya", "apellido": "Sato" },
+      { "dorsal": 19, "posicion": "OH", "name": "Takamaru", "apellido": "Ichijo" },
+      { "dorsal": 21, "posicion": "OP", "name": "Hazuki", "apellido": "Kishikawa" },
+      { "dorsal": 22, "posicion": "OH", "name": "Oskar", "apellido": "Madsen" },
+      { "dorsal": 24, "posicion": "MB", "name": "Shodai", "apellido": "Abe" },
+      { "dorsal": 26, "posicion": "OH", "name": "Farhan", "apellido": "Halim" }
+    ]
+  },
+  {
+    "nombre": "TORAY ARROWS SHIZUOKA",
+    "web": "http://www.toray-arrows.jp/men/index.html",
+    "entrenador": {
+      "nombre": "YUTA",
+      "apellido": "ABE"
+    },
+    "estadio": {
+      "nombre": "Mishima Citizen Gymnasium",
+      "ciudad": "Mishima"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "HottoMotto" },
+      { "nombreComercial": "Volz" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "name": "Takahiro", "apellido": "Namba" },
+      { "dorsal": 2, "posicion": "S", "name": "Takahiro", "apellido": "Shin" },
+      { "dorsal": 3, "posicion": "L", "name": "Takumi", "apellido": "Yamaguchi" },
+      { "dorsal": 4, "posicion": "S", "name": "Keisuke", "apellido": "Sakai" },
+      { "dorsal": 6, "posicion": "OH", "name": "Gaku", "apellido": "Kusumoto" },
+      { "dorsal": 8, "posicion": "OH", "name": "Yuto", "apellido": "Fujinaka" },
+      { "dorsal": 9, "posicion": "OH", "name": "Takumi", "apellido": "Mawatari" },
+      { "dorsal": 10, "posicion": "OH", "name": "Tobiastakeshi", "apellido": "Shigeto" },
+      { "dorsal": 11, "posicion": "OP", "name": "Kirill", "apellido": "Klets" },
+      { "dorsal": 12, "posicion": "OH", "name": "DAIKI", "apellido": "YAMADA" },
+      { "dorsal": 13, "posicion": "MB", "name": "Taylor", "apellido": "Averill" },
+      { "dorsal": 15, "posicion": "MB", "name": "Haku", "apellido": "Ri" },
+      { "dorsal": 16, "posicion": "MB", "name": "Reimondo", "apellido": "Kamijo" },
+      { "dorsal": 17, "posicion": "OH", "name": "Hiroki", "apellido": "Ozawa" },
+      { "dorsal": 18, "posicion": "OH", "name": "Hiroaki", "apellido": "Maki" },
+      { "dorsal": 19, "posicion": "L", "name": "Taishu", "apellido": "Takeda" },
+      { "dorsal": 20, "posicion": "S", "name": "Eiki", "apellido": "Onodera" },
+      { "dorsal": 22, "posicion": "MB", "name": "Ryusuke", "apellido": "Nakamura" },
+      { "dorsal": 24, "posicion": "OH", "name": "Julio", "apellido": "Cardenas" }
+    ]
+  },
+  {
+    "nombre": "JTEKT STINGS AICHI",
+    "web": "http://www.jtekt-stings.jp/",
+    "entrenador": {
+      "nombre": "SHIMBO",
+      "apellido": "KOICHIRO"
+    },
+    "estadio": {
+      "nombre": "Okazaki Central Park Gymnasium",
+      "ciudad": "Okazaki"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "name": "Yao-Kai", "apellido": "Lu Chiang" },
+      { "dorsal": 2, "posicion": "MB", "name": "Kentaro", "apellido": "Takahashi" },
+      { "dorsal": 3, "posicion": "MB", "name": "Sayato", "apellido": "Sakai" },
+      { "dorsal": 4, "posicion": "MB", "name": "Shuto", "apellido": "Kawaguchi" },
+      { "dorsal": 6, "posicion": "S", "name": "Yudai", "apellido": "Kawahigashi" },
+      { "dorsal": 7, "posicion": "L", "name": "Takuma", "apellido": "Araki" },
+      { "dorsal": 9, "posicion": "OP", "name": "Stephen", "apellido": "Boyer" },
+      { "dorsal": 10, "posicion": "OH", "name": "Kenya", "apellido": "Fujinaka" },
+      { "dorsal": 11, "posicion": "OH", "name": "Kosuke", "apellido": "Hata" },
+      { "dorsal": 12, "posicion": "OH", "name": "Naoya", "apellido": "Fujiwara" },
+      { "dorsal": 16, "posicion": "OP", "name": "Mitsuki", "apellido": "Demizu" },
+      { "dorsal": 17, "posicion": "S", "name": "Issei", "apellido": "Maeda" },
+      { "dorsal": 21, "posicion": "L", "name": "Kazuyuki", "apellido": "Takahashi" },
+      { "dorsal": 22, "posicion": "MB", "name": "Daigo", "apellido": "Iwamoto" },
+      { "dorsal": 23, "posicion": "OH", "name": "Torey", "apellido": "Defalco" },
+      { "dorsal": 26, "posicion": "OH", "name": "Ricardo Lucarelli", "apellido": "Souza" }
+    ]
+  },
+  {
+    "nombre": "WOLFDOGS NAGOYA",
+    "web": "https://www.wolfdogs.jp/",
+    "entrenador": {
+      "nombre": "Valerio",
+      "apellido": "Baldovin"
+    },
+    "estadio": {
+      "nombre": "ENTRIO",
+      "ciudad": "Nagoya"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "JSports" },
+      { "nombreComercial": "Lawson Ticket" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OH", "name": "Shuzo", "apellido": "Yamada" },
+      { "dorsal": 2, "posicion": "MB", "name": "Akira", "apellido": "Sawada" },
+      { "dorsal": 3, "posicion": "S", "name": "Hideomi", "apellido": "Fukatsu" },
+      { "dorsal": 4, "posicion": "MB", "name": "Masahiro", "apellido": "Yamazaki" },
+      { "dorsal": 5, "posicion": "L", "name": "Shunsuke", "apellido": "Watanabe" },
+      { "dorsal": 6, "posicion": "OH", "name": "Timothee", "apellido": "Carle" },
+      { "dorsal": 7, "posicion": "S", "name": "Shinnosuke", "apellido": "Hayasaka" },
+      { "dorsal": 9, "posicion": "OH", "name": "Aymen", "apellido": "Bouguerra" },
+      { "dorsal": 10, "posicion": "MB", "name": "Shunichiro", "apellido": "Sato" },
+      { "dorsal": 11, "posicion": "MB", "name": "Ryota", "apellido": "Denda" },
+      { "dorsal": 12, "posicion": "OH", "name": "Taito", "apellido": "Mizumachi" },
+      { "dorsal": 15, "posicion": "OP", "name": "Kento", "apellido": "Miyaura" },
+      { "dorsal": 17, "posicion": "L", "name": "Kenta", "apellido": "Ichikawa" },
+      { "dorsal": 18, "posicion": "S", "name": "Naozumi", "apellido": "Kambayashi" },
+      { "dorsal": 22, "posicion": "OP", "name": "Jo", "apellido": "Toyoda" },
+      { "dorsal": 26, "posicion": "OH", "name": "Akito", "apellido": "Yamazaki" },
+      { "dorsal": 99, "posicion": "MB", "name": "Norbert", "apellido": "Huber" }
+    ]
+  },
+  {
+    "nombre": "OSAKA BLUTEON",
+    "web": "https://www.osaka-bluteon.com/",
+    "entrenador": {
+      "nombre": "Tuomas Petteri",
+      "apellido": "Sammelvuo"
+    },
+    "estadio": {
+      "nombre": "Panasonic Arena",
+      "ciudad": "Osaka"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "JSports" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "HottoMotto" },
+      { "nombreComercial": "Volz" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "name": "Kunihiro", "apellido": "Shimizu" },
+      { "dorsal": 3, "posicion": "S", "name": "Shunsuke", "apellido": "Nakamura" },
+      { "dorsal": 4, "posicion": "MB", "name": "Kotaro", "apellido": "Kaneta" },
+      { "dorsal": 5, "posicion": "OH", "name": "Shoma", "apellido": "Tomita" },
+      { "dorsal": 6, "posicion": "S", "name": "Antoine", "apellido": "Brizard" },
+      { "dorsal": 8, "posicion": "OH", "name": "Kenyu", "apellido": "Nakamoto" },
+      { "dorsal": 9, "posicion": "MB", "name": "Shikun", "apellido": "Peng" },
+      { "dorsal": 10, "posicion": "MB", "name": "Akihiro", "apellido": "Yamauchi" },
+      { "dorsal": 11, "posicion": "OP", "name": "Yuji", "apellido": "Nishida" },
+      { "dorsal": 12, "posicion": "S", "name": "Ryo", "apellido": "Nozoe" },
+      { "dorsal": 13, "posicion": "L", "name": "Tomohiro", "apellido": "Yamamoto" },
+      { "dorsal": 15, "posicion": "OH", "name": "Masato", "apellido": "Kai" },
+      { "dorsal": 16, "posicion": "L", "name": "Kotaro", "apellido": "Ikeshiro" },
+      { "dorsal": 18, "posicion": "OP", "name": "Hiroto", "apellido": "Nishiyama" },
+      { "dorsal": 19, "posicion": "MB", "name": "Keitaro", "apellido": "Nishikawa" },
+      { "dorsal": 22, "posicion": "OH", "name": "Bryan", "apellido": "Bagunas" },
+      { "dorsal": 23, "posicion": "MB", "name": "Larry IK", "apellido": "Evbade-Dan" },
+      { "dorsal": 81, "posicion": "OH", "name": "Miguel", "apellido": "Lopez" }
+    ]
+  },
+  {
+    "nombre": "SUNTORY SUNBIRDS OSAKA",
+    "web": "http://www.suntory.co.jp/culture-sports/sunbirds/",
+    "entrenador": {
+      "nombre": "OLIVIER",
+      "apellido": "LECAT"
+    },
+    "estadio": {
+      "nombre": "Asue Arena Osaka",
+      "ciudad": "Osaka"
+    },
+    "sponsors": [
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "name": "Taishi", "apellido": "Onodera" },
+      { "dorsal": 2, "posicion": "MB", "name": "Kenji", "apellido": "Sato" },
+      { "dorsal": 5, "posicion": "S", "name": "Ryo", "apellido": "Shimokawa" },
+      { "dorsal": 7, "posicion": "OH", "name": "Alain", "apellido": "Dearmas" },
+      { "dorsal": 8, "posicion": "S", "name": "Masahiro", "apellido": "Sekita" },
+      { "dorsal": 10, "posicion": "L", "name": "Tomohiro", "apellido": "Ogawa" },
+      { "dorsal": 11, "posicion": "L", "name": "Soshi", "apellido": "Fujinaka" },
+      { "dorsal": 12, "posicion": "OH", "name": "Ran", "apellido": "Takahashi" },
+      { "dorsal": 13, "posicion": "OP", "name": "Dmitriy", "apellido": "Muserskiy" },
+      { "dorsal": 14, "posicion": "MB", "name": "Ren", "apellido": "Oniki" },
+      { "dorsal": 15, "posicion": "L", "name": "Yoshimitsu", "apellido": "Kiire" },
+      { "dorsal": 17, "posicion": "MB", "name": "Hirohito", "apellido": "Kashimura" },
+      { "dorsal": 18, "posicion": "OH", "name": "Egor", "apellido": "Kliuka" },
+      { "dorsal": 19, "posicion": "OP", "name": "Kotaro", "apellido": "Kai" },
+      { "dorsal": 21, "posicion": "OH", "name": "Rui", "apellido": "Takahashi" },
+      { "dorsal": 22, "posicion": "OH", "name": "Kenshin", "apellido": "Kuwada" },
+      { "dorsal": 23, "posicion": "MB", "name": "Tatsuki", "apellido": "Kashiwada" }
+    ]
+  },
+  {
+    "nombre": "NIPPON STEEL SAKAI BLAZERS",
+    "web": "http://www.blazers.gr.jp/web/",
+    "entrenador": {
+      "nombre": "KITAJIMA",
+      "apellido": "TAKESHI"
+    },
+    "estadio": {
+      "nombre": "Ohama Daishin Arena",
+      "ciudad": "Sakai"
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "Volz" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "name": "Matthew", "apellido": "Anderson" },
+      { "dorsal": 2, "posicion": "MB", "name": "Hiroyuki", "apellido": "Yamane" },
+      { "dorsal": 3, "posicion": "OH", "name": "Kosuke", "apellido": "Yasui" },
+      { "dorsal": 4, "posicion": "OH", "name": "Naoya", "apellido": "Takano" },
+      { "dorsal": 5, "posicion": "L", "name": "Tomohiro", "apellido": "Horie" },
+      { "dorsal": 6, "posicion": "L", "name": "Aiki", "apellido": "Mori" },
+      { "dorsal": 7, "posicion": "OH", "name": "Kenta", "apellido": "Takanashi" },
+      { "dorsal": 8, "posicion": "MB", "name": "Naoto", "apellido": "Akima" },
+      { "dorsal": 9, "posicion": "MB", "name": "Peichang", "apellido": "Tsai" },
+      { "dorsal": 10, "posicion": "MB", "name": "Cole", "apellido": "Watanabe" },
+      { "dorsal": 11, "posicion": "S", "name": "Masaki", "apellido": "Oya" },
+      { "dorsal": 14, "posicion": "OP", "name": "Ulrik", "apellido": "Dahl" },
+      { "dorsal": 15, "posicion": "S", "name": "Takumi", "apellido": "Eto" },
+      { "dorsal": 17, "posicion": "OP", "name": "Ryunosuke", "apellido": "Kamimura" },
+      { "dorsal": 20, "posicion": "S", "name": "Takehiro", "apellido": "Nakanishi" },
+      { "dorsal": 21, "posicion": "MB", "name": "Yutaro", "apellido": "Takemoto" },
+      { "dorsal": 22, "posicion": "OH", "name": "Akira", "apellido": "Kakizaki" },
+      { "dorsal": 23, "posicion": "L", "name": "Tatsuki", "apellido": "Minamiguchi" },
+      { "dorsal": 90, "posicion": "OH", "name": "Tommaso", "apellido": "Rinaldi" }
+    ]
+  },
+  {
+    "nombre": "HIROSHIMA THUNDERS",
+    "web": "http://www.jti.co.jp/knowledge/thunders/",
+    "entrenador": {
+      "nombre": "CARLOS JAVIER",
+      "apellido": "WEBER"
+    },
+    "estadio": {
+      "nombre": "Hiroshima Green Arena",
+      "ciudad": "Hiroshima"
+    },
+    "sponsors": [
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Open House Group" },
+      { "nombreComercial": "Lawson Ticket" },
+      { "nombreComercial": "TSP Taiyo" },
+      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OH", "name": "Yuri", "apellido": "Yanakita" },
+      { "dorsal": 2, "posicion": "MB", "name": "Yuki", "apellido": "Higuchi" },
+      { "dorsal": 3, "posicion": "L", "name": "Makoto", "apellido": "Nishimura" },
+      { "dorsal": 4, "posicion": "MB", "name": "Hiromasa", "apellido": "Miwa" },
+      { "dorsal": 5, "posicion": "OH", "name": "Shinichiro", "apellido": "Inoue" },
+      { "dorsal": 6, "posicion": "OH", "name": "Cooper", "apellido": "Robinson" },
+      { "dorsal": 7, "posicion": "OH", "name": "Yudai", "apellido": "Arai" },
+      { "dorsal": 8, "posicion": "OH", "name": "Koshi", "apellido": "Takechi" },
+      { "dorsal": 9, "posicion": "MB", "name": "Kaiki", "apellido": "Takanashi" },
+      { "dorsal": 10, "posicion": "L", "name": "Keishiro", "apellido": "Takaki" },
+      { "dorsal": 11, "posicion": "OH", "name": "Junya", "apellido": "Sakashita" },
+      { "dorsal": 15, "posicion": "MB", "name": "Keigo", "apellido": "Nishimoto" },
+      { "dorsal": 16, "posicion": "MB", "name": "Chihiro", "apellido": "Nishi" },
+      { "dorsal": 17, "posicion": "S", "name": "Masaki", "apellido": "Kaneko" },
+      { "dorsal": 18, "posicion": "OH", "name": "Shohei", "apellido": "Yamamoto" },
+      { "dorsal": 19, "posicion": "OP", "name": "Felipe Moreira", "apellido": "Roque" },
+      { "dorsal": 20, "posicion": "S", "name": "Daiki", "apellido": "Abe" },
+      { "dorsal": 21, "posicion": "S", "name": "Motoki", "apellido": "Eiro" },
+      { "dorsal": 22, "posicion": "OH", "name": "Hayato", "apellido": "Yamamoto" },
+      { "dorsal": 23, "posicion": "OP", "name": "Daniel Martinez", "apellido": "Campos" }
+    ]
+  }
+]
