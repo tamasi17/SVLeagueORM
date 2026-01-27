@@ -7,7 +7,8 @@ package model;
 public enum Posicion {
 
     SETTER("Colocador", "S"),
-    HITTER("Atacante", "H"),
+    OUTSIDE_HITTER("Atacante Izquierda", "OH"),
+    OPPOSITE_HITTER("Atacante Derecha", "OP"),
     MIDDLE_BLOCKER("Central", "MB"),
     LIBERO("Líbero", "L");
 
