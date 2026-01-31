@@ -2,6 +2,7 @@ package util;
 
 import dao.*;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import model.*;
 
 import java.time.LocalDate;
@@ -31,62 +32,64 @@ public class DataLoader {
         this.daoJpaEstadio = new DaoJpaEstadio(em);
     }
 
-    public Map<Equipo, List<Jugador>> prepareLeagueData() {
-        Map<Equipo, List<Jugador>> data = new HashMap<>();
 
-//        Sponsor globalSponsor = new Sponsor("Red Bull", "Energy");
+    /**
+     * Metodo que carga los datos de la liga para la simulacion dentro de una transaccion
+     * @param leagueData
+     * @param allSponsors
+     */
+    public void loadLeague(Map<Equipo, List<Jugador>> leagueData, List<Sponsor> allSponsors) {
 
-//        Equipo e1 = new Equipo("Osaka Bluteon");
-//        e1.addSponsor(globalSponsor); // Link it here!
+        EntityTransaction tx = entityManager.getTransaction();
+        try {
+            tx.begin();
 
-//        List<Jugador> players = new ArrayList<>();
-//        players.add(new Jugador("Nishida", 11));
-
-//        data.put(e1, players);
-        return data;
-    }
-
-    public void loadLeague(Map<Equipo, List<Jugador>> leagueData, List<Sponsor> allSponsors){
-
-        // First, save all sponsors
-        for (Sponsor s : allSponsors){
-            daoJpaSponsor.save(s);
-        }
-
-        // OUTER LOOP iterates through Team
-        for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()){
-
-            Equipo currentTeam = entry.getKey();
-            List<Jugador> roster = entry.getValue();
-
-            // Save team dependencies first
-            daoJpaEstadio.save(currentTeam.getEstadio());
-            daoJpaEntrenador.save(currentTeam.getEntrenador());
-
-
-            // Save team
-            daoJpaEquipo.save(currentTeam);
-            System.out.println("Saved Team: "+ currentTeam.getNombre());
-
-            // INNER LOOP iterates through players of currentTeam
-
-            for (Jugador p : roster){
-
-                // Helper !!
-                currentTeam.addJugador(p);
-                // Save it
-                daoJpaJugador.save(p);
+            // Save all sponsors
+            for (Sponsor s : allSponsors) {
+                daoJpaSponsor.save(s);
             }
 
-            System.out.println("Succesfully loaded "+ roster.size() +
-                    " players for "+ currentTeam.getNombre());
+            // OUTER LOOP recorre equipos
+            for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()) {
 
-            daoJpaEquipo.update(currentTeam);
+                Equipo currentTeam = entry.getKey();
+                List<Jugador> roster = entry.getValue();
+
+                // Save team dependencies (Estadio y Entrenador)
+                daoJpaEstadio.save(currentTeam.getEstadio());
+                daoJpaEntrenador.save(currentTeam.getEntrenador());
+
+                // Save team
+                daoJpaEquipo.save(currentTeam);
+                System.out.println("Saved Team: " + currentTeam.getNombre());
+
+                // INNER LOOP para asignar los jugadores de cada equipo
+
+                for (Jugador p : roster) {
+
+                    // Helper !!
+                    currentTeam.addJugador(p);
+                    // Save it
+                    daoJpaJugador.save(p);
+                }
+
+                System.out.println("Succesfully loaded " + roster.size() +
+                        " players for " + currentTeam.getNombre());
+
+                daoJpaEquipo.update(currentTeam);
+            }
+
+            tx.commit();
+            System.out.println("Data load completed succesfully");
+
+        } catch (Exception e) {
+            if (tx.isActive()) tx.rollback();
+            throw e;
         }
     }
 
 
-    public void loadTest(){
+    public void loadTest() {
         System.out.println("Test: Info Loading");
 
         Estadio panasonicArena = new Estadio();
@@ -126,7 +129,7 @@ public class DataLoader {
         daoJpaSponsor.save(daido);
 
         Equipo bluteon = createEquipo("Osaka Bluteon", "Osaka", panasonicArena,
-                tuomas, sponsors, LocalDate.ofYearDay(1951,12), "bluteon.com");
+                tuomas, sponsors, LocalDate.ofYearDay(1951, 12), "bluteon.com");
 
         Equipo suntory = createEquipo("Suntory Sunbirds Osaka", "Osaka", asueArena,
                 lecat, sponsors, LocalDate.ofYearDay(1942, 10), "suntory.com");
@@ -145,7 +148,7 @@ public class DataLoader {
         nishida.setName("Yuji");
         nishida.setApellido("Nishida");
         nishida.setDorsal(11);
-        nishida.setPosicion(Posicion.HITTER);
+        nishida.setPosicion(Posicion.OPPOSITE_HITTER);
         nishida.setEquipo(bluteon);
         Set<Jugador> jugadoresBluteon = new HashSet<>();
         jugadoresBluteon.add(nishida);
@@ -155,7 +158,7 @@ public class DataLoader {
         ran.setName("Ran");
         ran.setApellido("Takahashi");
         ran.setDorsal(12);
-        ran.setPosicion(Posicion.HITTER);
+        ran.setPosicion(Posicion.OUTSIDE_HITTER);
         ran.setEquipo(suntory);
         Set<Jugador> jugadoresSuntory = new HashSet<>();
         jugadoresSuntory.add(ran);
@@ -165,9 +168,8 @@ public class DataLoader {
     }
 
 
-
     private Equipo createEquipo(String nombre, String ciudad, Estadio estadio,
-                                Entrenador entrenador, Set<Sponsor> sponsors, LocalDate foundation, String web){
+                                Entrenador entrenador, Set<Sponsor> sponsors, LocalDate foundation, String web) {
         Equipo equipo = new Equipo();
         equipo.setNombre(nombre);
         equipo.setCiudad(ciudad);
