@@ -32,8 +32,7 @@ public class SimulationV1 {
 
             // Confirmamos carga de datos
 
-            // ToDo: Missing Jugador (birth date y nationality), Equipo (city, foundation date)
-            // ToDo: Entrenador (nationality), Sponsor (industry sector)
+            // ToDo: Missing Jugador (birth date y nationality), Equipo (foundation date), Estadio (capacity)
 
             System.out.println(" >>>> Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
 

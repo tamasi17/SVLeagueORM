@@ -2,22 +2,24 @@
   {
     "nombreEquipo": "VOREAS HOKKAIDO",
     "web": "https://voreas.co.jp/",
+    "ciudad": "Asahikawa",
     "entrenador": {
       "nombreEntrenador": "Edo",
-      "apellidoEntrenador": "Klein"
+      "apellidoEntrenador": "Klein",
+      "nacionalidad": "Croatia"
     },
     "estadio": {
       "nombreEstadio": "Asahikawa Gymnasium Recruit Staffing RICK&SUE",
       "ciudad": "Asahikawa"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "HottoMotto" },
-      { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 2, "posicion": "OH", "nombreJugador": "Manato", "apellidoJugador": "Nakamichi" },
@@ -40,23 +42,26 @@
   {
     "nombreEquipo": "TOKYO GREAT BEARS",
     "web": "https://tokyo-greatbears.com/",
+    "ciudad": "Tokyo",
+
     "entrenador": {
       "nombreEntrenador": "Kasper",
-      "apellidoEntrenador": "Vuorinen"
+      "apellidoEntrenador": "Vuorinen",
+      "nacionalidad": "Finlandia"
     },
     "estadio": {
       "nombreEstadio": "Yoyogi National Stadium 2nd Gymnasium",
       "ciudad": "Tokyo"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
-      { "nombreComercial": "Recruit" },
-      { "nombreComercial": "Mufg" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "Lawson Tickets" },
-      { "nombreComercial": "JSports" },
-      { "nombreComercial": "KTX" },
-      { "nombreComercial": "Taraflex" }
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Recruit", "sector": "RRHH" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Lawson Tickets", "sector": "Eventos" },
+      { "nombreComercial": "JSports", "sector": "Articulos deportivos" },
+      { "nombreComercial": "KTX", "sector": "Automoviles" },
+      { "nombreComercial": "Taraflex", "sector": "Suelos de volleyball" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "OP", "nombreJugador": "Bartosz", "apellidoJugador": "Kurek" },
@@ -82,9 +87,11 @@
   {
     "nombreEquipo": "VC NAGANO TRIDENTS",
     "web": "http://vcnagano.jp/",
+    "ciudad": "Matsumoto",
     "entrenador": {
       "nombreEntrenador": "Shinji",
-      "apellidoEntrenador": "Kawamura"
+      "apellidoEntrenador": "Kawamura",
+      "nacionalidad": "Japon"
     },
     "estadio": {
       "nombreEstadio": "Air Water Arena Matsumoto",
@@ -92,14 +99,14 @@
     },
     "sponsors": [
       { "nombreComercial": "Lawson Tickets" },
-      { "nombreComercial": "KTX" },
+      { "nombreComercial": "KTX", "sector": "Automoviles" },
       { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
       { "nombreComercial": "HottoMotto" },
-      { "nombreComercial": "Volz" },
-      { "nombreComercial": "Salonpas" },
-      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" },
+      { "nombreComercial": "Salonpas", "sector": "Parches Analgesicos" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
@@ -128,23 +135,25 @@
   {
     "nombreEquipo": "TORAY ARROWS SHIZUOKA",
     "web": "http://www.toray-arrows.jp/men/index.html",
+    "ciudad": "Mishima",
     "entrenador": {
       "nombreEntrenador": "Yuta",
-      "apellidoEntrenador": "Abe"
+      "apellidoEntrenador": "Abe",
+      "nacionalidad": "Japon"
     },
     "estadio": {
       "nombreEstadio": "Mishima Citizen Gymnasium",
       "ciudad": "Mishima"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Daido", "sector": "Seguros" },
       { "nombreComercial": "Recruit" },
       { "nombreComercial": "Mufg" },
       { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Kosé" },
-      { "nombreComercial": "HottoMotto" },
-      { "nombreComercial": "Volz" }
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "MB", "nombreJugador": "Takahiro", "apellidoJugador": "Namba" },
@@ -171,25 +180,27 @@
   {
     "nombreEquipo": "JTEKT STINGS AICHI",
     "web": "http://www.jtekt-stings.jp/",
+    "ciudad": "Okazaki",
     "entrenador": {
       "nombreEntrenador": "Shimbo",
-      "apellidoEntrenador": "Koichiro"
+      "apellidoEntrenador": "Koichiro",
+      "nacionalidad": "Japon"
     },
     "estadio": {
       "nombreEstadio": "Okazaki Central Park Gymnasium",
       "ciudad": "Okazaki"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Daido", "sector": "Seguros" },
       { "nombreComercial": "KTX" },
       { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Kosé" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
       { "nombreComercial": "Salonpas" },
-      { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Skylight" },
-      { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "MB", "nombreJugador": "Yao-Kai", "apellidoJugador": "Lu Chiang" },
@@ -213,26 +224,28 @@
   {
     "nombreEquipo": "WOLFDOGS NAGOYA",
     "web": "https://www.wolfdogs.jp/",
+    "ciudad": "Nagoya",
     "entrenador": {
       "nombreEntrenador": "Valerio",
-      "apellidoEntrenador": "Baldovin"
+      "apellidoEntrenador": "Baldovin",
+      "nacionalidad": "Italia"
+
     },
     "estadio": {
       "nombreEstadio": "ENTRIO",
       "ciudad": "Nagoya"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Daido", "sector": "Seguros" },
       { "nombreComercial": "Recruit" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "JSports" },
-      { "nombreComercial": "Lawson Ticket" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "JSports", "sector": "Articulos deportivos" },
       { "nombreComercial": "KTX" },
       { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Skylight" },
-      { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "OH", "nombreJugador": "Shuzo", "apellidoJugador": "Yamada" },
@@ -257,31 +270,30 @@
   {
     "nombreEquipo": "OSAKA BLUTEON",
     "web": "https://www.osaka-bluteon.com/",
+    "ciudad": "Osaka",
     "entrenador": {
       "nombreEntrenador": "Tuomas Petteri",
-      "apellidoEntrenador": "Sammelvuo"
+      "apellidoEntrenador": "Sammelvuo",
+      "nacionalidad": "Finlandia"
+
     },
     "estadio": {
       "nombreEstadio": "Panasonic Arena",
       "ciudad": "Osaka"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Daido", "sector": "Seguros" },
       { "nombreComercial": "Mufg" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "Lawson Tickets" },
-      { "nombreComercial": "JSports" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Lawson Tickets", "sector": "Eventos" },
+      { "nombreComercial": "JSports", "sector": "Articulos Deportivos" },
       { "nombreComercial": "KTX" },
-      { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Kosé" },
-      { "nombreComercial": "HottoMotto" },
-      { "nombreComercial": "Volz" },
-      { "nombreComercial": "Salonpas" },
-      { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Skylight" },
-      { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "OP", "nombreJugador": "Kunihiro", "apellidoJugador": "Shimizu" },
@@ -307,9 +319,12 @@
   {
     "nombreEquipo": "SUNTORY SUNBIRDS OSAKA",
     "web": "http://www.suntory.co.jp/culture-sports/sunbirds/",
+    "ciudad": "Osaka",
     "entrenador": {
       "nombreEntrenador": "Olivier",
-      "apellidoEntrenador": "Lecat"
+      "apellidoEntrenador": "Lecat",
+      "nacionalidad": "Francia"
+
     },
     "estadio": {
       "nombreEstadio": "Asue Arena Osaka",
@@ -317,14 +332,14 @@
     },
     "sponsors": [
       { "nombreComercial": "Recruit" },
-      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
       { "nombreComercial": "Lawson Tickets" },
       { "nombreComercial": "KTX" },
       { "nombreComercial": "Taraflex" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Skylight" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
       { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "MB", "nombreJugador": "Taishi", "apellidoJugador": "Onodera" },
@@ -349,26 +364,29 @@
   {
     "nombreEquipo": "NIPPON STEEL SAKAI BLAZERS",
     "web": "http://www.blazers.gr.jp/web/",
+    "ciudad": "Sakai",
     "entrenador": {
       "nombreEntrenador": "Kitajima",
-      "apellidoEntrenador": "Takeshi"
+      "apellidoEntrenador": "Takeshi",
+      "nacionalidad": "Japon"
+
     },
     "estadio": {
       "nombreEstadio": "Ohama Daishin Arena",
       "ciudad": "Sakai"
     },
     "sponsors": [
-      { "nombreComercial": "Daido" },
+      { "nombreComercial": "Daido", "sector": "Seguros" },
       { "nombreComercial": "Recruit" },
-      { "nombreComercial": "Mufg" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "Kosé" },
-      { "nombreComercial": "Volz" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" },
       { "nombreComercial": "Salonpas" },
       { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Skylight" },
-      { "nombreComercial": "Mass" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "OP", "nombreJugador": "Matthew", "apellidoJugador": "Anderson" },
@@ -395,24 +413,26 @@
   {
     "nombreEquipo": "HIROSHIMA THUNDERS",
     "web": "http://www.jti.co.jp/knowledge/thunders/",
+    "ciudad": "Hiroshima",
     "entrenador": {
       "nombreEntrenador": "Carlos Javier",
-      "apellidoEntrenador": "Weber"
+      "apellidoEntrenador": "Weber",
+      "nacionalidad": "Argentino"
+
     },
     "estadio": {
       "nombreEstadio": "Hiroshima Green Arena",
       "ciudad": "Hiroshima"
     },
     "sponsors": [
-      { "nombreComercial": "Mufg" },
-      { "nombreComercial": "Open House Group" },
-      { "nombreComercial": "Lawson Ticket" },
-      { "nombreComercial": "TSP Taiyo" },
-      { "nombreComercial": "Kosé" },
-      { "nombreComercial": "Salonpas" },
-      { "nombreComercial": "Mikasa" },
-      { "nombreComercial": "Skylight" },
-      { "nombreComercial": "Hummel" }
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "Salonpas", "sector": "Suelos volleyball" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
     ],
     "jugadores": [
       { "dorsal": 1, "posicion": "OH", "nombreJugador": "Yuri", "apellidoJugador": "Yanakita" },
