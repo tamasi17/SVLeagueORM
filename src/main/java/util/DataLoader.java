@@ -42,16 +42,32 @@ public class DataLoader {
 
         try {
 
-            // Save all sponsors
-            for (Sponsor s : allSponsors) {
-                daoJpaSponsor.save(s);
-            }
+//            for (Sponsor s : allSponsors) {
+//                daoJpaSponsor.save(s);
+//            }
 
             // OUTER LOOP recorre equipos
             for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()) {
 
                 Equipo currentTeam = entry.getKey();
                 List<Jugador> roster = entry.getValue();
+
+
+                // 1. Handle Sponsors (ManyToMany)
+                Set<Sponsor> attachedSponsors = new HashSet<>();
+                for (Sponsor s : currentTeam.getSponsors()) {
+                    // Comprobar si ya existe para no duplicar sponsors en la db
+                    Sponsor existing = daoJpaSponsor.findByName(s.getNombreComercial());
+
+                    if (existing != null) {
+                        attachedSponsors.add(existing);
+                    } else {
+                        daoJpaSponsor.save(s); // Save new one
+                        attachedSponsors.add(s);
+                    }
+                }
+                currentTeam.setSponsors(attachedSponsors);
+
 
                 // Save team dependencies (Estadio)
                 daoJpaEstadio.save(currentTeam.getEstadio());

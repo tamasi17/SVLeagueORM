@@ -1,6 +1,7 @@
 package dao;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import model.Jugador;
 import model.Sponsor;
 
@@ -15,9 +16,21 @@ public class DaoJpaSponsor extends AbstractDao<Sponsor> implements GenericDao<Sp
         super(entityManager, Sponsor.class);
     }
 
+
     // Specific to Sponsor
 
-    // findByName, findBySector
+    // findBySector
+
+    public Sponsor findByName(String name) {
+        try {
+            return em.createQuery(
+                            "SELECT s FROM Sponsor s WHERE s.nombreComercial = :name", Sponsor.class)
+                    .setParameter("name", name)
+                    .getSingleResult();
+        } catch (NoResultException nre) {
+            return null;
+        }
+    }
 
     // problema N+1, aparte de findAll() crear una fetchJoin query
 

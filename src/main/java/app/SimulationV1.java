@@ -3,6 +3,7 @@ package app;
 import config.JpaUtil;
 import dao.DaoJpaEquipo;
 import dao.DaoJpaPartido;
+import dao.DaoJpaSponsor;
 import dao.DaoJpaStats;
 import jakarta.persistence.EntityManager;
 import model.Partido;
