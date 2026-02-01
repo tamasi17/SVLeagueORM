@@ -4,6 +4,8 @@ import dao.*;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import model.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -13,6 +15,8 @@ import java.util.*;
  * @author mati
  */
 public class DataLoader {
+
+    private static final Logger logger = LogManager.getLogger(DataLoader.class);
 
     private final EntityManager entityManager;
     private final DaoJpaEntrenador daoJpaEntrenador;
@@ -40,11 +44,9 @@ public class DataLoader {
      */
     public void loadLeague(Map<Equipo, List<Jugador>> leagueData, List<Sponsor> allSponsors) {
 
-        try {
+        logger.info("Starting league data load.");
 
-//            for (Sponsor s : allSponsors) {
-//                daoJpaSponsor.save(s);
-//            }
+        try {
 
             // OUTER LOOP recorre equipos
             for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()) {
@@ -73,8 +75,8 @@ public class DataLoader {
                 daoJpaEstadio.save(currentTeam.getEstadio());
 
                 // Save team
+                logger.debug("Attempting to save team: {}", currentTeam.getNombreEquipo());
                 daoJpaEquipo.save(currentTeam);
-                System.out.println("Saved Team: " + currentTeam.getNombreEquipo());
 
 
                 // INNER LOOP para asignar los jugadores de cada equipo
@@ -86,19 +88,17 @@ public class DataLoader {
                     daoJpaJugador.save(p);
                 }
 
-                System.out.println("Succesfully loaded " + roster.size() +
-                        " players for " + currentTeam.getNombreEquipo());
+                logger.info("Successfully loaded {} players for {}", roster.size(), currentTeam.getNombreEquipo());
 
                 daoJpaEquipo.update(currentTeam);
             }
 
-            System.out.println("Data load completed succesfully");
+            logger.info("Data load completed succesfully.");
 
 
 
             } catch (Exception e) {
-            System.err.println("Error loading league: "+ e.getLocalizedMessage());
-            e.printStackTrace();
+            logger.error("Failed to load league data: ", e);
         }
     }
 

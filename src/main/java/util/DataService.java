@@ -3,6 +3,8 @@ package util;
 import model.Equipo;
 import model.Jugador;
 import model.Sponsor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
@@ -12,6 +14,9 @@ import java.util.*;
  * Finalmente, envia toda esa información al DataLoader que carga la liga en la Simulacion.
  */
 public class DataService {
+
+    private static final Logger logger = LogManager.getLogger(DataService.class);
+
 
     public void prepareAndExecute(String jsonPath, DataLoader loader) {
 
@@ -33,7 +38,7 @@ public class DataService {
             }
         }
 
-
+        logger.debug("League loading prepared.");
         loader.loadLeague(leagueMap, new ArrayList<>(uniqueSponsors));
     }
 }

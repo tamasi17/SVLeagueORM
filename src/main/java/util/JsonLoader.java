@@ -1,9 +1,12 @@
 package util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import model.Equipo;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,15 +18,18 @@ import java.util.List;
  */
 public class JsonLoader {
 
-    public static List<Equipo> parseLeague(String path) {
-        ObjectMapper mapper = new ObjectMapper();
-        // para gestionar fechas
-        mapper.registerModule(new JavaTimeModule());
+    private static final Logger logger = LogManager.getLogger(JsonLoader.class);
 
+    private static final ObjectMapper MAPPER = new ObjectMapper()
+            .registerModule(new JavaTimeModule())
+            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false); // forgiving
+
+    public static List<Equipo> parseLeague(String path) {
         try {
-            return mapper.readValue(new File(path), new TypeReference<List<Equipo>>() {});
+            return MAPPER.readValue(new File(path), new TypeReference<List<Equipo>>() {});
         } catch (IOException e) {
-            throw new RuntimeException("Failed to parse JSON league file", e);
+            logger.error("Error parsing the league JSON file at path: {}", path, e);
+            throw new RuntimeException("League data could not be initialized from " + path, e);
         }
     }
 }
