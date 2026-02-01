@@ -6,14 +6,21 @@ import dao.DaoJpaPartido;
 import dao.DaoJpaSponsor;
 import dao.DaoJpaStats;
 import jakarta.persistence.EntityManager;
+import model.Equipo;
 import model.Partido;
 import model.StatsPartido;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import util.DataLoader;
 import util.DataService;
+import util.MatchEngine;
 
+import java.util.List;
 import java.util.Random;
 
 public class SimulationV1 {
+
+    private static final Logger logger = LogManager.getLogger(SimulationV1.class);
 
     public static void main(String[] args) {
 
@@ -34,10 +41,14 @@ public class SimulationV1 {
 
             // ToDo: Missing Jugador (birth date y nationality), Equipo (foundation date), Estadio (capacity)
 
-            System.out.println(" >>>> Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
+            logger.debug("Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
 
             // Simulación Partidos y Estadísticas
 
+            logger.info("Comenzamos liga!");
+            MatchEngine simuladorLiga = new MatchEngine();
+            simularLiga(daoEquipo.findAll(), simuladorLiga);
+            logger.info("Liga finalizada");
 
 
 
@@ -56,11 +67,11 @@ public class SimulationV1 {
     private static StatsPartido fillStats(StatsPartido statsPartido, Partido partido, Random random) {
         statsPartido.setPartido(partido);
 
-        int ataques = random.nextInt(20,23);
+        int ataques = random.nextInt(20, 23);
         statsPartido.setAtaques(ataques);
         statsPartido.setPuntos(ataques - (random.nextInt(5)));
 
-        int saques = random.nextInt(10,13);
+        int saques = random.nextInt(10, 13);
         statsPartido.setSaques(saques);
         statsPartido.setAces(saques - (random.nextInt(5)));
 
@@ -71,4 +82,14 @@ public class SimulationV1 {
         return statsPartido;
     }
 
+    public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga) {
+        for (int i = 0; i < league.size(); i++) {
+            for (int j = i + 1; j < league.size(); j++) {
+                Equipo home = league.get(i);
+                Equipo away = league.get(j);
+
+                simuladorLiga.playMatch(home, away);
+            }
+        }
+    }
 }
