@@ -40,9 +40,7 @@ public class DataLoader {
      */
     public void loadLeague(Map<Equipo, List<Jugador>> leagueData, List<Sponsor> allSponsors) {
 
-        EntityTransaction tx = entityManager.getTransaction();
         try {
-            tx.begin();
 
             // Save all sponsors
             for (Sponsor s : allSponsors) {
@@ -55,16 +53,15 @@ public class DataLoader {
                 Equipo currentTeam = entry.getKey();
                 List<Jugador> roster = entry.getValue();
 
-                // Save team dependencies (Estadio y Entrenador)
+                // Save team dependencies (Estadio)
                 daoJpaEstadio.save(currentTeam.getEstadio());
-                daoJpaEntrenador.save(currentTeam.getEntrenador());
 
                 // Save team
                 daoJpaEquipo.save(currentTeam);
-                System.out.println("Saved Team: " + currentTeam.getNombre());
+                System.out.println("Saved Team: " + currentTeam.getNombreEquipo());
+
 
                 // INNER LOOP para asignar los jugadores de cada equipo
-
                 for (Jugador p : roster) {
 
                     // Helper !!
@@ -74,17 +71,18 @@ public class DataLoader {
                 }
 
                 System.out.println("Succesfully loaded " + roster.size() +
-                        " players for " + currentTeam.getNombre());
+                        " players for " + currentTeam.getNombreEquipo());
 
                 daoJpaEquipo.update(currentTeam);
             }
 
-            tx.commit();
             System.out.println("Data load completed succesfully");
 
-        } catch (Exception e) {
-            if (tx.isActive()) tx.rollback();
-            throw e;
+
+
+            } catch (Exception e) {
+            System.err.println("Error loading league: "+ e.getLocalizedMessage());
+            e.printStackTrace();
         }
     }
 
@@ -93,24 +91,24 @@ public class DataLoader {
         System.out.println("Test: Info Loading");
 
         Estadio panasonicArena = new Estadio();
-        panasonicArena.setNombre("Panasonic Arena");
+        panasonicArena.setNombreEstadio("Panasonic Arena");
         panasonicArena.setCiudad("Osaka");
         daoJpaEstadio.save(panasonicArena);
 
         Estadio asueArena = new Estadio();
-        asueArena.setNombre("Asue Arena Osaka");
+        asueArena.setNombreEstadio("Asue Arena Osaka");
         asueArena.setCiudad("Osaka");
         daoJpaEstadio.save(asueArena);
 
         Entrenador tuomas = new Entrenador();
-        tuomas.setNombre("Tuomas");
-        tuomas.setApellido("Sammelvuo");
+        tuomas.setNombreEntrenador("Tuomas");
+        tuomas.setApellidoEntrenador("Sammelvuo");
         tuomas.setNacionalidad("Finland");
         daoJpaEntrenador.save(tuomas);
 
         Entrenador lecat = new Entrenador();
-        lecat.setNombre("Olivier");
-        lecat.setApellido("Lecat");
+        lecat.setNombreEntrenador("Olivier");
+        lecat.setApellidoEntrenador("Lecat");
         lecat.setNacionalidad("France");
         daoJpaEntrenador.save(lecat);
 
@@ -145,8 +143,8 @@ public class DataLoader {
 
         // Players
         Jugador nishida = new Jugador();
-        nishida.setName("Yuji");
-        nishida.setApellido("Nishida");
+        nishida.setNombreJugador("Yuji");
+        nishida.setApellidoJugador("Nishida");
         nishida.setDorsal(11);
         nishida.setPosicion(Posicion.OPPOSITE_HITTER);
         nishida.setEquipo(bluteon);
@@ -155,8 +153,8 @@ public class DataLoader {
         daoJpaJugador.save(nishida);
 
         Jugador ran = new Jugador();
-        ran.setName("Ran");
-        ran.setApellido("Takahashi");
+        ran.setNombreJugador("Ran");
+        ran.setApellidoJugador("Takahashi");
         ran.setDorsal(12);
         ran.setPosicion(Posicion.OUTSIDE_HITTER);
         ran.setEquipo(suntory);
@@ -171,7 +169,7 @@ public class DataLoader {
     private Equipo createEquipo(String nombre, String ciudad, Estadio estadio,
                                 Entrenador entrenador, Set<Sponsor> sponsors, LocalDate foundation, String web) {
         Equipo equipo = new Equipo();
-        equipo.setNombre(nombre);
+        equipo.setNombreEquipo(nombre);
         equipo.setCiudad(ciudad);
         equipo.setEstadio(estadio);
         equipo.setEntrenador(entrenador);

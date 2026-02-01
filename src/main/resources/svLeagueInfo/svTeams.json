@@ -1,13 +1,13 @@
 [
   {
-    "nombre": "VOREAS HOKKAIDO",
+    "nombreEquipo": "VOREAS HOKKAIDO",
     "web": "https://voreas.co.jp/",
     "entrenador": {
-      "nombre": "EDO",
-      "apellido": "KLEIN"
+      "nombreEntrenador": "Edo",
+      "apellidoEntrenador": "Klein"
     },
     "estadio": {
-      "nombre": "Asahikawa Gymnasium Recruit Staffing RICK&SUE",
+      "nombreEstadio": "Asahikawa Gymnasium Recruit Staffing RICK&SUE",
       "ciudad": "Asahikawa"
     },
     "sponsors": [
@@ -20,32 +20,32 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 2, "posicion": "OH", "name": "Manato", "apellido": "Nakamichi" },
-      { "dorsal": 5, "posicion": "MB", "name": "Jin", "apellido": "Inoue" },
-      { "dorsal": 6, "posicion": "S", "name": "Jun", "apellido": "Yamagishi" },
-      { "dorsal": 8, "posicion": "OH", "name": "Kyosuke", "apellido": "Higuruma" },
-      { "dorsal": 9, "posicion": "OH", "name": "Kota", "apellido": "Ikeda" },
-      { "dorsal": 10, "posicion": "OH", "name": "Mart", "apellido": "Tammearu" },
-      { "dorsal": 11, "posicion": "L", "name": "Kohei", "apellido": "Tonozaki" },
-      { "dorsal": 12, "posicion": "L", "name": "Reon", "apellido": "Arao" },
-      { "dorsal": 14, "posicion": "OP", "name": "Yu-Sheng", "apellido": "Chang" },
-      { "dorsal": 15, "posicion": "MB", "name": "Taisei", "apellido": "Deguchi" },
-      { "dorsal": 18, "posicion": "OP", "name": "Kenta", "apellido": "Koga" },
-      { "dorsal": 19, "posicion": "S", "name": "Shota", "apellido": "Hamada" },
-      { "dorsal": 20, "posicion": "OH", "name": "Hikaru", "apellido": "Someno" },
-      { "dorsal": 34, "posicion": "MB", "name": "Keisuke", "apellido": "Miyoshi" },
-      { "dorsal": 44, "posicion": "MB", "name": "Timo", "apellido": "Tammemaa" }
+      { "dorsal": 2, "posicion": "OH", "nombreJugador": "Manato", "apellidoJugador": "Nakamichi" },
+      { "dorsal": 5, "posicion": "MB", "nombreJugador": "Jin", "apellidoJugador": "Inoue" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Jun", "apellidoJugador": "Yamagishi" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Kyosuke", "apellidoJugador": "Higuruma" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Kota", "apellidoJugador": "Ikeda" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Mart", "apellidoJugador": "Tammearu" },
+      { "dorsal": 11, "posicion": "L", "nombreJugador": "Kohei", "apellidoJugador": "Tonozaki" },
+      { "dorsal": 12, "posicion": "L", "nombreJugador": "Reon", "apellidoJugador": "Arao" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Yu-Sheng", "apellidoJugador": "Chang" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Taisei", "apellidoJugador": "Deguchi" },
+      { "dorsal": 18, "posicion": "OP", "nombreJugador": "Kenta", "apellidoJugador": "Koga" },
+      { "dorsal": 19, "posicion": "S", "nombreJugador": "Shota", "apellidoJugador": "Hamada" },
+      { "dorsal": 20, "posicion": "OH", "nombreJugador": "Hikaru", "apellidoJugador": "Someno" },
+      { "dorsal": 34, "posicion": "MB", "nombreJugador": "Keisuke", "apellidoJugador": "Miyoshi" },
+      { "dorsal": 44, "posicion": "MB", "nombreJugador": "Timo", "apellidoJugador": "Tammemaa" }
     ]
   },
   {
-    "nombre": "TOKYO GREAT BEARS",
+    "nombreEquipo": "TOKYO GREAT BEARS",
     "web": "https://tokyo-greatbears.com/",
     "entrenador": {
-      "nombre": "KASPER",
-      "apellido": "VUORINEN"
+      "nombreEntrenador": "Kasper",
+      "apellidoEntrenador": "Vuorinen"
     },
     "estadio": {
-      "nombre": "Yoyogi National Stadium 2nd Gymnasium",
+      "nombreEstadio": "Yoyogi National Stadium 2nd Gymnasium",
       "ciudad": "Tokyo"
     },
     "sponsors": [
@@ -59,35 +59,35 @@
       { "nombreComercial": "Taraflex" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "OP", "name": "Bartosz", "apellido": "Kurek" },
-      { "dorsal": 3, "posicion": "S", "name": "Akihiro", "apellido": "Fukatsu" },
-      { "dorsal": 4, "posicion": "MB", "name": "Jan", "apellido": "Kozamernik" },
-      { "dorsal": 5, "posicion": "L", "name": "Wataru", "apellido": "Taniguchi" },
-      { "dorsal": 6, "posicion": "OH", "name": "Alex", "apellido": "Ferreira" },
-      { "dorsal": 8, "posicion": "OH", "name": "Masahiro", "apellido": "Yanagida" },
-      { "dorsal": 9, "posicion": "OH", "name": "Takahiro", "apellido": "Tozaki" },
-      { "dorsal": 10, "posicion": "L", "name": "Taichiro", "apellido": "Koga" },
-      { "dorsal": 12, "posicion": "MB", "name": "Go", "apellido": "Murayama" },
-      { "dorsal": 13, "posicion": "MB", "name": "Issei", "apellido": "Otake" },
-      { "dorsal": 15, "posicion": "S", "name": "Yuki", "apellido": "Imahashi" },
-      { "dorsal": 17, "posicion": "OH", "name": "Luciano", "apellido": "Vicentin" },
-      { "dorsal": 25, "posicion": "OH", "name": "Rikuto", "apellido": "Goto" },
-      { "dorsal": 26, "posicion": "MB", "name": "Riku", "apellido": "Ito" },
-      { "dorsal": 29, "posicion": "L", "name": "Ryuki", "apellido": "Ohmae" },
-      { "dorsal": 30, "posicion": "OH", "name": "Takuma", "apellido": "Kawano" },
-      { "dorsal": 32, "posicion": "S", "name": "Ranmaru", "apellido": "Kondo" },
-      { "dorsal": 39, "posicion": "OP", "name": "Yusaku", "apellido": "Takashima" }
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Bartosz", "apellidoJugador": "Kurek" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Akihiro", "apellidoJugador": "Fukatsu" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Jan", "apellidoJugador": "Kozamernik" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Wataru", "apellidoJugador": "Taniguchi" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Alex", "apellidoJugador": "Ferreira" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Masahiro", "apellidoJugador": "Yanagida" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Takahiro", "apellidoJugador": "Tozaki" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Taichiro", "apellidoJugador": "Koga" },
+      { "dorsal": 12, "posicion": "MB", "nombreJugador": "Go", "apellidoJugador": "Murayama" },
+      { "dorsal": 13, "posicion": "MB", "nombreJugador": "Issei", "apellidoJugador": "Otake" },
+      { "dorsal": 15, "posicion": "S", "nombreJugador": "Yuki", "apellidoJugador": "Imahashi" },
+      { "dorsal": 17, "posicion": "OH", "nombreJugador": "Luciano", "apellidoJugador": "Vicentin" },
+      { "dorsal": 25, "posicion": "OH", "nombreJugador": "Rikuto", "apellidoJugador": "Goto" },
+      { "dorsal": 26, "posicion": "MB", "nombreJugador": "Riku", "apellidoJugador": "Ito" },
+      { "dorsal": 29, "posicion": "L", "nombreJugador": "Ryuki", "apellidoJugador": "Ohmae" },
+      { "dorsal": 30, "posicion": "OH", "nombreJugador": "Takuma", "apellidoJugador": "Kawano" },
+      { "dorsal": 32, "posicion": "S", "nombreJugador": "Ranmaru", "apellidoJugador": "Kondo" },
+      { "dorsal": 39, "posicion": "OP", "nombreJugador": "Yusaku", "apellidoJugador": "Takashima" }
     ]
   },
   {
-    "nombre": "VC NAGANO TRIDENTS",
+    "nombreEquipo": "VC NAGANO TRIDENTS",
     "web": "http://vcnagano.jp/",
     "entrenador": {
-      "nombre": "SHINJI",
-      "apellido": "KAWAMURA"
+      "nombreEntrenador": "Shinji",
+      "apellidoEntrenador": "Kawamura"
     },
     "estadio": {
-      "nombre": "Air Water Arena Matsumoto",
+      "nombreEstadio": "Air Water Arena Matsumoto",
       "ciudad": "Matsumoto"
     },
     "sponsors": [
@@ -103,37 +103,37 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "MB", "name": "Koki", "apellido": "Yamada" },
-      { "dorsal": 2, "posicion": "L", "name": "Keiichiro", "apellido": "Fujisawa" },
-      { "dorsal": 3, "posicion": "OP", "name": "Shusuke", "apellido": "Sakai" },
-      { "dorsal": 5, "posicion": "L", "name": "Koji", "apellido": "Nanba" },
-      { "dorsal": 6, "posicion": "S", "name": "Shinjo", "apellido": "Akahoshi" },
-      { "dorsal": 7, "posicion": "L", "name": "Hiroki", "apellido": "Kotoh" },
-      { "dorsal": 8, "posicion": "S", "name": "Kento", "apellido": "Nakashima" },
-      { "dorsal": 9, "posicion": "OH", "name": "Shota", "apellido": "Fujiwara" },
-      { "dorsal": 10, "posicion": "MB", "name": "Dai", "apellido": "Yasuhara" },
-      { "dorsal": 11, "posicion": "OH", "name": "Yuji", "apellido": "Kudo" },
-      { "dorsal": 12, "posicion": "S", "name": "Yusuke", "apellido": "Hoshina" },
-      { "dorsal": 13, "posicion": "OP", "name": "Koga", "apellido": "Iida" },
-      { "dorsal": 14, "posicion": "OP", "name": "Matthew", "apellido": "Neaves" },
-      { "dorsal": 17, "posicion": "MB", "name": "Yoshihiko", "apellido": "Matsumoto" },
-      { "dorsal": 18, "posicion": "OH", "name": "Ryuya", "apellido": "Sato" },
-      { "dorsal": 19, "posicion": "OH", "name": "Takamaru", "apellido": "Ichijo" },
-      { "dorsal": 21, "posicion": "OP", "name": "Hazuki", "apellido": "Kishikawa" },
-      { "dorsal": 22, "posicion": "OH", "name": "Oskar", "apellido": "Madsen" },
-      { "dorsal": 24, "posicion": "MB", "name": "Shodai", "apellido": "Abe" },
-      { "dorsal": 26, "posicion": "OH", "name": "Farhan", "apellido": "Halim" }
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Koki", "apellidoJugador": "Yamada" },
+      { "dorsal": 2, "posicion": "L", "nombreJugador": "Keiichiro", "apellidoJugador": "Fujisawa" },
+      { "dorsal": 3, "posicion": "OP", "nombreJugador": "Shusuke", "apellidoJugador": "Sakai" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Koji", "apellidoJugador": "Nanba" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Shinjo", "apellidoJugador": "Akahoshi" },
+      { "dorsal": 7, "posicion": "L", "nombreJugador": "Hiroki", "apellidoJugador": "Kotoh" },
+      { "dorsal": 8, "posicion": "S", "nombreJugador": "Kento", "apellidoJugador": "Nakashima" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Shota", "apellidoJugador": "Fujiwara" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Dai", "apellidoJugador": "Yasuhara" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Yuji", "apellidoJugador": "Kudo" },
+      { "dorsal": 12, "posicion": "S", "nombreJugador": "Yusuke", "apellidoJugador": "Hoshina" },
+      { "dorsal": 13, "posicion": "OP", "nombreJugador": "Koga", "apellidoJugador": "Iida" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Matthew", "apellidoJugador": "Neaves" },
+      { "dorsal": 17, "posicion": "MB", "nombreJugador": "Yoshihiko", "apellidoJugador": "Matsumoto" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Ryuya", "apellidoJugador": "Sato" },
+      { "dorsal": 19, "posicion": "OH", "nombreJugador": "Takamaru", "apellidoJugador": "Ichijo" },
+      { "dorsal": 21, "posicion": "OP", "nombreJugador": "Hazuki", "apellidoJugador": "Kishikawa" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Oskar", "apellidoJugador": "Madsen" },
+      { "dorsal": 24, "posicion": "MB", "nombreJugador": "Shodai", "apellidoJugador": "Abe" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Farhan", "apellidoJugador": "Halim" }
     ]
   },
   {
-    "nombre": "TORAY ARROWS SHIZUOKA",
+    "nombreEquipo": "TORAY ARROWS SHIZUOKA",
     "web": "http://www.toray-arrows.jp/men/index.html",
     "entrenador": {
-      "nombre": "YUTA",
-      "apellido": "ABE"
+      "nombreEntrenador": "Yuta",
+      "apellidoEntrenador": "Abe"
     },
     "estadio": {
-      "nombre": "Mishima Citizen Gymnasium",
+      "nombreEstadio": "Mishima Citizen Gymnasium",
       "ciudad": "Mishima"
     },
     "sponsors": [
@@ -147,36 +147,36 @@
       { "nombreComercial": "Volz" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "MB", "name": "Takahiro", "apellido": "Namba" },
-      { "dorsal": 2, "posicion": "S", "name": "Takahiro", "apellido": "Shin" },
-      { "dorsal": 3, "posicion": "L", "name": "Takumi", "apellido": "Yamaguchi" },
-      { "dorsal": 4, "posicion": "S", "name": "Keisuke", "apellido": "Sakai" },
-      { "dorsal": 6, "posicion": "OH", "name": "Gaku", "apellido": "Kusumoto" },
-      { "dorsal": 8, "posicion": "OH", "name": "Yuto", "apellido": "Fujinaka" },
-      { "dorsal": 9, "posicion": "OH", "name": "Takumi", "apellido": "Mawatari" },
-      { "dorsal": 10, "posicion": "OH", "name": "Tobiastakeshi", "apellido": "Shigeto" },
-      { "dorsal": 11, "posicion": "OP", "name": "Kirill", "apellido": "Klets" },
-      { "dorsal": 12, "posicion": "OH", "name": "DAIKI", "apellido": "YAMADA" },
-      { "dorsal": 13, "posicion": "MB", "name": "Taylor", "apellido": "Averill" },
-      { "dorsal": 15, "posicion": "MB", "name": "Haku", "apellido": "Ri" },
-      { "dorsal": 16, "posicion": "MB", "name": "Reimondo", "apellido": "Kamijo" },
-      { "dorsal": 17, "posicion": "OH", "name": "Hiroki", "apellido": "Ozawa" },
-      { "dorsal": 18, "posicion": "OH", "name": "Hiroaki", "apellido": "Maki" },
-      { "dorsal": 19, "posicion": "L", "name": "Taishu", "apellido": "Takeda" },
-      { "dorsal": 20, "posicion": "S", "name": "Eiki", "apellido": "Onodera" },
-      { "dorsal": 22, "posicion": "MB", "name": "Ryusuke", "apellido": "Nakamura" },
-      { "dorsal": 24, "posicion": "OH", "name": "Julio", "apellido": "Cardenas" }
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Takahiro", "apellidoJugador": "Namba" },
+      { "dorsal": 2, "posicion": "S", "nombreJugador": "Takahiro", "apellidoJugador": "Shin" },
+      { "dorsal": 3, "posicion": "L", "nombreJugador": "Takumi", "apellidoJugador": "Yamaguchi" },
+      { "dorsal": 4, "posicion": "S", "nombreJugador": "Keisuke", "apellidoJugador": "Sakai" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Gaku", "apellidoJugador": "Kusumoto" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Yuto", "apellidoJugador": "Fujinaka" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Takumi", "apellidoJugador": "Mawatari" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Tobiastakeshi", "apellidoJugador": "Shigeto" },
+      { "dorsal": 11, "posicion": "OP", "nombreJugador": "Kirill", "apellidoJugador": "Klets" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Daiki", "apellidoJugador": "Yamada" },
+      { "dorsal": 13, "posicion": "MB", "nombreJugador": "Taylor", "apellidoJugador": "Averill" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Haku", "apellidoJugador": "Ri" },
+      { "dorsal": 16, "posicion": "MB", "nombreJugador": "Reimondo", "apellidoJugador": "Kamijo" },
+      { "dorsal": 17, "posicion": "OH", "nombreJugador": "Hiroki", "apellidoJugador": "Ozawa" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Hiroaki", "apellidoJugador": "Maki" },
+      { "dorsal": 19, "posicion": "L", "nombreJugador": "Taishu", "apellidoJugador": "Takeda" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Eiki", "apellidoJugador": "Onodera" },
+      { "dorsal": 22, "posicion": "MB", "nombreJugador": "Ryusuke", "apellidoJugador": "Nakamura" },
+      { "dorsal": 24, "posicion": "OH", "nombreJugador": "Julio", "apellidoJugador": "Cardenas" }
     ]
   },
   {
-    "nombre": "JTEKT STINGS AICHI",
+    "nombreEquipo": "JTEKT STINGS AICHI",
     "web": "http://www.jtekt-stings.jp/",
     "entrenador": {
-      "nombre": "SHIMBO",
-      "apellido": "KOICHIRO"
+      "nombreEntrenador": "Shimbo",
+      "apellidoEntrenador": "Koichiro"
     },
     "estadio": {
-      "nombre": "Okazaki Central Park Gymnasium",
+      "nombreEstadio": "Okazaki Central Park Gymnasium",
       "ciudad": "Okazaki"
     },
     "sponsors": [
@@ -192,33 +192,33 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "MB", "name": "Yao-Kai", "apellido": "Lu Chiang" },
-      { "dorsal": 2, "posicion": "MB", "name": "Kentaro", "apellido": "Takahashi" },
-      { "dorsal": 3, "posicion": "MB", "name": "Sayato", "apellido": "Sakai" },
-      { "dorsal": 4, "posicion": "MB", "name": "Shuto", "apellido": "Kawaguchi" },
-      { "dorsal": 6, "posicion": "S", "name": "Yudai", "apellido": "Kawahigashi" },
-      { "dorsal": 7, "posicion": "L", "name": "Takuma", "apellido": "Araki" },
-      { "dorsal": 9, "posicion": "OP", "name": "Stephen", "apellido": "Boyer" },
-      { "dorsal": 10, "posicion": "OH", "name": "Kenya", "apellido": "Fujinaka" },
-      { "dorsal": 11, "posicion": "OH", "name": "Kosuke", "apellido": "Hata" },
-      { "dorsal": 12, "posicion": "OH", "name": "Naoya", "apellido": "Fujiwara" },
-      { "dorsal": 16, "posicion": "OP", "name": "Mitsuki", "apellido": "Demizu" },
-      { "dorsal": 17, "posicion": "S", "name": "Issei", "apellido": "Maeda" },
-      { "dorsal": 21, "posicion": "L", "name": "Kazuyuki", "apellido": "Takahashi" },
-      { "dorsal": 22, "posicion": "MB", "name": "Daigo", "apellido": "Iwamoto" },
-      { "dorsal": 23, "posicion": "OH", "name": "Torey", "apellido": "Defalco" },
-      { "dorsal": 26, "posicion": "OH", "name": "Ricardo Lucarelli", "apellido": "Souza" }
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Yao-Kai", "apellidoJugador": "Lu Chiang" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Kentaro", "apellidoJugador": "Takahashi" },
+      { "dorsal": 3, "posicion": "MB", "nombreJugador": "Sayato", "apellidoJugador": "Sakai" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Shuto", "apellidoJugador": "Kawaguchi" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Yudai", "apellidoJugador": "Kawahigashi" },
+      { "dorsal": 7, "posicion": "L", "nombreJugador": "Takuma", "apellidoJugador": "Araki" },
+      { "dorsal": 9, "posicion": "OP", "nombreJugador": "Stephen", "apellidoJugador": "Boyer" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Kenya", "apellidoJugador": "Fujinaka" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Kosuke", "apellidoJugador": "Hata" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Naoya", "apellidoJugador": "Fujiwara" },
+      { "dorsal": 16, "posicion": "OP", "nombreJugador": "Mitsuki", "apellidoJugador": "Demizu" },
+      { "dorsal": 17, "posicion": "S", "nombreJugador": "Issei", "apellidoJugador": "Maeda" },
+      { "dorsal": 21, "posicion": "L", "nombreJugador": "Kazuyuki", "apellidoJugador": "Takahashi" },
+      { "dorsal": 22, "posicion": "MB", "nombreJugador": "Daigo", "apellidoJugador": "Iwamoto" },
+      { "dorsal": 23, "posicion": "OH", "nombreJugador": "Torey", "apellidoJugador": "Defalco" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Ricardo Lucarelli", "apellidoJugador": "Souza" }
     ]
   },
   {
-    "nombre": "WOLFDOGS NAGOYA",
+    "nombreEquipo": "WOLFDOGS NAGOYA",
     "web": "https://www.wolfdogs.jp/",
     "entrenador": {
-      "nombre": "Valerio",
-      "apellido": "Baldovin"
+      "nombreEntrenador": "Valerio",
+      "apellidoEntrenador": "Baldovin"
     },
     "estadio": {
-      "nombre": "ENTRIO",
+      "nombreEstadio": "ENTRIO",
       "ciudad": "Nagoya"
     },
     "sponsors": [
@@ -235,34 +235,34 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "OH", "name": "Shuzo", "apellido": "Yamada" },
-      { "dorsal": 2, "posicion": "MB", "name": "Akira", "apellido": "Sawada" },
-      { "dorsal": 3, "posicion": "S", "name": "Hideomi", "apellido": "Fukatsu" },
-      { "dorsal": 4, "posicion": "MB", "name": "Masahiro", "apellido": "Yamazaki" },
-      { "dorsal": 5, "posicion": "L", "name": "Shunsuke", "apellido": "Watanabe" },
-      { "dorsal": 6, "posicion": "OH", "name": "Timothee", "apellido": "Carle" },
-      { "dorsal": 7, "posicion": "S", "name": "Shinnosuke", "apellido": "Hayasaka" },
-      { "dorsal": 9, "posicion": "OH", "name": "Aymen", "apellido": "Bouguerra" },
-      { "dorsal": 10, "posicion": "MB", "name": "Shunichiro", "apellido": "Sato" },
-      { "dorsal": 11, "posicion": "MB", "name": "Ryota", "apellido": "Denda" },
-      { "dorsal": 12, "posicion": "OH", "name": "Taito", "apellido": "Mizumachi" },
-      { "dorsal": 15, "posicion": "OP", "name": "Kento", "apellido": "Miyaura" },
-      { "dorsal": 17, "posicion": "L", "name": "Kenta", "apellido": "Ichikawa" },
-      { "dorsal": 18, "posicion": "S", "name": "Naozumi", "apellido": "Kambayashi" },
-      { "dorsal": 22, "posicion": "OP", "name": "Jo", "apellido": "Toyoda" },
-      { "dorsal": 26, "posicion": "OH", "name": "Akito", "apellido": "Yamazaki" },
-      { "dorsal": 99, "posicion": "MB", "name": "Norbert", "apellido": "Huber" }
+      { "dorsal": 1, "posicion": "OH", "nombreJugador": "Shuzo", "apellidoJugador": "Yamada" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Akira", "apellidoJugador": "Sawada" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Hideomi", "apellidoJugador": "Fukatsu" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Masahiro", "apellidoJugador": "Yamazaki" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Shunsuke", "apellidoJugador": "Watanabe" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Timothee", "apellidoJugador": "Carle" },
+      { "dorsal": 7, "posicion": "S", "nombreJugador": "Shinnosuke", "apellidoJugador": "Hayasaka" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Aymen", "apellidoJugador": "Bouguerra" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Shunichiro", "apellidoJugador": "Sato" },
+      { "dorsal": 11, "posicion": "MB", "nombreJugador": "Ryota", "apellidoJugador": "Denda" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Taito", "apellidoJugador": "Mizumachi" },
+      { "dorsal": 15, "posicion": "OP", "nombreJugador": "Kento", "apellidoJugador": "Miyaura" },
+      { "dorsal": 17, "posicion": "L", "nombreJugador": "Kenta", "apellidoJugador": "Ichikawa" },
+      { "dorsal": 18, "nombreJugador": "Naozumi", "apellidoJugador": "Kambayashi", "posicion": "S" },
+      { "dorsal": 22, "posicion": "OP", "nombreJugador": "Jo", "apellidoJugador": "Toyoda" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Akito", "apellidoJugador": "Yamazaki" },
+      { "dorsal": 99, "posicion": "MB", "nombreJugador": "Norbert", "apellidoJugador": "Huber" }
     ]
   },
   {
-    "nombre": "OSAKA BLUTEON",
+    "nombreEquipo": "OSAKA BLUTEON",
     "web": "https://www.osaka-bluteon.com/",
     "entrenador": {
-      "nombre": "Tuomas Petteri",
-      "apellido": "Sammelvuo"
+      "nombreEntrenador": "Tuomas Petteri",
+      "apellidoEntrenador": "Sammelvuo"
     },
     "estadio": {
-      "nombre": "Panasonic Arena",
+      "nombreEstadio": "Panasonic Arena",
       "ciudad": "Osaka"
     },
     "sponsors": [
@@ -284,35 +284,35 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "OP", "name": "Kunihiro", "apellido": "Shimizu" },
-      { "dorsal": 3, "posicion": "S", "name": "Shunsuke", "apellido": "Nakamura" },
-      { "dorsal": 4, "posicion": "MB", "name": "Kotaro", "apellido": "Kaneta" },
-      { "dorsal": 5, "posicion": "OH", "name": "Shoma", "apellido": "Tomita" },
-      { "dorsal": 6, "posicion": "S", "name": "Antoine", "apellido": "Brizard" },
-      { "dorsal": 8, "posicion": "OH", "name": "Kenyu", "apellido": "Nakamoto" },
-      { "dorsal": 9, "posicion": "MB", "name": "Shikun", "apellido": "Peng" },
-      { "dorsal": 10, "posicion": "MB", "name": "Akihiro", "apellido": "Yamauchi" },
-      { "dorsal": 11, "posicion": "OP", "name": "Yuji", "apellido": "Nishida" },
-      { "dorsal": 12, "posicion": "S", "name": "Ryo", "apellido": "Nozoe" },
-      { "dorsal": 13, "posicion": "L", "name": "Tomohiro", "apellido": "Yamamoto" },
-      { "dorsal": 15, "posicion": "OH", "name": "Masato", "apellido": "Kai" },
-      { "dorsal": 16, "posicion": "L", "name": "Kotaro", "apellido": "Ikeshiro" },
-      { "dorsal": 18, "posicion": "OP", "name": "Hiroto", "apellido": "Nishiyama" },
-      { "dorsal": 19, "posicion": "MB", "name": "Keitaro", "apellido": "Nishikawa" },
-      { "dorsal": 22, "posicion": "OH", "name": "Bryan", "apellido": "Bagunas" },
-      { "dorsal": 23, "posicion": "MB", "name": "Larry IK", "apellido": "Evbade-Dan" },
-      { "dorsal": 81, "posicion": "OH", "name": "Miguel", "apellido": "Lopez" }
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Kunihiro", "apellidoJugador": "Shimizu" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Shunsuke", "apellidoJugador": "Nakamura" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Kotaro", "apellidoJugador": "Kaneta" },
+      { "dorsal": 5, "posicion": "OH", "nombreJugador": "Shoma", "apellidoJugador": "Tomita" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Antoine", "apellidoJugador": "Brizard" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Kenyu", "apellidoJugador": "Nakamoto" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Shikun", "apellidoJugador": "Peng" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Akihiro", "apellidoJugador": "Yamauchi" },
+      { "dorsal": 11, "posicion": "OP", "nombreJugador": "Yuji", "apellidoJugador": "Nishida" },
+      { "dorsal": 12, "posicion": "S", "nombreJugador": "Ryo", "apellidoJugador": "Nozoe" },
+      { "dorsal": 13, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Yamamoto" },
+      { "dorsal": 15, "posicion": "OH", "nombreJugador": "Masato", "apellidoJugador": "Kai" },
+      { "dorsal": 16, "posicion": "L", "nombreJugador": "Kotaro", "apellidoJugador": "Ikeshiro" },
+      { "dorsal": 18, "posicion": "OP", "nombreJugador": "Hiroto", "apellidoJugador": "Nishiyama" },
+      { "dorsal": 19, "posicion": "MB", "nombreJugador": "Keitaro", "apellidoJugador": "Nishikawa" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Bryan", "apellidoJugador": "Bagunas" },
+      { "dorsal": 23, "posicion": "MB", "nombreJugador": "Larry IK", "apellidoJugador": "Evbade-Dan" },
+      { "dorsal": 81, "posicion": "OH", "nombreJugador": "Miguel", "apellidoJugador": "Lopez" }
     ]
   },
   {
-    "nombre": "SUNTORY SUNBIRDS OSAKA",
+    "nombreEquipo": "SUNTORY SUNBIRDS OSAKA",
     "web": "http://www.suntory.co.jp/culture-sports/sunbirds/",
     "entrenador": {
-      "nombre": "OLIVIER",
-      "apellido": "LECAT"
+      "nombreEntrenador": "Olivier",
+      "apellidoEntrenador": "Lecat"
     },
     "estadio": {
-      "nombre": "Asue Arena Osaka",
+      "nombreEstadio": "Asue Arena Osaka",
       "ciudad": "Osaka"
     },
     "sponsors": [
@@ -327,34 +327,34 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "MB", "name": "Taishi", "apellido": "Onodera" },
-      { "dorsal": 2, "posicion": "MB", "name": "Kenji", "apellido": "Sato" },
-      { "dorsal": 5, "posicion": "S", "name": "Ryo", "apellido": "Shimokawa" },
-      { "dorsal": 7, "posicion": "OH", "name": "Alain", "apellido": "Dearmas" },
-      { "dorsal": 8, "posicion": "S", "name": "Masahiro", "apellido": "Sekita" },
-      { "dorsal": 10, "posicion": "L", "name": "Tomohiro", "apellido": "Ogawa" },
-      { "dorsal": 11, "posicion": "L", "name": "Soshi", "apellido": "Fujinaka" },
-      { "dorsal": 12, "posicion": "OH", "name": "Ran", "apellido": "Takahashi" },
-      { "dorsal": 13, "posicion": "OP", "name": "Dmitriy", "apellido": "Muserskiy" },
-      { "dorsal": 14, "posicion": "MB", "name": "Ren", "apellido": "Oniki" },
-      { "dorsal": 15, "posicion": "L", "name": "Yoshimitsu", "apellido": "Kiire" },
-      { "dorsal": 17, "posicion": "MB", "name": "Hirohito", "apellido": "Kashimura" },
-      { "dorsal": 18, "posicion": "OH", "name": "Egor", "apellido": "Kliuka" },
-      { "dorsal": 19, "posicion": "OP", "name": "Kotaro", "apellido": "Kai" },
-      { "dorsal": 21, "posicion": "OH", "name": "Rui", "apellido": "Takahashi" },
-      { "dorsal": 22, "posicion": "OH", "name": "Kenshin", "apellido": "Kuwada" },
-      { "dorsal": 23, "posicion": "MB", "name": "Tatsuki", "apellido": "Kashiwada" }
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Taishi", "apellidoJugador": "Onodera" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Kenji", "apellidoJugador": "Sato" },
+      { "dorsal": 5, "posicion": "S", "nombreJugador": "Ryo", "apellidoJugador": "Shimokawa" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Alain", "apellidoJugador": "Dearmas" },
+      { "dorsal": 8, "posicion": "S", "nombreJugador": "Masahiro", "apellidoJugador": "Sekita" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Ogawa" },
+      { "dorsal": 11, "posicion": "L", "nombreJugador": "Soshi", "apellidoJugador": "Fujinaka" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Ran", "apellidoJugador": "Takahashi" },
+      { "dorsal": 13, "posicion": "OP", "nombreJugador": "Dmitriy", "apellidoJugador": "Muserskiy" },
+      { "dorsal": 14, "posicion": "MB", "nombreJugador": "Ren", "apellidoJugador": "Oniki" },
+      { "dorsal": 15, "posicion": "L", "nombreJugador": "Yoshimitsu", "apellidoJugador": "Kiire" },
+      { "dorsal": 17, "posicion": "MB", "nombreJugador": "Hirohito", "apellidoJugador": "Kashimura" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Egor", "apellidoJugador": "Kliuka" },
+      { "dorsal": 19, "posicion": "OP", "nombreJugador": "Kotaro", "apellidoJugador": "Kai" },
+      { "dorsal": 21, "posicion": "OH", "nombreJugador": "Rui", "apellidoJugador": "Takahashi" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Kenshin", "apellidoJugador": "Kuwada" },
+      { "dorsal": 23, "posicion": "MB", "nombreJugador": "Tatsuki", "apellidoJugador": "Kashiwada" }
     ]
   },
   {
-    "nombre": "NIPPON STEEL SAKAI BLAZERS",
+    "nombreEquipo": "NIPPON STEEL SAKAI BLAZERS",
     "web": "http://www.blazers.gr.jp/web/",
     "entrenador": {
-      "nombre": "KITAJIMA",
-      "apellido": "TAKESHI"
+      "nombreEntrenador": "Kitajima",
+      "apellidoEntrenador": "Takeshi"
     },
     "estadio": {
-      "nombre": "Ohama Daishin Arena",
+      "nombreEstadio": "Ohama Daishin Arena",
       "ciudad": "Sakai"
     },
     "sponsors": [
@@ -371,36 +371,36 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "OP", "name": "Matthew", "apellido": "Anderson" },
-      { "dorsal": 2, "posicion": "MB", "name": "Hiroyuki", "apellido": "Yamane" },
-      { "dorsal": 3, "posicion": "OH", "name": "Kosuke", "apellido": "Yasui" },
-      { "dorsal": 4, "posicion": "OH", "name": "Naoya", "apellido": "Takano" },
-      { "dorsal": 5, "posicion": "L", "name": "Tomohiro", "apellido": "Horie" },
-      { "dorsal": 6, "posicion": "L", "name": "Aiki", "apellido": "Mori" },
-      { "dorsal": 7, "posicion": "OH", "name": "Kenta", "apellido": "Takanashi" },
-      { "dorsal": 8, "posicion": "MB", "name": "Naoto", "apellido": "Akima" },
-      { "dorsal": 9, "posicion": "MB", "name": "Peichang", "apellido": "Tsai" },
-      { "dorsal": 10, "posicion": "MB", "name": "Cole", "apellido": "Watanabe" },
-      { "dorsal": 11, "posicion": "S", "name": "Masaki", "apellido": "Oya" },
-      { "dorsal": 14, "posicion": "OP", "name": "Ulrik", "apellido": "Dahl" },
-      { "dorsal": 15, "posicion": "S", "name": "Takumi", "apellido": "Eto" },
-      { "dorsal": 17, "posicion": "OP", "name": "Ryunosuke", "apellido": "Kamimura" },
-      { "dorsal": 20, "posicion": "S", "name": "Takehiro", "apellido": "Nakanishi" },
-      { "dorsal": 21, "posicion": "MB", "name": "Yutaro", "apellido": "Takemoto" },
-      { "dorsal": 22, "posicion": "OH", "name": "Akira", "apellido": "Kakizaki" },
-      { "dorsal": 23, "posicion": "L", "name": "Tatsuki", "apellido": "Minamiguchi" },
-      { "dorsal": 90, "posicion": "OH", "name": "Tommaso", "apellido": "Rinaldi" }
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Matthew", "apellidoJugador": "Anderson" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Hiroyuki", "apellidoJugador": "Yamane" },
+      { "dorsal": 3, "posicion": "OH", "nombreJugador": "Kosuke", "apellidoJugador": "Yasui" },
+      { "dorsal": 4, "posicion": "OH", "nombreJugador": "Naoya", "apellidoJugador": "Takano" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Horie" },
+      { "dorsal": 6, "posicion": "L", "nombreJugador": "Aiki", "apellidoJugador": "Mori" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Kenta", "apellidoJugador": "Takanashi" },
+      { "dorsal": 8, "posicion": "MB", "nombreJugador": "Naoto", "apellidoJugador": "Akima" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Peichang", "apellidoJugador": "Tsai" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Cole", "apellidoJugador": "Watanabe" },
+      { "dorsal": 11, "posicion": "S", "nombreJugador": "Masaki", "apellidoJugador": "Oya" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Ulrik", "apellidoJugador": "Dahl" },
+      { "dorsal": 15, "posicion": "S", "nombreJugador": "Takumi", "apellidoJugador": "Eto" },
+      { "dorsal": 17, "posicion": "OP", "nombreJugador": "Ryunosuke", "apellidoJugador": "Kamimura" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Takehiro", "apellidoJugador": "Nakanishi" },
+      { "dorsal": 21, "posicion": "MB", "nombreJugador": "Yutaro", "apellidoJugador": "Takemoto" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Akira", "apellidoJugador": "Kakizaki" },
+      { "dorsal": 23, "posicion": "L", "nombreJugador": "Tatsuki", "apellidoJugador": "Minamiguchi" },
+      { "dorsal": 90, "posicion": "OH", "nombreJugador": "Tommaso", "apellidoJugador": "Rinaldi" }
     ]
   },
   {
-    "nombre": "HIROSHIMA THUNDERS",
+    "nombreEquipo": "HIROSHIMA THUNDERS",
     "web": "http://www.jti.co.jp/knowledge/thunders/",
     "entrenador": {
-      "nombre": "CARLOS JAVIER",
-      "apellido": "WEBER"
+      "nombreEntrenador": "Carlos Javier",
+      "apellidoEntrenador": "Weber"
     },
     "estadio": {
-      "nombre": "Hiroshima Green Arena",
+      "nombreEstadio": "Hiroshima Green Arena",
       "ciudad": "Hiroshima"
     },
     "sponsors": [
@@ -415,26 +415,26 @@
       { "nombreComercial": "Hummel" }
     ],
     "jugadores": [
-      { "dorsal": 1, "posicion": "OH", "name": "Yuri", "apellido": "Yanakita" },
-      { "dorsal": 2, "posicion": "MB", "name": "Yuki", "apellido": "Higuchi" },
-      { "dorsal": 3, "posicion": "L", "name": "Makoto", "apellido": "Nishimura" },
-      { "dorsal": 4, "posicion": "MB", "name": "Hiromasa", "apellido": "Miwa" },
-      { "dorsal": 5, "posicion": "OH", "name": "Shinichiro", "apellido": "Inoue" },
-      { "dorsal": 6, "posicion": "OH", "name": "Cooper", "apellido": "Robinson" },
-      { "dorsal": 7, "posicion": "OH", "name": "Yudai", "apellido": "Arai" },
-      { "dorsal": 8, "posicion": "OH", "name": "Koshi", "apellido": "Takechi" },
-      { "dorsal": 9, "posicion": "MB", "name": "Kaiki", "apellido": "Takanashi" },
-      { "dorsal": 10, "posicion": "L", "name": "Keishiro", "apellido": "Takaki" },
-      { "dorsal": 11, "posicion": "OH", "name": "Junya", "apellido": "Sakashita" },
-      { "dorsal": 15, "posicion": "MB", "name": "Keigo", "apellido": "Nishimoto" },
-      { "dorsal": 16, "posicion": "MB", "name": "Chihiro", "apellido": "Nishi" },
-      { "dorsal": 17, "posicion": "S", "name": "Masaki", "apellido": "Kaneko" },
-      { "dorsal": 18, "posicion": "OH", "name": "Shohei", "apellido": "Yamamoto" },
-      { "dorsal": 19, "posicion": "OP", "name": "Felipe Moreira", "apellido": "Roque" },
-      { "dorsal": 20, "posicion": "S", "name": "Daiki", "apellido": "Abe" },
-      { "dorsal": 21, "posicion": "S", "name": "Motoki", "apellido": "Eiro" },
-      { "dorsal": 22, "posicion": "OH", "name": "Hayato", "apellido": "Yamamoto" },
-      { "dorsal": 23, "posicion": "OP", "name": "Daniel Martinez", "apellido": "Campos" }
+      { "dorsal": 1, "posicion": "OH", "nombreJugador": "Yuri", "apellidoJugador": "Yanakita" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Yuki", "apellidoJugador": "Higuchi" },
+      { "dorsal": 3, "posicion": "L", "nombreJugador": "Makoto", "apellidoJugador": "Nishimura" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Hiromasa", "apellidoJugador": "Miwa" },
+      { "dorsal": 5, "posicion": "OH", "nombreJugador": "Shinichiro", "apellidoJugador": "Inoue" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Cooper", "apellidoJugador": "Robinson" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Yudai", "apellidoJugador": "Arai" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Koshi", "apellidoJugador": "Takechi" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Kaiki", "apellidoJugador": "Takanashi" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Keishiro", "apellidoJugador": "Takaki" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Junya", "apellidoJugador": "Sakashita" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Keigo", "apellidoJugador": "Nishimoto" },
+      { "dorsal": 16, "posicion": "MB", "nombreJugador": "Chihiro", "apellidoJugador": "Nishi" },
+      { "dorsal": 17, "posicion": "S", "nombreJugador": "Masaki", "apellidoJugador": "Kaneko" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Shohei", "apellidoJugador": "Yamamoto" },
+      { "dorsal": 19, "posicion": "OP", "nombreJugador": "Felipe Moreira", "apellidoJugador": "Roque" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Daiki", "apellidoJugador": "Abe" },
+      { "dorsal": 21, "posicion": "S", "nombreJugador": "Motoki", "apellidoJugador": "Eiro" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Hayato", "apellidoJugador": "Yamamoto" },
+      { "dorsal": 23, "posicion": "OP", "nombreJugador": "Daniel Martinez", "apellidoJugador": "Campos" }
     ]
   }
 ]

@@ -5,14 +5,14 @@ import dao.DaoJpaEquipo;
 import dao.DaoJpaPartido;
 import dao.DaoJpaStats;
 import jakarta.persistence.EntityManager;
+import model.Equipo;
 import model.Partido;
 import model.StatsPartido;
 import util.DataLoader;
-import util.DataService;
 
 import java.util.Random;
 
-public class SimulationV1 {
+public class SimulationTest {
 
     public static void main(String[] args) {
 
@@ -25,21 +25,36 @@ public class SimulationV1 {
 
             // Carga datos inicial: Equipos, Jugadores, Entrenadores, Sponsors...
             DataLoader dataLoader = new DataLoader(entityManager);
-            DataService dataService = new DataService();
+            dataLoader.loadTest();
 
-            dataService.prepareAndExecute("src/main/resources/svLeagueInfo/svTeams.json", dataLoader);
+            // Simulacion Partidos y Estadisticas
 
-            // Confirmamos carga de datos
+            Random random = new Random();
 
-            // ToDo: Missing Jugador (birth date y nationality), Equipo (city, foundation date)
-            // ToDo: Entrenador (nationality), Sponsor (industry sector)
+            Equipo bluteon = daoEquipo.findById(1L);
+            Equipo suntory = daoEquipo.findById(2L);
 
-            System.out.println(" >>>> Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
+            Partido clasico = new Partido();
+            clasico.setEquipoLocal(bluteon);
+            clasico.setEquipoVisitante(suntory);
+            clasico.setSetsLocal(random.nextInt(3) + 1);
+            clasico.setSetsVisitante(random.nextInt(3) + 1);
 
-            // Simulación Partidos y Estadísticas
+            StatsPartido statsYuji = new StatsPartido();
+            if (!bluteon.getJugadores().isEmpty()) {
+                statsYuji.setJugador(bluteon.getJugadores().iterator().next());
+            }
+            StatsPartido statsRan = new StatsPartido();
+            if (!suntory.getJugadores().isEmpty()) {
+                statsRan.setJugador(suntory.getJugadores().iterator().next());
+            }
 
+            fillStats(statsYuji, clasico, random);
+            fillStats(statsRan, clasico, random);
 
-
+            System.out.println("\n ======= \n" + clasico.getResultadoFormateado());
+            System.out.println(statsYuji);
+            System.out.println(statsRan);
 
             // Mercado de fichajes
 

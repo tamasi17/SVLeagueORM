@@ -14,6 +14,7 @@ import java.util.List;
  * @author mati
  */
 public class JsonLoader {
+
     public static List<Equipo> parseLeague(String path) {
         ObjectMapper mapper = new ObjectMapper();
         // para gestionar fechas

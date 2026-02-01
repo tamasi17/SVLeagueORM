@@ -1,16 +1,18 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * Enum que define las posiciones posibles para los jugadores
  * @author mati
  */
 public enum Posicion {
 
-    SETTER("Colocador", "S"),
-    OUTSIDE_HITTER("Atacante Izquierda", "OH"),
-    OPPOSITE_HITTER("Atacante Derecha", "OP"),
-    MIDDLE_BLOCKER("Central", "MB"),
-    LIBERO("Líbero", "L");
+    @JsonProperty("S") SETTER("Colocador", "S"),
+    @JsonProperty("OH") OUTSIDE_HITTER("Atacante Izquierda", "OH"),
+    @JsonProperty("OP") OPPOSITE_HITTER("Atacante Derecha", "OP"),
+    @JsonProperty("MB") MIDDLE_BLOCKER("Central", "MB"),
+    @JsonProperty("L") LIBERO("Líbero", "L");
 
     private final String nombreCastellano;
     private final String abreviatura;

@@ -21,10 +21,10 @@ public class Jugador {
     private Long id;
 
     @Column(name = "firstName", nullable = false)
-    private String name;
+    private String nombreJugador;
 
     @Column(name = "last_name", nullable = false)
-    private String apellido;
+    private String apellidoJugador;
 
     @Column(name = "birth_date")
     private LocalDate fechaNacimiento;
@@ -64,11 +64,11 @@ public class Jugador {
     public Jugador() {
     }
 
-    public Jugador(String name, String apellido, LocalDate fechaNacimiento,
+    public Jugador(String nombreJugador, String apellidoJugador, LocalDate fechaNacimiento,
                    int dorsal, String nacionalidad, Posicion posicion,
                    Equipo equipo, List<StatsPartido> statsPartidos) {
-        this.name = name;
-        this.apellido = apellido;
+        this.nombreJugador = nombreJugador;
+        this.apellidoJugador = apellidoJugador;
         this.fechaNacimiento = fechaNacimiento;
         this.dorsal = dorsal;
         this.nacionalidad = nacionalidad;
@@ -92,20 +92,20 @@ public class Jugador {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombreJugador() {
+        return nombreJugador;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidoJugador() {
+        return apellidoJugador;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidoJugador(String apellidoJugador) {
+        this.apellidoJugador = apellidoJugador;
     }
 
     public LocalDate getFechaNacimiento() {
@@ -165,23 +165,23 @@ public class Jugador {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Jugador jugador = (Jugador) o;
-        return Objects.equals(id, jugador.id);
+        return Objects.equals(id, jugador.id) && Objects.equals(nombreJugador, jugador.nombreJugador) && Objects.equals(apellidoJugador, jugador.apellidoJugador);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id);
+        return Objects.hash(id, nombreJugador, apellidoJugador);
     }
 
     @Override
     public String toString() {
-        return name + " " + apellido + " #" + dorsal +
+        return nombreJugador + " " + apellidoJugador + " #" + dorsal +
                 "\n" + fechaNacimiento + ", " + nacionalidad +
                 "\n" + posicion + ", " + equipo;
     }
 
     public String toStringStats(){
-        return "#" + dorsal + ", " + name + " " + apellido +
+        return "#" + dorsal + ", " + nombreJugador + " " + apellidoJugador +
                 "\n" + posicion + ", " + equipo;
     }
 }
