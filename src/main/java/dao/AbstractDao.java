@@ -2,10 +2,15 @@ package dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import util.DataService;
 
 import java.util.List;
 
 public abstract class AbstractDao<T> implements GenericDao<T>{
+
+    private static final Logger logger = LogManager.getLogger(AbstractDao.class);
 
     protected EntityManager em;
     private final Class<T> entityClass;
@@ -23,8 +28,7 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
             transaction.commit();
         } catch (Exception e) {
             if (transaction.isActive()) transaction.rollback();
-            System.out.println(e.getLocalizedMessage());
-            throw e;
+            logger.error("Error saving entity {}", entity.getClass() ,e);
         }
     }
 
@@ -42,8 +46,8 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
             transaction.commit();
         } catch (Exception e){
             if (transaction.isActive()) transaction.rollback();
-            System.out.println(e.getLocalizedMessage());
-            throw e;
+            logger.error("Error deleting entity {}", entity.getClass() ,e);
+
         }
     }
 
@@ -55,8 +59,8 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
             transaction.commit();
         } catch (Exception e){
             if (transaction.isActive()) transaction.rollback();
-            System.out.println(e.getLocalizedMessage());
-            throw e;
+            logger.error("Error updating entity {}", entity.getClass() ,e);
+
         }
     }
 
