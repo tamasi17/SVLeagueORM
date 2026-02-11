@@ -59,7 +59,7 @@ public class SimulationV1 {
             System.err.println(e.getLocalizedMessage());
             e.printStackTrace();
         } finally {
-            // if you dont auto close entity manager, close it here
+            // si no fuera try(EntityManager) cerrar aqui
         }
 
     }
