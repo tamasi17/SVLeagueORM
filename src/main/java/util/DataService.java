@@ -32,7 +32,7 @@ public class DataService {
                 leagueMap.put(team, new ArrayList<>(team.getJugadores()));
             }
 
-            // Collect unique sponsors for the global list
+            // Colecciona los sponsors para la lista
             if (team.getSponsors() != null) {
                 uniqueSponsors.addAll(team.getSponsors());
             }

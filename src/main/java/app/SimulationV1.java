@@ -39,8 +39,6 @@ public class SimulationV1 {
 
             // Confirmamos carga de datos
 
-            // ToDo: Missing Jugador (birth date y nationality), Equipo (foundation date), Estadio (capacity)
-
             logger.debug("Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
 
             // Simulación Partidos y Estadísticas
@@ -49,7 +47,6 @@ public class SimulationV1 {
             MatchEngine simuladorLiga = new MatchEngine();
             simularLiga(daoEquipo.findAll(), simuladorLiga, daoPartidos);
             logger.info("Liga finalizada");
-
 
 
             // Mercado de fichajes
@@ -62,24 +59,6 @@ public class SimulationV1 {
             // si no fuera try(EntityManager) cerrar aqui
         }
 
-    }
-
-    private static StatsPartido fillStats(StatsPartido statsPartido, Partido partido, Random random) {
-        statsPartido.setPartido(partido);
-
-        int ataques = random.nextInt(20, 23);
-        statsPartido.setAtaques(ataques);
-        statsPartido.setPuntos(ataques - (random.nextInt(5)));
-
-        int saques = random.nextInt(10, 13);
-        statsPartido.setSaques(saques);
-        statsPartido.setAces(saques - (random.nextInt(5)));
-
-        int bloqueos = random.nextInt(2, 5);
-        statsPartido.setBloqueosIntentados(bloqueos);
-        statsPartido.setBloqueosConseguidos(bloqueos - (random.nextInt(2)));
-
-        return statsPartido;
     }
 
     public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga, DaoJpaPartido daoJpaPartido) {

@@ -6,14 +6,13 @@ import model.Partido;
 import model.StatsPartido;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Random;
 
 /**
  * Clase que organiza los enfrentamientos de la liga en Simulation/Main
- * Gana el mejor de 5
+ * Gana el mejor de 5, player stats en funcion de la posicion.
  * @author mati
  */
 public class MatchEngine {
