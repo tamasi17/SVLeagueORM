@@ -126,8 +126,15 @@ public class Partido {
         this.estadisticas = estadisticas;
     }
 
+    // Helper
     public void addEstadistica(StatsPartido stats){
-        this.estadisticas.add(stats);
+
+        if (stats == null) return;
+
+        // Lazy
+        if (this.estadisticas == null) {
+            this.estadisticas = new ArrayList<>();
+        }
         stats.setPartido(this);
     }
 
