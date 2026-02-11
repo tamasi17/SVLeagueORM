@@ -3,6 +3,7 @@ package model;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -44,7 +45,7 @@ public class Partido {
 
     // Relación OneToMany: Un partido genera muchas estadísticas (una por jugador)
     @OneToMany(mappedBy = "partido", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<StatsPartido> estadisticas;
+    private List<StatsPartido> estadisticas = new ArrayList<>();
 
     // Constructores, Getters y Setters
 

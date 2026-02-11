@@ -47,7 +47,7 @@ public class SimulationV1 {
 
             logger.info("Comenzamos liga!");
             MatchEngine simuladorLiga = new MatchEngine();
-            simularLiga(daoEquipo.findAll(), simuladorLiga);
+            simularLiga(daoEquipo.findAll(), simuladorLiga, daoPartidos);
             logger.info("Liga finalizada");
 
 
@@ -82,13 +82,22 @@ public class SimulationV1 {
         return statsPartido;
     }
 
-    public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga) {
+    public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga, DaoJpaPartido daoJpaPartido) {
         for (int i = 0; i < league.size(); i++) {
             for (int j = i + 1; j < league.size(); j++) {
                 Equipo home = league.get(i);
                 Equipo away = league.get(j);
 
-                simuladorLiga.playMatch(home, away);
+                Partido match = simuladorLiga.playMatch(home, away);
+
+                // Cascade.ALL saves linked Stats too
+                daoJpaPartido.save(match);
+
+                logger.info("Match saved: {} {} - {} {}",
+                        home.getNombreEquipo(), match.getSetsLocal(),
+                        match.getSetsVisitante(), away.getNombreEquipo());
+
+                // Recomendado flush() y clear() al final de cada ciclo, pero no estoy abriendo transacciones aqui.
             }
         }
     }
