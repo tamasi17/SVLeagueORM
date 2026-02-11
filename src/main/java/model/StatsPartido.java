@@ -201,7 +201,7 @@ public class StatsPartido {
 
     @Override
     public String toString() {
-        return  jugador.toStringStats() + " \n " + partido.getEncuentroFormateado() +
+        return  jugador.toStringStats() +
                 "\nAtaques: " + ataques +
                 "\nPuntos: " + puntos +
                 "\nSaques: " + saques +

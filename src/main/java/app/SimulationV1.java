@@ -6,6 +6,7 @@ import dao.DaoJpaPartido;
 import dao.DaoJpaSponsor;
 import dao.DaoJpaStats;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import model.Equipo;
 import model.Partido;
 import model.StatsPartido;
@@ -36,16 +37,22 @@ public class SimulationV1 {
             DataService dataService = new DataService();
 
             dataService.prepareAndExecute("src/main/resources/svLeagueInfo/svTeams.json", dataLoader);
+            entityManager.clear();
 
             // Confirmamos carga de datos
-
-            logger.debug("Confirmamos carga con equipo aleatorio: " + daoEquipo.findById(7L).getNombreEquipo());
+            Equipo testTeam = daoEquipo.findById(7L);
+            logger.debug("Confirmamos carga: {} con {} jugadores.",
+                    testTeam.getNombreEquipo(),
+                    testTeam.getJugadores().size());
 
             // Simulación Partidos y Estadísticas
 
             logger.info("Comenzamos liga!");
             MatchEngine simuladorLiga = new MatchEngine();
-            simularLiga(daoEquipo.findAll(), simuladorLiga, daoPartidos);
+
+            // Find all with players
+            List<Equipo> teamsInDb = daoEquipo.findAllWithPlayers();
+            simularLiga(teamsInDb, simuladorLiga, daoPartidos, entityManager);
             logger.info("Liga finalizada");
 
 
@@ -61,23 +68,45 @@ public class SimulationV1 {
 
     }
 
-    public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga, DaoJpaPartido daoJpaPartido) {
-        for (int i = 0; i < league.size(); i++) {
-            for (int j = i + 1; j < league.size(); j++) {
-                Equipo home = league.get(i);
-                Equipo away = league.get(j);
+    public static void simularLiga(List<Equipo> league, MatchEngine simuladorLiga,
+                                   DaoJpaPartido daoJpaPartido, EntityManager entityManager) {
 
-                Partido match = simuladorLiga.playMatch(home, away);
+        EntityTransaction tx = entityManager.getTransaction();
 
-                // Cascade.ALL saves linked Stats too
-                daoJpaPartido.save(match);
+        /* Transactions should be in bigger methods like this one
+        / but I made the early mistake of including them in the DAO methods. Don't.
+        */
 
-                logger.info("Match saved: {} {} - {} {}",
-                        home.getNombreEquipo(), match.getSetsLocal(),
-                        match.getSetsVisitante(), away.getNombreEquipo());
+        try {
+            tx.begin();
 
-                // Recomendado flush() y clear() al final de cada ciclo, pero no estoy abriendo transacciones aqui.
+            for (int i = 0; i < league.size(); i++) {
+                for (int j = i + 1; j < league.size(); j++) {
+                    Equipo home = league.get(i);
+                    Equipo away = league.get(j);
+
+                    Partido match = simuladorLiga.playMatch(home, away);
+
+                    logger.info("Match {} has {} stats ready to be saved.",
+                            match.getId(), match.getEstadisticas().size());
+                    // Cascade.ALL saves linked Stats too
+                    daoJpaPartido.save(match);
+
+                    logger.info("Match saved: {} {} - {} {}",
+                            home.getNombreEquipo(), match.getSetsLocal(),
+                            match.getSetsVisitante(), away.getNombreEquipo());
+
+                    entityManager.flush();
+                    entityManager.clear();
+                }
             }
+
+            tx.commit();
+            logger.info("Season simulation saved successfully.");
+
+        } catch (Exception e) {
+            if (tx.isActive()) tx.rollback();
+            logger.error("Simulation failed! Changes rolled back.", e);
         }
     }
 }

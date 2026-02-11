@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * Clase que organiza los enfrentamientos de la liga en Simulation/Main
@@ -16,6 +17,7 @@ import java.util.Random;
  * @author mati
  */
 public class MatchEngine {
+
     private static final Logger logger = LogManager.getLogger(MatchEngine.class);
     private final Random random = new Random();
 
@@ -53,9 +55,20 @@ public class MatchEngine {
     }
 
     private void simulateRosterStats(Equipo team, Partido match) {
+
+        Set<Jugador> jugadores = team.getJugadores();
+        logger.info("Simulating stats for team: {}. Players found in set: {}",
+                team.getNombreEquipo(), (jugadores != null ? jugadores.size() : "NULL"));
+
+        if (jugadores == null || jugadores.isEmpty()) {
+            logger.warn("ATTENTION: Team {} has NO players in its roster list!", team.getNombreEquipo());
+            return;
+        }
+
         for (Jugador p : team.getJugadores()) {
             StatsPartido stats = new StatsPartido();
             stats.setJugador(p);
+
 
             // Helper to link the stat to the match
             match.addEstadistica(stats);

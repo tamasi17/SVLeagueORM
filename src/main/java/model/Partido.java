@@ -128,16 +128,18 @@ public class Partido {
 
     // Helper
     public void addEstadistica(StatsPartido stats){
-
         if (stats == null) return;
 
         // Lazy
         if (this.estadisticas == null) {
             this.estadisticas = new ArrayList<>();
         }
+
+        this.estadisticas.add(stats);
+
+        // This tells the Stat which Match it belongs to (for the Foreign Key)
         stats.setPartido(this);
     }
-
 
     public String getEncuentroFormateado() {
         return equipoLocal + " - " + equipoVisitante + "(" + fecha + ")";

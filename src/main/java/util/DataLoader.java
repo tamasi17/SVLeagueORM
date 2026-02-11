@@ -46,7 +46,11 @@ public class DataLoader {
 
         logger.info("Starting league data load.");
 
+        EntityTransaction tx = entityManager.getTransaction();
+
+
         try {
+            tx.begin();
 
             // OUTER LOOP recorre equipos
             for (Map.Entry<Equipo, List<Jugador>> entry : leagueData.entrySet()) {
@@ -93,9 +97,9 @@ public class DataLoader {
                 daoJpaEquipo.update(currentTeam);
             }
 
+            entityManager.flush();
+            tx.commit();
             logger.info("Data load completed succesfully.");
-
-
 
             } catch (Exception e) {
             logger.error("Failed to load league data: ", e);

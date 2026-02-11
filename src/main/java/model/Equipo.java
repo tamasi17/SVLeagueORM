@@ -45,8 +45,8 @@ public class Equipo {
     @JoinColumn(name = "coach_id", referencedColumnName = "id")
     private Entrenador entrenador;
 
-    // Orphan removal, si borramos un jugador, se borra el resto de su info en el equipo
-    @OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL, orphanRemoval = true)
+    // Se podria añadird Orphan removal, si borramos un jugador, se borra el resto de su info en el equipo
+    @OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL)
     private Set<Jugador> jugadores;
 
     // Si borramos el equipo, no se borra el sponsor (lo usan otros equipos)

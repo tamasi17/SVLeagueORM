@@ -8,7 +8,7 @@ import util.DataService;
 
 import java.util.List;
 
-public abstract class AbstractDao<T> implements GenericDao<T>{
+public abstract class AbstractDao<T> implements GenericDao<T> {
 
     private static final Logger logger = LogManager.getLogger(AbstractDao.class);
 
@@ -21,50 +21,29 @@ public abstract class AbstractDao<T> implements GenericDao<T>{
     }
 
     public void save(T entity) {
-        EntityTransaction transaction = em.getTransaction();
-        try {
-            transaction.begin();
-            em.persist(entity);
-            transaction.commit();
-        } catch (Exception e) {
-            if (transaction.isActive()) transaction.rollback();
-            logger.error("Error saving entity {}", entity.getClass() ,e);
-        }
+        logger.debug("Persisting entity: {}", entity);
+        em.persist(entity);
     }
 
     public T findById(Long id) {
+        logger.debug("Finding by Id: {}", id);
         return em.find(entityClass, id);
     }
 
     public void delete(T entity) {
-        EntityTransaction transaction = em.getTransaction();
-        try{
-            transaction.begin();
-            // Merge first to ensure entity is "attached" to current session before deleting
-            em.merge(entity);
-            em.remove(entity);
-            transaction.commit();
-        } catch (Exception e){
-            if (transaction.isActive()) transaction.rollback();
-            logger.error("Error deleting entity {}", entity.getClass() ,e);
-
-        }
+        logger.debug("Deleting entity: {}", entity);
+        // Merge first to ensure entity is "attached" to current session before deleting
+        em.merge(entity);
+        em.remove(entity);
     }
 
     public void update(T entity) {
-        EntityTransaction transaction = em.getTransaction();
-        try{
-            transaction.begin();
-            em.merge(entity);
-            transaction.commit();
-        } catch (Exception e){
-            if (transaction.isActive()) transaction.rollback();
-            logger.error("Error updating entity {}", entity.getClass() ,e);
-
-        }
+        logger.debug("Updating entity: {}", entity);
+        em.merge(entity);
     }
 
     public List<T> findAll() {
+        logger.debug("Finding all entities.");
         return em.createQuery("FROM " + entityClass.getName(), entityClass).getResultList();
     }
 
