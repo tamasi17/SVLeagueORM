@@ -28,6 +28,19 @@ public class DaoJpaEquipo extends AbstractDao<Equipo> implements GenericDao<Equi
                 .getResultList();
     }
 
+    public List<Object[]> obtenerClasificacion() {
+        // Esta consulta cuenta cuántas veces un equipo aparece como local y ganó,
+        // o como visitante y ganó.
+        String jpql = "SELECT e.nombreEquipo, " +
+                "SUM(CASE WHEN (p.equipoLocal = e AND p.setsLocal > p.setsVisitante) OR " +
+                "             (p.equipoVisitante = e AND p.setsVisitante > p.setsLocal) THEN 1 ELSE 0 END) as victorias " +
+                "FROM Equipo e, Partido p " +
+                "GROUP BY e.nombreEquipo " +
+                "ORDER BY victorias DESC";
+
+        return em.createQuery(jpql).getResultList();
+    }
+
     // findByName
 
     // problema N+1, aparte de findAll() crear una fetchJoin query

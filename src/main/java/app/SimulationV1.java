@@ -3,13 +3,11 @@ package app;
 import config.JpaUtil;
 import dao.DaoJpaEquipo;
 import dao.DaoJpaPartido;
-import dao.DaoJpaSponsor;
 import dao.DaoJpaStats;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import model.Equipo;
 import model.Partido;
-import model.StatsPartido;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import util.DataLoader;
@@ -17,7 +15,9 @@ import util.DataService;
 import util.MatchEngine;
 
 import java.util.List;
-import java.util.Random;
+
+import static util.ResultsVisualizer.imprimirTabla;
+import static util.ResultsVisualizer.mostrarTopAnotadores;
 
 public class SimulationV1 {
 
@@ -55,8 +55,13 @@ public class SimulationV1 {
             simularLiga(teamsInDb, simuladorLiga, daoPartidos, entityManager);
             logger.info("Liga finalizada");
 
+            // Resultados liga
+
+            imprimirTabla(daoEquipo.obtenerClasificacion());
+            mostrarTopAnotadores(entityManager);
 
             // Mercado de fichajes
+
 
 
         } catch (Exception e) {
@@ -109,4 +114,7 @@ public class SimulationV1 {
             logger.error("Simulation failed! Changes rolled back.", e);
         }
     }
+
+
+
 }
