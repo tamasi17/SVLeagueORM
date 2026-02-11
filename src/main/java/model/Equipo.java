@@ -20,7 +20,7 @@ public class Equipo {
     private Long id;
 
     @Column(name = "team_name", nullable = false, length = 100)
-    private String nombre;
+    private String nombreEquipo;
 
     @Column(name = "city")
     private String ciudad;
@@ -45,8 +45,8 @@ public class Equipo {
     @JoinColumn(name = "coach_id", referencedColumnName = "id")
     private Entrenador entrenador;
 
-    // Orphan removal, si borramos un jugador, se borra el resto de su info en el equipo
-    @OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL, orphanRemoval = true)
+    // Se podria añadird Orphan removal, si borramos un jugador, se borra el resto de su info en el equipo
+    @OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL)
     private Set<Jugador> jugadores;
 
     // Si borramos el equipo, no se borra el sponsor (lo usan otros equipos)
@@ -65,10 +65,10 @@ public class Equipo {
     public Equipo() {
     }
 
-    public Equipo(String nombre, String ciudad, String web,
+    public Equipo(String nombreEquipo, String ciudad, String web,
                   LocalDate fechaFundacion, Estadio estadio, Entrenador entrenador,
                   Set<Jugador> jugadores, Set<Sponsor> sponsors) {
-        this.nombre = nombre;
+        this.nombreEquipo = nombreEquipo;
         this.ciudad = ciudad;
         this.web = web;
         this.fechaFundacion = fechaFundacion;
@@ -86,12 +86,12 @@ public class Equipo {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreEquipo() {
+        return nombreEquipo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
     }
 
     public String getCiudad() {
@@ -183,17 +183,17 @@ public class Equipo {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Equipo equipo = (Equipo) o;
-        return Objects.equals(id, equipo.id) && Objects.equals(nombre, equipo.nombre) && Objects.equals(ciudad, equipo.ciudad) && Objects.equals(web, equipo.web) && Objects.equals(fechaFundacion, equipo.fechaFundacion) && Objects.equals(estadio, equipo.estadio) && Objects.equals(entrenador, equipo.entrenador) && Objects.equals(jugadores, equipo.jugadores) && Objects.equals(sponsors, equipo.sponsors);
+        return Objects.equals(nombreEquipo, equipo.nombreEquipo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, ciudad, web, fechaFundacion, estadio, entrenador, jugadores, sponsors);
+        return Objects.hashCode(nombreEquipo);
     }
 
     @Override
     public String toString() {
-        return "> " + nombre + "(" + id + ") \n" + ciudad +
+        return "> " + nombreEquipo + "(" + id + ") \n" + ciudad +
                 "\n" + web +
                 "\n" + fechaFundacion + ", " + estadio +
                 "\n" + entrenador +

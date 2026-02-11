@@ -1,0 +1,474 @@
+[
+  {
+    "nombreEquipo": "VOREAS HOKKAIDO",
+    "web": "https://voreas.co.jp/",
+    "ciudad": "Asahikawa",
+    "fechaFundacion": "2016-10-01",
+    "entrenador": {
+      "nombreEntrenador": "Edo",
+      "apellidoEntrenador": "Klein",
+      "nacionalidad": "Croacia"
+    },
+    "estadio": {
+      "nombreEstadio": "Asahikawa Gymnasium Recruit Staffing RICK&SUE",
+      "ciudad": "Asahikawa",
+      "capacidad": 20000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 2, "posicion": "OH", "nombreJugador": "Manato", "apellidoJugador": "Nakamichi", "nacionalidad": "Japon", "fechaNacimiento": "1996-06-02" },
+      { "dorsal": 5, "posicion": "MB", "nombreJugador": "Jin", "apellidoJugador": "Inoue", "nacionalidad": "Japon", "fechaNacimiento": "1999-04-02" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Jun", "apellidoJugador": "Yamagishi", "nacionalidad": "Japon", "fechaNacimiento": "1999-08-03" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Kyosuke", "apellidoJugador": "Higuruma", "nacionalidad": "Japon", "fechaNacimiento": "1998-10-09" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Kota", "apellidoJugador": "Ikeda", "nacionalidad": "Japon", "fechaNacimiento": "1997-02-08" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Mart", "apellidoJugador": "Tammearu", "nacionalidad": "Estonia", "fechaNacimiento": "2001-03-17" },
+      { "dorsal": 11, "posicion": "L", "nombreJugador": "Kohei", "apellidoJugador": "Tonozaki", "nacionalidad": "Japon", "fechaNacimiento": "1992-04-11" },
+      { "dorsal": 12, "posicion": "L", "nombreJugador": "Reon", "apellidoJugador": "Arao", "nacionalidad": "Japon", "fechaNacimiento": "2001-05-01" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Yu-Sheng", "apellidoJugador": "Chang", "nacionalidad": "Taiwan", "fechaNacimiento": "2000-03-30" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Taisei", "apellidoJugador": "Deguchi", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-13" },
+      { "dorsal": 18, "posicion": "OP", "nombreJugador": "Kenta", "apellidoJugador": "Koga", "nacionalidad": "Japon", "fechaNacimiento": "1997-09-17" },
+      { "dorsal": 19, "posicion": "S", "nombreJugador": "Shota", "apellidoJugador": "Hamada", "nacionalidad": "Japon", "fechaNacimiento": "1999-09-21" },
+      { "dorsal": 20, "posicion": "OH", "nombreJugador": "Hikaru", "apellidoJugador": "Someno", "nacionalidad": "Japon", "fechaNacimiento": "2001-10-06" },
+      { "dorsal": 34, "posicion": "MB", "nombreJugador": "Keisuke", "apellidoJugador": "Miyoshi", "nacionalidad": "Japon", "fechaNacimiento": "1996-02-16" },
+      { "dorsal": 44, "posicion": "MB", "nombreJugador": "Timo", "apellidoJugador": "Tammemaa", "nacionalidad": "Estonia", "fechaNacimiento": "1991-11-18" }
+    ]
+  },
+  {
+    "nombreEquipo": "TOKYO GREAT BEARS",
+    "web": "https://tokyo-greatbears.com/",
+    "ciudad": "Tokyo",
+    "fechaFundacion": "2022-06-01",
+    "entrenador": {
+      "nombreEntrenador": "Kasper",
+      "apellidoEntrenador": "Vuorinen",
+      "nacionalidad": "Finlandia"
+    },
+    "estadio": {
+      "nombreEstadio": "Yoyogi National Stadium 2nd Gymnasium",
+      "ciudad": "Tokyo",
+      "capacidad": 40000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Recruit", "sector": "RRHH" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Lawson Tickets", "sector": "Eventos" },
+      { "nombreComercial": "JSports", "sector": "Articulos deportivos" },
+      { "nombreComercial": "KTX", "sector": "Automoviles" },
+      { "nombreComercial": "Taraflex", "sector": "Suelos de volleyball" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Bartosz", "apellidoJugador": "Kurek", "nacionalidad": "Polonia", "fechaNacimiento": "1988-08-29" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Akihiro", "apellidoJugador": "Fukatsu", "nacionalidad": "Japon", "fechaNacimiento": "1987-07-23" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Jan", "apellidoJugador": "Kozamernik", "nacionalidad": "Eslovenia", "fechaNacimiento": "1995-12-24" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Wataru", "apellidoJugador": "Taniguchi", "nacionalidad": "Japon", "fechaNacimiento": "1996-11-05" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Alex", "apellidoJugador": "Ferreira", "nacionalidad": "Portugal", "fechaNacimiento": "1991-11-13" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Masahiro", "apellidoJugador": "Yanagida", "nacionalidad": "Japon", "fechaNacimiento": "1992-07-06" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Takahiro", "apellidoJugador": "Tozaki", "nacionalidad": "Japon", "fechaNacimiento": "1995-06-14" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Taichiro", "apellidoJugador": "Koga", "nacionalidad": "Japon", "fechaNacimiento": "1989-10-04" },
+      { "dorsal": 12, "posicion": "MB", "nombreJugador": "Go", "apellidoJugador": "Murayama", "nacionalidad": "Japon", "fechaNacimiento": "1998-07-02" },
+      { "dorsal": 13, "posicion": "MB", "nombreJugador": "Issei", "apellidoJugador": "Otake", "nacionalidad": "Japon", "fechaNacimiento": "1995-12-03" },
+      { "dorsal": 15, "posicion": "S", "nombreJugador": "Yuki", "apellidoJugador": "Imahashi", "nacionalidad": "Japon", "fechaNacimiento": "1996-12-25" },
+      { "dorsal": 17, "posicion": "OH", "nombreJugador": "Luciano", "apellidoJugador": "Vicentin", "nacionalidad": "Argentina", "fechaNacimiento": "2000-04-04" },
+      { "dorsal": 25, "posicion": "OH", "nombreJugador": "Rikuto", "apellidoJugador": "Goto", "nacionalidad": "Japon", "fechaNacimiento": "1998-05-13" },
+      { "dorsal": 26, "posicion": "MB", "nombreJugador": "Riku", "apellidoJugador": "Ito", "nacionalidad": "Japon", "fechaNacimiento": "2001-11-14" },
+      { "dorsal": 29, "posicion": "L", "nombreJugador": "Ryuki", "apellidoJugador": "Ohmae", "nacionalidad": "Japon", "fechaNacimiento": "2000-04-20" },
+      { "dorsal": 30, "posicion": "OH", "nombreJugador": "Takuma", "apellidoJugador": "Kawano", "nacionalidad": "Japon", "fechaNacimiento": "2001-12-25" },
+      { "dorsal": 32, "posicion": "S", "nombreJugador": "Ranmaru", "apellidoJugador": "Kondo", "nacionalidad": "Japon", "fechaNacimiento": "1996-01-30" },
+      { "dorsal": 39, "posicion": "OP", "nombreJugador": "Yusaku", "apellidoJugador": "Takashima", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-16" }
+    ]
+  },
+  {
+    "nombreEquipo": "VC NAGANO TRIDENTS",
+    "web": "http://vcnagano.jp/",
+    "ciudad": "Matsumoto",
+    "fechaFundacion": "2008-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Shinji",
+      "apellidoEntrenador": "Kawamura",
+      "nacionalidad": "Japon"
+    },
+    "estadio": {
+      "nombreEstadio": "Air Water Arena Matsumoto",
+      "ciudad": "Matsumoto",
+      "capacidad": 25000
+    },
+    "sponsors": [
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "KTX", "sector": "Automoviles" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "HottoMotto" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" },
+      { "nombreComercial": "Salonpas", "sector": "Parches Analgesicos" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Koki", "apellidoJugador": "Yamada", "nacionalidad": "Japon", "fechaNacimiento": "1999-08-07" },
+      { "dorsal": 2, "posicion": "L", "nombreJugador": "Keiichiro", "apellidoJugador": "Fujisawa", "nacionalidad": "Japon", "fechaNacimiento": "1999-09-02" },
+      { "dorsal": 3, "posicion": "OP", "nombreJugador": "Shusuke", "apellidoJugador": "Sakai", "nacionalidad": "Japon", "fechaNacimiento": "1997-12-05" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Koji", "apellidoJugador": "Nanba", "nacionalidad": "Japon", "fechaNacimiento": "1998-05-13" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Shinjo", "apellidoJugador": "Akahoshi", "nacionalidad": "Japon", "fechaNacimiento": "1998-08-11" },
+      { "dorsal": 7, "posicion": "L", "nombreJugador": "Hiroki", "apellidoJugador": "Kotoh", "nacionalidad": "Japon", "fechaNacimiento": "1998-01-20" },
+      { "dorsal": 8, "posicion": "S", "nombreJugador": "Kento", "apellidoJugador": "Nakashima", "nacionalidad": "Japon", "fechaNacimiento": "2001-10-15" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Shota", "apellidoJugador": "Fujiwara", "nacionalidad": "Japon", "fechaNacimiento": "1998-07-14" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Dai", "apellidoJugador": "Yasuhara", "nacionalidad": "Japon", "fechaNacimiento": "2001-12-14" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Yuji", "apellidoJugador": "Kudo", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-20" },
+      { "dorsal": 12, "posicion": "S", "nombreJugador": "Hoshina", "apellidoJugador": "Yusuke", "nacionalidad": "Japon", "fechaNacimiento": "1998-05-18" },
+      { "dorsal": 13, "posicion": "OP", "nombreJugador": "Koga", "apellidoJugador": "Iida", "nacionalidad": "Japon", "fechaNacimiento": "2000-02-14" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Matthew", "apellidoJugador": "Neaves", "nacionalidad": "Canada", "fechaNacimiento": "2000-07-20" },
+      { "dorsal": 17, "posicion": "MB", "nombreJugador": "Yoshihiko", "apellidoJugador": "Matsumoto", "nacionalidad": "Japon", "fechaNacimiento": "1981-01-07" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Ryuya", "apellidoJugador": "Sato", "nacionalidad": "Japon", "fechaNacimiento": "2001-01-25" },
+      { "dorsal": 19, "posicion": "OH", "nombreJugador": "Takamaru", "apellidoJugador": "Ichijo", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-30" },
+      { "dorsal": 21, "posicion": "OP", "nombreJugador": "Hazuki", "apellidoJugador": "Kishikawa", "nacionalidad": "Japon", "fechaNacimiento": "2002-05-10" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Oskar", "apellidoJugador": "Madsen", "nacionalidad": "Dinamarca", "fechaNacimiento": "2000-01-17" },
+      { "dorsal": 24, "posicion": "MB", "nombreJugador": "Shodai", "apellidoJugador": "Abe", "nacionalidad": "Japon", "fechaNacimiento": "1999-11-03" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Farhan", "apellidoJugador": "Halim", "nacionalidad": "Indonesia", "fechaNacimiento": "2001-05-14" }
+    ]
+  },
+  {
+    "nombreEquipo": "TORAY ARROWS SHIZUOKA",
+    "web": "http://www.toray-arrows.jp/men/index.html",
+    "ciudad": "Mishima",
+    "fechaFundacion": "1947-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Yuta",
+      "apellidoEntrenador": "Abe",
+      "nacionalidad": "Japon"
+    },
+    "estadio": {
+      "nombreEstadio": "Mishima Citizen Gymnasium",
+      "ciudad": "Mishima",
+      "capacidad": 30000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Takahiro", "apellidoJugador": "Namba", "nacionalidad": "Japon", "fechaNacimiento": "1998-05-01" },
+      { "dorsal": 2, "posicion": "S", "nombreJugador": "Takahiro", "apellidoJugador": "Shin", "nacionalidad": "Japon", "fechaNacimiento": "1991-08-10" },
+      { "dorsal": 3, "posicion": "L", "nombreJugador": "Takumi", "apellidoJugador": "Yamaguchi", "nacionalidad": "Japon", "fechaNacimiento": "1997-08-30" },
+      { "dorsal": 4, "posicion": "S", "nombreJugador": "Keisuke", "apellidoJugador": "Sakai", "nacionalidad": "Japon", "fechaNacimiento": "1996-08-25" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Gaku", "apellidoJugador": "Kusumoto", "nacionalidad": "Japon", "fechaNacimiento": "1998-03-20" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Yuto", "apellidoJugador": "Fujinaka", "nacionalidad": "Japon", "fechaNacimiento": "1996-04-20" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Takumi", "apellidoJugador": "Mawatari", "nacionalidad": "Japon", "fechaNacimiento": "1999-02-15" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Tobiastakeshi", "apellidoJugador": "Shigeto", "nacionalidad": "Japon", "fechaNacimiento": "2001-02-08" },
+      { "dorsal": 11, "posicion": "OP", "nombreJugador": "Kirill", "apellidoJugador": "Klets", "nacionalidad": "Rusia", "fechaNacimiento": "1998-03-15" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Daiki", "apellidoJugador": "Yamada", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-07" },
+      { "dorsal": 13, "posicion": "MB", "nombreJugador": "Taylor", "apellidoJugador": "Averill", "nacionalidad": "USA", "fechaNacimiento": "1992-03-05" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Haku", "apellidoJugador": "Ri", "nacionalidad": "Japon", "fechaNacimiento": "1990-12-27" },
+      { "dorsal": 16, "posicion": "MB", "nombreJugador": "Reimondo", "apellidoJugador": "Kamijo", "nacionalidad": "Japon", "fechaNacimiento": "1999-09-16" },
+      { "dorsal": 17, "posicion": "OH", "nombreJugador": "Hiroki", "apellidoJugador": "Ozawa", "nacionalidad": "Japon", "fechaNacimiento": "1997-09-21" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Hiroaki", "apellidoJugador": "Maki", "nacionalidad": "Japon", "fechaNacimiento": "2003-11-02" },
+      { "dorsal": 19, "posicion": "L", "nombreJugador": "Taishu", "apellidoJugador": "Takeda", "nacionalidad": "Japon", "fechaNacimiento": "1996-09-17" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Eiki", "apellidoJugador": "Onodera", "nacionalidad": "Japon", "fechaNacimiento": "2001-06-15" },
+      { "dorsal": 22, "posicion": "MB", "nombreJugador": "Ryusuke", "apellidoJugador": "Nakamura", "nacionalidad": "Japon", "fechaNacimiento": "1997-12-26" },
+      { "dorsal": 24, "posicion": "OH", "nombreJugador": "Julio", "apellidoJugador": "Cardenas", "nacionalidad": "Cuba", "fechaNacimiento": "2000-09-04" }
+    ]
+  },
+  {
+    "nombreEquipo": "JTEKT STINGS AICHI",
+    "web": "http://www.jtekt-stings.jp/",
+    "ciudad": "Okazaki",
+    "fechaFundacion": "1958-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Shimbo",
+      "apellidoEntrenador": "Koichiro",
+      "nacionalidad": "Japon"
+    },
+    "estadio": {
+      "nombreEstadio": "Okazaki Central Park Gymnasium",
+      "ciudad": "Okazaki",
+      "capacidad": 24000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Yao-Kai", "apellidoJugador": "Lu Chiang", "nacionalidad": "Taiwan", "fechaNacimiento": "2000-05-15" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Kentaro", "apellidoJugador": "Takahashi", "nacionalidad": "Japon", "fechaNacimiento": "1995-02-08" },
+      { "dorsal": 3, "posicion": "MB", "nombreJugador": "Sayato", "apellidoJugador": "Sakai", "nacionalidad": "Japon", "fechaNacimiento": "2001-09-25" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Shuto", "apellidoJugador": "Kawaguchi", "nacionalidad": "Japon", "fechaNacimiento": "1997-10-21" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Yudai", "apellidoJugador": "Kawahigashi", "nacionalidad": "Japon", "fechaNacimiento": "1998-02-07" },
+      { "dorsal": 7, "posicion": "L", "nombreJugador": "Takuma", "apellidoJugador": "Araki", "nacionalidad": "Japon", "fechaNacimiento": "2002-04-10" },
+      { "dorsal": 9, "posicion": "OP", "nombreJugador": "Stephen", "apellidoJugador": "Boyer", "nacionalidad": "Francia", "fechaNacimiento": "1996-04-10" },
+      { "dorsal": 10, "posicion": "OH", "nombreJugador": "Kenya", "apellidoJugador": "Fujinaka", "nacionalidad": "Japon", "fechaNacimiento": "1993-07-25" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Kosuke", "apellidoJugador": "Hata", "nacionalidad": "Japon", "fechaNacimiento": "1995-07-15" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Naoya", "apellidoJugador": "Fujiwara", "nacionalidad": "Japon", "fechaNacimiento": "2001-12-24" },
+      { "dorsal": 16, "posicion": "OP", "nombreJugador": "Mitsuki", "apellidoJugador": "Demizu", "nacionalidad": "Japon", "fechaNacimiento": "1999-06-18" },
+      { "dorsal": 17, "posicion": "S", "nombreJugador": "Issei", "apellidoJugador": "Maeda", "nacionalidad": "Japon", "fechaNacimiento": "1991-09-22" },
+      { "dorsal": 21, "posicion": "L", "nombreJugador": "Kazuyuki", "apellidoJugador": "Takahashi", "nacionalidad": "Japon", "fechaNacimiento": "1999-09-03" },
+      { "dorsal": 22, "posicion": "MB", "nombreJugador": "Daigo", "apellidoJugador": "Iwamoto", "nacionalidad": "Japon", "fechaNacimiento": "2001-02-10" },
+      { "dorsal": 23, "posicion": "OH", "nombreJugador": "Torey", "apellidoJugador": "Defalco", "nacionalidad": "USA", "fechaNacimiento": "1997-04-10" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Ricardo Lucarelli", "apellidoJugador": "Souza", "nacionalidad": "Brasil", "fechaNacimiento": "1992-02-14" }
+    ]
+  },
+  {
+    "nombreEquipo": "WOLFDOGS NAGOYA",
+    "web": "https://www.wolfdogs.jp/",
+    "ciudad": "Nagoya",
+    "fechaFundacion": "1961-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Valerio",
+      "apellidoEntrenador": "Baldovin",
+      "nacionalidad": "Italia"
+    },
+    "estadio": {
+      "nombreEstadio": "ENTRIO",
+      "ciudad": "Nagoya",
+      "capacidad": 22000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "JSports", "sector": "Articulos deportivos" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OH", "nombreJugador": "Shuzo", "apellidoJugador": "Yamada", "nacionalidad": "Japon", "fechaNacimiento": "1992-11-27" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Akira", "apellidoJugador": "Sawada", "nacionalidad": "Japon", "fechaNacimiento": "1996-07-20" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Hideomi", "apellidoJugador": "Fukatsu", "nacionalidad": "Japon", "fechaNacimiento": "1990-06-01" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Masahiro", "apellidoJugador": "Yamazaki", "nacionalidad": "Japon", "fechaNacimiento": "1998-05-18" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Shunsuke", "apellidoJugador": "Watanabe", "nacionalidad": "Japon", "fechaNacimiento": "1988-04-11" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Timothee", "apellidoJugador": "Carle", "nacionalidad": "Francia", "fechaNacimiento": "1995-11-30" },
+      { "dorsal": 7, "posicion": "S", "nombreJugador": "Shinnosuke", "apellidoJugador": "Hayasaka", "nacionalidad": "Japon", "fechaNacimiento": "2000-09-05" },
+      { "dorsal": 9, "posicion": "OH", "nombreJugador": "Aymen", "apellidoJugador": "Bouguerra", "nacionalidad": "Tunez", "fechaNacimiento": "2001-11-01" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Shunichiro", "apellidoJugador": "Sato", "nacionalidad": "Japon", "fechaNacimiento": "2000-05-17" },
+      { "dorsal": 11, "posicion": "MB", "nombreJugador": "Ryota", "apellidoJugador": "Denda", "nacionalidad": "Japon", "fechaNacimiento": "1991-07-03" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Taito", "apellidoJugador": "Mizumachi", "nacionalidad": "Japon", "fechaNacimiento": "2001-09-07" },
+      { "dorsal": 15, "posicion": "OP", "nombreJugador": "Kento", "apellidoJugador": "Miyaura", "nacionalidad": "Japon", "fechaNacimiento": "1999-02-22" },
+      { "dorsal": 17, "posicion": "L", "nombreJugador": "Kenta", "apellidoJugador": "Ichikawa", "nacionalidad": "Japon", "fechaNacimiento": "1999-04-06" },
+      { "dorsal": 18, "posicion": "S", "nombreJugador": "Naozumi", "apellidoJugador": "Kambayashi", "nacionalidad": "Japon", "fechaNacimiento": "1998-11-20" },
+      { "dorsal": 22, "posicion": "OP", "nombreJugador": "Jo", "apellidoJugador": "Toyoda", "nacionalidad": "Japon", "fechaNacimiento": "2002-12-05" },
+      { "dorsal": 26, "posicion": "OH", "nombreJugador": "Akito", "apellidoJugador": "Yamazaki", "nacionalidad": "Japon", "fechaNacimiento": "1997-10-16" },
+      { "dorsal": 99, "posicion": "MB", "nombreJugador": "Norbert", "apellidoJugador": "Huber", "nacionalidad": "Polonia", "fechaNacimiento": "1998-08-14" }
+    ]
+  },
+  {
+    "nombreEquipo": "OSAKA BLUTEON",
+    "web": "https://www.osaka-bluteon.com/",
+    "ciudad": "Osaka",
+    "fechaFundacion": "1951-12-20",
+    "entrenador": {
+      "nombreEntrenador": "Tuomas Petteri",
+      "apellidoEntrenador": "Sammelvuo",
+      "nacionalidad": "Finlandia"
+    },
+    "estadio": {
+      "nombreEstadio": "Panasonic Arena",
+      "ciudad": "Osaka",
+      "capacidad": 55000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Mufg" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Lawson Tickets", "sector": "Eventos" },
+      { "nombreComercial": "JSports", "sector": "Articulos Deportivos" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "HottoMotto", "sector": "Restaurantes" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Kunihiro", "apellidoJugador": "Shimizu", "nacionalidad": "Japon", "fechaNacimiento": "1986-08-11" },
+      { "dorsal": 3, "posicion": "S", "nombreJugador": "Shunsuke", "apellidoJugador": "Nakamura", "nacionalidad": "Japon", "fechaNacimiento": "1994-03-07" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Kotaro", "apellidoJugador": "Kaneta", "nacionalidad": "Japon", "fechaNacimiento": "2001-09-02" },
+      { "dorsal": 5, "posicion": "OH", "nombreJugador": "Shoma", "apellidoJugador": "Tomita", "nacionalidad": "Japon", "fechaNacimiento": "1997-06-20" },
+      { "dorsal": 6, "posicion": "S", "nombreJugador": "Antoine", "apellidoJugador": "Brizard", "nacionalidad": "Francia", "fechaNacimiento": "1994-05-22" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Kenyu", "apellidoJugador": "Nakamoto", "nacionalidad": "Japon", "fechaNacimiento": "1997-11-21" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Shikun", "apellidoJugador": "Peng", "nacionalidad": "China", "fechaNacimiento": "1995-08-26" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Akihiro", "apellidoJugador": "Yamauchi", "nacionalidad": "Japon", "fechaNacimiento": "1993-11-30" },
+      { "dorsal": 11, "posicion": "OP", "nombreJugador": "Yuji", "apellidoJugador": "Nishida", "nacionalidad": "Japon", "fechaNacimiento": "2000-01-30" },
+      { "dorsal": 12, "posicion": "S", "nombreJugador": "Ryo", "apellidoJugador": "Nozoe", "nacionalidad": "Japon", "fechaNacimiento": "1998-09-11" },
+      { "dorsal": 13, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Yamamoto", "nacionalidad": "Japon", "fechaNacimiento": "1994-11-05" },
+      { "dorsal": 15, "posicion": "OH", "nombreJugador": "Masato", "apellidoJugador": "Kai", "nacionalidad": "Japon", "fechaNacimiento": "2003-09-25" },
+      { "dorsal": 16, "posicion": "L", "nombreJugador": "Kotaro", "apellidoJugador": "Ikeshiro", "nacionalidad": "Japon", "fechaNacimiento": "2001-11-15" },
+      { "dorsal": 18, "posicion": "OP", "nombreJugador": "Hiroto", "apellidoJugador": "Nishiyama", "nacionalidad": "Japon", "fechaNacimiento": "2003-03-04" },
+      { "dorsal": 19, "posicion": "MB", "nombreJugador": "Keitaro", "apellidoJugador": "Nishikawa", "nacionalidad": "Japon", "fechaNacimiento": "2001-01-14" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Bryan", "apellidoJugador": "Bagunas", "nacionalidad": "Filipinas", "fechaNacimiento": "1997-10-10" },
+      { "dorsal": 23, "posicion": "MB", "nombreJugador": "Larry IK", "apellidoJugador": "Evbade-Dan", "nacionalidad": "Japon", "fechaNacimiento": "2001-08-18" },
+      { "dorsal": 81, "posicion": "OH", "nombreJugador": "Miguel", "apellidoJugador": "Lopez", "nacionalidad": "Cuba", "fechaNacimiento": "1997-03-25" }
+    ]
+  },
+  {
+    "nombreEquipo": "SUNTORY SUNBIRDS OSAKA",
+    "web": "http://www.suntory.co.jp/culture-sports/sunbirds/",
+    "ciudad": "Osaka",
+    "fechaFundacion": "1973-04-01",
+    "entrenador": {
+      "nombreEntrenador": "Olivier",
+      "apellidoEntrenador": "Lecat",
+      "nacionalidad": "Francia"
+    },
+    "estadio": {
+      "nombreEstadio": "Asue Arena Osaka",
+      "ciudad": "Osaka",
+      "capacidad": 63000
+    },
+    "sponsors": [
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Lawson Tickets" },
+      { "nombreComercial": "KTX" },
+      { "nombreComercial": "Taraflex" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "MB", "nombreJugador": "Taishi", "apellidoJugador": "Onodera", "nacionalidad": "Japon", "fechaNacimiento": "1996-02-27" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Kenji", "apellidoJugador": "Sato", "nacionalidad": "Japon", "fechaNacimiento": "1997-01-16" },
+      { "dorsal": 5, "posicion": "S", "nombreJugador": "Ryo", "apellidoJugador": "Shimokawa", "nacionalidad": "Japon", "fechaNacimiento": "1999-01-12" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Alain", "apellidoJugador": "Dearmas", "nacionalidad": "Cuba", "fechaNacimiento": "2001-03-04" },
+      { "dorsal": 8, "posicion": "S", "nombreJugador": "Masahiro", "apellidoJugador": "Sekita", "nacionalidad": "Japon", "fechaNacimiento": "1993-11-20" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Ogawa", "nacionalidad": "Japon", "fechaNacimiento": "1996-07-04" },
+      { "dorsal": 11, "posicion": "L", "nombreJugador": "Soshi", "apellidoJugador": "Fujinaka", "nacionalidad": "Japon", "fechaNacimiento": "1999-12-02" },
+      { "dorsal": 12, "posicion": "OH", "nombreJugador": "Ran", "apellidoJugador": "Takahashi", "nacionalidad": "Japon", "fechaNacimiento": "2001-09-02" },
+      { "dorsal": 13, "posicion": "OP", "nombreJugador": "Dmitriy", "apellidoJugador": "Muserskiy", "nacionalidad": "Rusia", "fechaNacimiento": "1988-10-29" },
+      { "dorsal": 14, "posicion": "MB", "nombreJugador": "Ren", "apellidoJugador": "Oniki", "nacionalidad": "Japon", "fechaNacimiento": "1995-08-28" },
+      { "dorsal": 15, "posicion": "L", "nombreJugador": "Yoshimitsu", "apellidoJugador": "Kiire", "nacionalidad": "Japon", "fechaNacimiento": "1995-05-13" },
+      { "dorsal": 17, "posicion": "MB", "nombreJugador": "Hirohito", "apellidoJugador": "Kashimura", "nacionalidad": "Japon", "fechaNacimiento": "1999-01-15" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Egor", "apellidoJugador": "Kliuka", "nacionalidad": "Rusia", "fechaNacimiento": "1995-06-15" },
+      { "dorsal": 19, "posicion": "OP", "nombreJugador": "Kotaro", "apellidoJugador": "Kai", "nacionalidad": "Japon", "fechaNacimiento": "2001-07-17" },
+      { "dorsal": 21, "posicion": "OH", "nombreJugador": "Rui", "apellidoJugador": "Takahashi", "nacionalidad": "Japon", "fechaNacimiento": "2000-03-10" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Kenshin", "apellidoJugador": "Kuwada", "nacionalidad": "Japon", "fechaNacimiento": "2002-12-05" },
+      { "dorsal": 23, "posicion": "MB", "nombreJugador": "Tatsuki", "apellidoJugador": "Kashiwada", "nacionalidad": "Japon", "fechaNacimiento": "1997-11-09" }
+    ]
+  },
+  {
+    "nombreEquipo": "NIPPON STEEL SAKAI BLAZERS",
+    "web": "http://www.blazers.gr.jp/web/",
+    "ciudad": "Sakai",
+    "fechaFundacion": "1939-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Kitajima",
+      "apellidoEntrenador": "Takeshi",
+      "nacionalidad": "Japon"
+    },
+    "estadio": {
+      "nombreEstadio": "Ohama Daishin Arena",
+      "ciudad": "Sakai",
+      "capacidad": 23000
+    },
+    "sponsors": [
+      { "nombreComercial": "Daido", "sector": "Seguros" },
+      { "nombreComercial": "Recruit" },
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "Volz", "sector": "Hidraulica" },
+      { "nombreComercial": "Salonpas" },
+      { "nombreComercial": "Mikasa" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Mass", "sector": "Maquinaria industrial" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OP", "nombreJugador": "Matthew", "apellidoJugador": "Anderson", "nacionalidad": "USA", "fechaNacimiento": "1987-04-18" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Hiroyuki", "apellidoJugador": "Yamane", "nacionalidad": "Japon", "fechaNacimiento": "1999-01-30" },
+      { "dorsal": 3, "posicion": "OH", "nombreJugador": "Kosuke", "apellidoJugador": "Yasui", "nacionalidad": "Japon", "fechaNacimiento": "1999-08-28" },
+      { "dorsal": 4, "posicion": "OH", "nombreJugador": "Naoya", "apellidoJugador": "Takano", "nacionalidad": "Japon", "fechaNacimiento": "1993-04-30" },
+      { "dorsal": 5, "posicion": "L", "nombreJugador": "Tomohiro", "apellidoJugador": "Horie", "nacionalidad": "Japon", "fechaNacimiento": "1997-06-24" },
+      { "dorsal": 6, "posicion": "L", "nombreJugador": "Aiki", "apellidoJugador": "Mori", "nacionalidad": "Japon", "fechaNacimiento": "2002-04-15" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Kenta", "apellidoJugador": "Takanashi", "nacionalidad": "Japon", "fechaNacimiento": "1997-03-25" },
+      { "dorsal": 8, "posicion": "MB", "nombreJugador": "Naoto", "apellidoJugador": "Akima", "nacionalidad": "Japon", "fechaNacimiento": "2000-09-19" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Peichang", "apellidoJugador": "Tsai", "nacionalidad": "Taiwan", "fechaNacimiento": "2001-01-02" },
+      { "dorsal": 10, "posicion": "MB", "nombreJugador": "Cole", "apellidoJugador": "Watanabe", "nacionalidad": "Japon", "fechaNacimiento": "2000-09-07" },
+      { "dorsal": 11, "posicion": "S", "nombreJugador": "Masaki", "apellidoJugador": "Oya", "nacionalidad": "Japon", "fechaNacimiento": "1995-04-23" },
+      { "dorsal": 14, "posicion": "OP", "nombreJugador": "Ulrik", "apellidoJugador": "Dahl", "nacionalidad": "Dinamarca", "fechaNacimiento": "2000-11-18" },
+      { "dorsal": 15, "posicion": "S", "nombreJugador": "Takumi", "apellidoJugador": "Eto", "nacionalidad": "Japon", "fechaNacimiento": "2000-01-04" },
+      { "dorsal": 17, "posicion": "OP", "nombreJugador": "Ryunosuke", "apellidoJugador": "Kamimura", "nacionalidad": "Japon", "fechaNacimiento": "2001-06-16" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Takehiro", "apellidoJugador": "Nakanishi", "nacionalidad": "Japon", "fechaNacimiento": "2002-09-10" },
+      { "dorsal": 21, "posicion": "MB", "nombreJugador": "Yutaro", "apellidoJugador": "Takemoto", "nacionalidad": "Japon", "fechaNacimiento": "1995-02-21" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Akira", "apellidoJugador": "Kakizaki", "nacionalidad": "Japon", "fechaNacimiento": "2000-11-20" },
+      { "dorsal": 23, "posicion": "L", "nombreJugador": "Tatsuki", "apellidoJugador": "Minamiguchi", "nacionalidad": "Japon", "fechaNacimiento": "2002-06-15" },
+      { "dorsal": 90, "posicion": "OH", "nombreJugador": "Tommaso", "apellidoJugador": "Rinaldi", "nacionalidad": "Italia", "fechaNacimiento": "2001-11-09" }
+    ]
+  },
+  {
+    "nombreEquipo": "HIROSHIMA THUNDERS",
+    "web": "http://www.jti.co.jp/knowledge/thunders/",
+    "ciudad": "Hiroshima",
+    "fechaFundacion": "1931-01-01",
+    "entrenador": {
+      "nombreEntrenador": "Carlos Javier",
+      "apellidoEntrenador": "Weber",
+      "nacionalidad": "Argentina"
+    },
+    "estadio": {
+      "nombreEstadio": "Hiroshima Green Arena",
+      "ciudad": "Hiroshima",
+      "capacidad": 32000
+    },
+    "sponsors": [
+      { "nombreComercial": "Mufg", "sector": "Banca" },
+      { "nombreComercial": "Open House Group", "sector": "Inmobiliaria" },
+      { "nombreComercial": "TSP Taiyo", "sector": "Eventos" },
+      { "nombreComercial": "Kosé", "sector": "Cosmeticos" },
+      { "nombreComercial": "Salonpas", "sector": "Suelos volleyball" },
+      { "nombreComercial": "Mikasa", "sector": "Articulos deportivos" },
+      { "nombreComercial": "Skylight", "sector": "Consultoria" },
+      { "nombreComercial": "Hummel", "sector": "Articulos deportivos" }
+    ],
+    "jugadores": [
+      { "dorsal": 1, "posicion": "OH", "nombreJugador": "Yuri", "apellidoJugador": "Yanakita", "nacionalidad": "Japon", "fechaNacimiento": "1997-09-21" },
+      { "dorsal": 2, "posicion": "MB", "nombreJugador": "Yuki", "apellidoJugador": "Higuchi", "nacionalidad": "Japon", "fechaNacimiento": "1996-04-27" },
+      { "dorsal": 3, "posicion": "L", "nombreJugador": "Makoto", "apellidoJugador": "Nishimura", "nacionalidad": "Japon", "fechaNacimiento": "1998-09-01" },
+      { "dorsal": 4, "posicion": "MB", "nombreJugador": "Hiromasa", "apellidoJugador": "Miwa", "nacionalidad": "Japon", "fechaNacimiento": "1999-12-17" },
+      { "dorsal": 5, "posicion": "OH", "nombreJugador": "Shinichiro", "apellidoJugador": "Inoue", "nacionalidad": "Japon", "fechaNacimiento": "2000-12-21" },
+      { "dorsal": 6, "posicion": "OH", "nombreJugador": "Cooper", "apellidoJugador": "Robinson", "nacionalidad": "USA", "fechaNacimiento": "1997-10-14" },
+      { "dorsal": 7, "posicion": "OH", "nombreJugador": "Yudai", "apellidoJugador": "Arai", "nacionalidad": "Japon", "fechaNacimiento": "1998-06-27" },
+      { "dorsal": 8, "posicion": "OH", "nombreJugador": "Koshi", "apellidoJugador": "Takechi", "nacionalidad": "Japon", "fechaNacimiento": "1996-01-01" },
+      { "dorsal": 9, "posicion": "MB", "nombreJugador": "Kaiki", "apellidoJugador": "Takanashi", "nacionalidad": "Japon", "fechaNacimiento": "2001-06-15" },
+      { "dorsal": 10, "posicion": "L", "nombreJugador": "Keishiro", "apellidoJugador": "Takaki", "nacionalidad": "Japon", "fechaNacimiento": "2002-03-25" },
+      { "dorsal": 11, "posicion": "OH", "nombreJugador": "Junya", "apellidoJugador": "Sakashita", "nacionalidad": "Japon", "fechaNacimiento": "1998-06-12" },
+      { "dorsal": 15, "posicion": "MB", "nombreJugador": "Keigo", "apellidoJugador": "Nishimoto", "nacionalidad": "Japon", "fechaNacimiento": "1998-10-27" },
+      { "dorsal": 16, "posicion": "MB", "nombreJugador": "Chihiro", "apellidoJugador": "Nishi", "nacionalidad": "Japon", "fechaNacimiento": "2001-11-20" },
+      { "dorsal": 17, "posicion": "S", "nombreJugador": "Masaki", "apellidoJugador": "Kaneko", "nacionalidad": "Japon", "fechaNacimiento": "1991-03-27" },
+      { "dorsal": 18, "posicion": "OH", "nombreJugador": "Shohei", "apellidoJugador": "Yamamoto", "nacionalidad": "Japon", "fechaNacimiento": "1991-03-21" },
+      { "dorsal": 19, "posicion": "OP", "nombreJugador": "Felipe Moreira", "apellidoJugador": "Roque", "nacionalidad": "Brasil", "fechaNacimiento": "1997-01-19" },
+      { "dorsal": 20, "posicion": "S", "nombreJugador": "Daiki", "apellidoJugador": "Abe", "nacionalidad": "Japon", "fechaNacimiento": "2000-02-16" },
+      { "dorsal": 21, "posicion": "S", "nombreJugador": "Motoki", "apellidoJugador": "Eiro", "nacionalidad": "Japon", "fechaNacimiento": "1996-06-08" },
+      { "dorsal": 22, "posicion": "OH", "nombreJugador": "Hayato", "apellidoJugador": "Yamamoto", "nacionalidad": "Japon", "fechaNacimiento": "2001-10-17" },
+      { "dorsal": 23, "posicion": "OP", "nombreJugador": "Daniel Martinez", "apellidoJugador": "Campos", "nacionalidad": "Cuba", "fechaNacimiento": "2002-09-07" }
+    ]
+  }
+]

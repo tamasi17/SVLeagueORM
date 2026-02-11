@@ -13,10 +13,10 @@ public class Entrenador {
     private Long id;
 
     @Column(name = "name", nullable = false, length = 100)
-    private String nombre;
+    private String nombreEntrenador;
 
-    @Column(name = "name", nullable = false, length = 100)
-    private String apellido;
+    @Column(name = "last_name", nullable = false, length = 100)
+    private String apellidoEntrenador;
 
     @Column(name = "nationality")
     private String nacionalidad;
@@ -30,9 +30,9 @@ public class Entrenador {
     public Entrenador() {
     }
 
-    public Entrenador(String nombre, String apellido, String nacionalidad, Equipo equipo) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Entrenador(String nombreEntrenador, String apellidoEntrenador, String nacionalidad, Equipo equipo) {
+        this.nombreEntrenador = nombreEntrenador;
+        this.apellidoEntrenador = apellidoEntrenador;
         this.nacionalidad = nacionalidad;
         this.equipo = equipo;
     }
@@ -45,20 +45,20 @@ public class Entrenador {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreEntrenador() {
+        return nombreEntrenador;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreEntrenador(String nombreEntrenador) {
+        this.nombreEntrenador = nombreEntrenador;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidoEntrenador() {
+        return apellidoEntrenador;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidoEntrenador(String apellidoEntrenador) {
+        this.apellidoEntrenador = apellidoEntrenador;
     }
 
     public String getNacionalidad() {
@@ -81,17 +81,17 @@ public class Entrenador {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Entrenador that = (Entrenador) o;
-        return Objects.equals(id, that.id) && Objects.equals(nombre, that.nombre) && Objects.equals(apellido, that.apellido);
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, apellido);
+        return Objects.hashCode(id);
     }
 
     @Override
     public String toString() {
-        return nombre + " " + apellido + "("+ id + ") \n"
+        return nombreEntrenador + " " + apellidoEntrenador + "("+ id + ") \n"
                 + nacionalidad + "\n" + equipo;
     }
 }

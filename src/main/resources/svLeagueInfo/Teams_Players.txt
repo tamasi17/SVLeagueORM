@@ -57,7 +57,9 @@ Team Info
 Official website
 https://voreas.co.jp/](https://voreas.co.jp/
 Arena
-Recruit Staffing RICK&SUE Asahikawa Gymnasium
+Asahikawa Gymnasium Recruit Staffing RICK&SUE
+Sponsors
+Daido, Open House Group, TSP Taiyo, HottoMotto, Mikasa, Mass, Hummel
 
 Tokyo Great Bears
 
@@ -125,6 +127,8 @@ Official website
 https://tokyo-greatbears.com/](https://tokyo-greatbears.com/
 Arena
 Yoyogi National Stadium 2nd Gymnasium
+Sponsors
+Daido, Recruit, Mufg, Open House Group, Lawson Tickets, JSports, KTX, Taraflex
 
 VC NAGANO TRIDENTS
 
@@ -198,6 +202,8 @@ Official website
 http://vcnagano.jp/](http://vcnagano.jp/
 Arena
 Air Water Arena Matsumoto
+Sponsors
+Lawson Tickets, KTX, Taraflex, TSP Taiyo, Kosé, HottoMotto, Volz, Salonpas, Mass, Hummel
 
 TORAY ARROWS SHIZUOKA
 
@@ -268,6 +274,8 @@ Official website
 http://www.toray-arrows.jp/men/index.html](http://www.toray-arrows.jp/men/index.html
 Arena
 Mishima Citizen Gymnasium
+Sponsors
+Daido, Recruit, Mufg, Taraflex, TSP Taiyo, Kosé, HottoMotto, Volz
 
 JTEKT STINGS AICHI
 
@@ -329,6 +337,8 @@ Official website
 http://www.jtekt-stings.jp/](http://www.jtekt-stings.jp/
 Arena
 Okazaki Central Park Gymnasium
+Sponsors
+Daido, KTX, Taraflex, TSP Taiyo, Kosé, Salonpas, Mikasa, Skylight, Mass, Hummel
 
 WOLFDOGS NAGOYA
 
@@ -393,6 +403,8 @@ Official website
 https://www.wolfdogs.jp/](https://www.wolfdogs.jp/
 Arena
 ENTRIO
+Sponsors
+Daido, Recruit, Open House Group, JSports, Lawson Ticket, KTX, Taraflex, Mikasa, Skylight, Mass, Hummel
 
 OSAKA BLUTEON
 
@@ -460,6 +472,9 @@ Official website
 https://www.osaka-bluteon.com/
 Arena
 Panasonic Arena
+Sponsors
+Daido, Mufg, Open House Group, Lawson Tickets, JSports, KTX, Taraflex, TSP Taiyo, Kosé
+HottoMotto, Volz, Salonpas, Mikasa, Skylight, Mass, Hummel
 
 SUNTORY SUNBIRDS OSAKA
 
@@ -524,6 +539,8 @@ Official website
 http://www.suntory.co.jp/culture-sports/sunbirds/
 Arena
 Asue Arena Osaka
+Sponsors
+Recruit, Mufg, Lawson Tickets, KTX, Taraflex, TSP Taiyo, Skylight, Mass, Hummel
 
 NIPPON STEEL SAKAI BLAZERS
 
@@ -594,6 +611,8 @@ Official website
 http://www.blazers.gr.jp/web/
 Arena
 Ohama Daishin Arena
+Sponsors
+Daido, Recruit, Mufg, Open House Group, Kosé, Volz, Salonpas, Mikasa, Skylight, Mass, Hummel
 
 HIROSHIMA THUNDERS
 
@@ -667,3 +686,5 @@ Official website
 http://www.jti.co.jp/knowledge/thunders/
 Arena
 Hiroshima Green Arena
+Sponsors
+Mufg, Open House Group, Lawson Ticket, TSP Taiyo, Kosé, Salonpas, Mikasa, Skylight, Hummel

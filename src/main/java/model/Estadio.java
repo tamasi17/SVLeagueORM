@@ -2,7 +2,6 @@ package model;
 
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
 import java.util.Objects;
 
 /**
@@ -18,7 +17,7 @@ public class Estadio {
     private Long id;
 
     @Column(name = "stadium_name", nullable = false, length = 100)
-    private String nombre;
+    private String nombreEstadio;
 
     @Column(name = "city")
     private String ciudad;
@@ -34,8 +33,8 @@ public class Estadio {
     public Estadio() {
     }
 
-    public Estadio(String nombre, String ciudad, int capacidad, Equipo equipo) {
-        this.nombre = nombre;
+    public Estadio(String nombreEstadio, String ciudad, int capacidad, Equipo equipo) {
+        this.nombreEstadio = nombreEstadio;
         this.ciudad = ciudad;
         this.capacidad = capacidad;
         this.equipo = equipo;
@@ -50,12 +49,12 @@ public class Estadio {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreEstadio() {
+        return nombreEstadio;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreEstadio(String nombreEstadio) {
+        this.nombreEstadio = nombreEstadio;
     }
 
     public String getCiudad() {
@@ -86,18 +85,18 @@ public class Estadio {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Estadio estadio = (Estadio) o;
-        return capacidad == estadio.capacidad && Objects.equals(id, estadio.id) && Objects.equals(nombre, estadio.nombre) && Objects.equals(ciudad, estadio.ciudad) && Objects.equals(equipo, estadio.equipo);
+        return Objects.equals(id, estadio.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, ciudad, capacidad, equipo);
+        return Objects.hashCode(id);
     }
 
     @Override
     public String toString() {
         return  id +
-                " - " + nombre + ", " + ciudad +
+                " - " + nombreEstadio + ", " + ciudad +
                 "\nCapacidad: " + capacidad +
                 "\nEquipo: " + equipo;
     }

@@ -12,15 +12,13 @@ public class JpaUtil {
     private static final EntityManagerFactory entityManagerFactory = buildManagerFactory();
 
     private static EntityManagerFactory buildManagerFactory() {
-
         try {
-            return Persistence.createEntityManagerFactory("svleague");
+            return Persistence.createEntityManagerFactory("orm_competicion");
         } catch (Exception e) {
             System.err.println("Error al crear EntityManagerFactory: " + e.getLocalizedMessage());
             e.printStackTrace();
             throw new ExceptionInInitializerError(e);
         }
-
     }
 
     public static EntityManagerFactory getEntityManagerFactory(){ return entityManagerFactory;}

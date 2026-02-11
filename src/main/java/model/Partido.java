@@ -3,6 +3,7 @@ package model;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -44,7 +45,7 @@ public class Partido {
 
     // Relación OneToMany: Un partido genera muchas estadísticas (una por jugador)
     @OneToMany(mappedBy = "partido", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<StatsPartido> estadisticas;
+    private List<StatsPartido> estadisticas = new ArrayList<>();
 
     // Constructores, Getters y Setters
 
@@ -125,11 +126,20 @@ public class Partido {
         this.estadisticas = estadisticas;
     }
 
+    // Helper
     public void addEstadistica(StatsPartido stats){
+        if (stats == null) return;
+
+        // Lazy
+        if (this.estadisticas == null) {
+            this.estadisticas = new ArrayList<>();
+        }
+
         this.estadisticas.add(stats);
+
+        // This tells the Stat which Match it belongs to (for the Foreign Key)
         stats.setPartido(this);
     }
-
 
     public String getEncuentroFormateado() {
         return equipoLocal + " - " + equipoVisitante + "(" + fecha + ")";
@@ -143,12 +153,12 @@ public class Partido {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Partido partido = (Partido) o;
-        return Objects.equals(id, partido.id) && Objects.equals(fecha, partido.fecha) && Objects.equals(lugar, partido.lugar) && Objects.equals(equipoLocal, partido.equipoLocal) && Objects.equals(equipoVisitante, partido.equipoVisitante) && Objects.equals(estadisticas, partido.estadisticas);
+        return Objects.equals(id, partido.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, fecha, lugar, equipoLocal, equipoVisitante, estadisticas);
+        return Objects.hashCode(id);
     }
 
     @Override
