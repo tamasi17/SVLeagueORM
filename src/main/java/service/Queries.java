@@ -106,6 +106,7 @@ public class Queries {
 
 
         // 9. Determina y muestra los tres equipos con más puntos y los tres con menos.
+        showTopAndBottomTeams();
 
 
         /*
@@ -229,6 +230,47 @@ public class Queries {
     }
 
     // 9. Determina y muestra los tres equipos con más puntos y los tres con menos.
+    public List<StandingsDTO> getTop3Teams() {
+        return em.createQuery(
+                        "SELECT new dto.StandingsDTO(e.nombreEquipo, " +
+                                "SUM(CASE WHEN (p.equipoLocal = e AND p.setsLocal > p.setsVisitante) OR " +
+                                "             (p.equipoVisitante = e AND p.setsVisitante > p.setsLocal) THEN 3L ELSE 0L END)) " +
+                                "FROM Equipo e, Partido p " +
+                                "GROUP BY e.nombreEquipo " +
+                                "ORDER BY 2 DESC", StandingsDTO.class) // Sort DESC
+                .setMaxResults(3) // LIMIT 3
+                .getResultList();
+    }
+
+    public List<StandingsDTO> getBottom3Teams() {
+        return em.createQuery(
+                        "SELECT new dto.StandingsDTO(e.nombreEquipo, " +
+                                "SUM(CASE WHEN (p.equipoLocal = e AND p.setsLocal > p.setsVisitante) OR " +
+                                "             (p.equipoVisitante = e AND p.setsVisitante > p.setsLocal) THEN 3L ELSE 0L END)) " +
+                                "FROM Equipo e, Partido p " +
+                                "GROUP BY e.nombreEquipo " +
+                                "ORDER BY 2 ASC", StandingsDTO.class) // Sort DESC
+                .setMaxResults(3) // LIMIT 3
+                .getResultList();
+    }
+
+
+    public void showTopAndBottomTeams() {
+
+        List<StandingsDTO> top3 = getTop3Teams();
+        List<StandingsDTO> bottom3 = getBottom3Teams();
+
+        // 2. Top 3
+        logger.info("=== LOS 3 MEJORES (TOP) ===");
+        top3.forEach(team ->
+                logger.info("> {} con {} puntos", team.nombre(), team.puntos()));
+
+        // 3. Bottom 3
+        logger.info("=== LOS 3 PEORES (BOTTOM) ===");
+        bottom3.forEach(team ->
+                logger.info("> {} con {} puntos", team.nombre(), team.puntos()));
+    }
+
 
     // 10. Muestra las nuevas incorporaciones a la competición (utiliza una NamedQuery).
 

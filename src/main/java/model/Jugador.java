@@ -35,6 +35,10 @@ public class Jugador {
     @Column(name = "nationality")
     private String nacionalidad;
 
+    @Column(name = "isNew")
+    private boolean esNuevo = false;
+
+
     @Enumerated(EnumType.STRING)
     @Column(name = "position")
     private Posicion posicion;
@@ -131,6 +135,10 @@ public class Jugador {
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
+
+    public boolean isEsNuevo() { return esNuevo; }
+
+    public void setEsNuevo(boolean esNuevo) { this.esNuevo = esNuevo; }
 
     public Posicion getPosicion() {
         return posicion;
