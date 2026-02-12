@@ -1,13 +1,14 @@
 package dao;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import util.DataService;
-
 import java.util.List;
 
+/**
+ * Clase abstracta que proporciona la base para todos los Daos
+ * @author mati
+ */
 public abstract class AbstractDao<T> implements GenericDao<T> {
 
     private static final Logger logger = LogManager.getLogger(AbstractDao.class);

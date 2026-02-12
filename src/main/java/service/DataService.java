@@ -1,10 +1,12 @@
-package util;
+package service;
 
 import model.Equipo;
 import model.Jugador;
 import model.Sponsor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import util.DataLoader;
+import util.JsonLoader;
 
 import java.util.*;
 

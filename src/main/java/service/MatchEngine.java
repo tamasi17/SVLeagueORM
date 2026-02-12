@@ -1,4 +1,4 @@
-package util;
+package service;
 
 import model.Equipo;
 import model.Jugador;
@@ -7,7 +7,6 @@ import model.StatsPartido;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Random;
 import java.util.Set;
 

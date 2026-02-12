@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
- * Clase que define un patrocinador
+ * Clase que define un patrocinador, sponsors en la db
  * @author mati
  */
 @Entity

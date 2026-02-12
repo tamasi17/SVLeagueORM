@@ -14,6 +14,10 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "players")
+@NamedQuery(
+        name = "Jugador.newTransfers",
+        query = "SELECT j FROM Jugador j WHERE j.esNuevo = true"
+)
 public class Jugador {
 
     @Id
@@ -34,6 +38,10 @@ public class Jugador {
 
     @Column(name = "nationality")
     private String nacionalidad;
+
+    @Column(name = "isNew")
+    private boolean esNuevo = false;
+
 
     @Enumerated(EnumType.STRING)
     @Column(name = "position")
@@ -131,6 +139,10 @@ public class Jugador {
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
+
+    public boolean isEsNuevo() { return esNuevo; }
+
+    public void setEsNuevo(boolean esNuevo) { this.esNuevo = esNuevo; }
 
     public Posicion getPosicion() {
         return posicion;

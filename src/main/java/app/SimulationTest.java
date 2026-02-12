@@ -12,6 +12,10 @@ import util.DataLoader;
 
 import java.util.Random;
 
+/**
+ * Test para comprobar funcionamiento de daos y persistencia
+ * @author mati
+ */
 public class SimulationTest {
 
     public static void main(String[] args) {

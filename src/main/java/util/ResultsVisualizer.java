@@ -6,6 +6,10 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
+/**
+ * Clase que facilita la visualizacion de datos de las queries
+ * @author mati
+ */
 public class ResultsVisualizer {
 
 

@@ -5,7 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 /**
- *
+ * Clase que proporciona el EntityManager a traves de una Factory
+ * @author mati
  */
 public class JpaUtil {
 

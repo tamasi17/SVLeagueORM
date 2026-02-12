@@ -8,6 +8,10 @@ import model.Jugador;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Clase que organiza el mercado de fichajes.
+ * @author mati
+ */
 public class MarketService {
 
     private static final Logger logger = LogManager.getLogger(MarketService.class);
@@ -35,9 +39,14 @@ public class MarketService {
                 equipoOrigen.getJugadores().remove(jugador);
             }
 
+
             // 3. Usar el helper para añadirlo al nuevo equipo
             // Esto internamente hace: jugador.setEquipo(equipoDestino)
             equipoDestino.addJugador(jugador);
+
+            // Mark as a new incorporation for the destination team
+            jugador.setEsNuevo(true);
+
         }
     }
 

@@ -3,24 +3,22 @@ package app;
 import config.JpaUtil;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import service.SimulationService;
 
+/**
+ * Main, llama a las simulaciones de liga y transfer market.
+ * @author mati
+ */
 public class Main {
 
     public static void main(String[] args) {
 
-        EntityManagerFactory entityManagerFactory = JpaUtil.getEntityManagerFactory();
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        // v1
 
-        // Start transaction
+        SimulationService.simulation();
 
-        // Create objects
-
-        // Persist objects
-
-        // Commit
-
-        // Check to test
-
+        // v2
+        // v3
 
     }
 }
