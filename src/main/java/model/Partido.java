@@ -9,6 +9,7 @@ import java.util.Objects;
 
 /**
  * Clase que define un Partido
+ * Su tabla en la db se llama matches
  * @author mati
  */
 @Entity

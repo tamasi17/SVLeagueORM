@@ -17,6 +17,11 @@ import java.util.List;
 import static util.ResultsVisualizer.imprimirTabla;
 import static util.ResultsVisualizer.mostrarTopAnotadores;
 
+/**
+ * Version 1. Clase que simula la liga y transfers market
+ * Incluye carga de datos, visualizacion y consultas.
+ * @author mati
+ */
 public class SimulationService {
 
     private static final Logger logger = LogManager.getLogger(SimulationService.class);

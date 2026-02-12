@@ -8,6 +8,10 @@ import model.Jugador;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Clase que organiza el mercado de fichajes.
+ * @author mati
+ */
 public class MarketService {
 
     private static final Logger logger = LogManager.getLogger(MarketService.class);

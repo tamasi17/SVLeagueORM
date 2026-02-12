@@ -5,6 +5,10 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import service.SimulationService;
 
+/**
+ * Main, llama a las simulaciones de liga y transfer market.
+ * @author mati
+ */
 public class Main {
 
     public static void main(String[] args) {
