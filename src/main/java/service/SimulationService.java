@@ -1,4 +1,4 @@
-package app;
+package service;
 
 import config.JpaUtil;
 import dao.DaoJpaEquipo;
@@ -10,22 +10,18 @@ import model.Equipo;
 import model.Partido;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import service.MarketService;
-import service.Queries;
 import util.DataLoader;
-import util.DataService;
-import util.MatchEngine;
 
 import java.util.List;
 
 import static util.ResultsVisualizer.imprimirTabla;
 import static util.ResultsVisualizer.mostrarTopAnotadores;
 
-public class SimulationV1 {
+public class SimulationService {
 
-    private static final Logger logger = LogManager.getLogger(SimulationV1.class);
+    private static final Logger logger = LogManager.getLogger(SimulationService.class);
 
-    public static void main(String[] args) {
+    public static void simulation() {
 
 
         try (EntityManager entityManager = JpaUtil.getEntityManagerFactory().createEntityManager()) {
@@ -67,7 +63,7 @@ public class SimulationV1 {
             marketService.transferMarketSimulado(daoEquipo);
 
             // Consultas
-            Queries consultas = new Queries(entityManager, daoEquipo);
+            ConsultasCompeticion consultas = new ConsultasCompeticion(entityManager, daoEquipo);
             consultas.allQueries();
 
 

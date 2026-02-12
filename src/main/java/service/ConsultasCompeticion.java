@@ -14,16 +14,15 @@ import model.Sponsor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
-public class Queries {
+public class ConsultasCompeticion {
 
-    private static final Logger logger = LogManager.getLogger(Queries.class);
+    private static final Logger logger = LogManager.getLogger(ConsultasCompeticion.class);
     private final EntityManager em;
     private DaoJpaEquipo daoJpaEquipo;
 
-    public Queries(EntityManager em, DaoJpaEquipo daoJpaEquipo) {
+    public ConsultasCompeticion(EntityManager em, DaoJpaEquipo daoJpaEquipo) {
         this.em = em;
         this.daoJpaEquipo = daoJpaEquipo;
     }
