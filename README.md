@@ -69,6 +69,8 @@ Future versions might include Hibernate and a frontend.
 
 Assignment for the Data Access course, a part of the Multiplatform Application Development vocational studies
 
+Commits - [/resources/commits.txt](https://github.com/tamasi17/SVLeagueORM/blob/main/src/main/resources/commits.txt)
+
 <!--
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 -->
