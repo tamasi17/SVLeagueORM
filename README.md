@@ -29,7 +29,7 @@
   -->
 
 <h1>SV League ORM</h1>
-
+<br />
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -61,8 +61,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Actual version: v1
+
 Japanese National Volleyball League (SVLeague) assignment. The goal is to learn ORMs, using Java + JPA as the starting point.
+
 Future versions might include Hibernate and a frontend.
+
 Assignment for the Data Access course, a part of the Multiplatform Application Development vocational studies
 
 <!--
@@ -74,13 +78,39 @@ Assignment for the Data Access course, a part of the Multiplatform Application D
 
 
 
+### Structure
+
+src/main
+
+  /java  
+  
+    app : main, test
+    config : jpaUtil, EntityManagerFactory
+    dao : crud logic for all entities
+    dto : records to help visualize queries
+    model : all class models
+    service : Simulation, MatchEngine, Queries and Data services
+    util: visualizers, data seeders and json parsing
+
+  /resources
+  
+    META-INF/
+      persistence.xml
+    svLeagueInfo/
+      svTeamsJson with all players/teams information
+    log4j2 config file
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ### Built With
 
-Java
-JPA
-Hibernate core
-MySQL
-Log4j2
+    Java
+    JPA
+    Hibernate core
+    MySQL
+    Log4j2
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -91,6 +121,7 @@ Log4j2
 ## Getting Started
 
 Main will run SimulationService.simulation.
+
 Logs can be read to follow the different aspects of ORM and data handling trained during this assignment. 
 
 ### Prerequisites
