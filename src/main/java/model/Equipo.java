@@ -195,9 +195,7 @@ public class Equipo {
     public String toString() {
         return "> " + nombreEquipo + "(" + id + ") \n" + ciudad +
                 "\n" + web +
-                "\n" + fechaFundacion + ", " + estadio +
-                "\n" + entrenador +
-                "\n" + jugadores +
+                "\n" + fechaFundacion + ", " +
                 "\n" + sponsors;
     }
 }

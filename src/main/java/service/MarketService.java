@@ -19,7 +19,9 @@ public class MarketService {
 
 
     public void transferirJugador(Long jugadorId, Equipo equipoDestino) {
-        // 1. Buscamos al jugador (debe estar en el contexto de persistencia)
+        // 1. Finding player (must be in persistence context)
+        // With em.find or DAO's findById, those objects enter Persistence Context
+        // These objects are Managed, the em is "dirty checking" all those objects.
         Jugador jugador = entityManager.find(Jugador.class, jugadorId);
         Equipo equipoOrigen = jugador.getEquipo();
 
