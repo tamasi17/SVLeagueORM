@@ -14,6 +14,10 @@ import java.util.Objects;
  */
 @Entity
 @Table(name = "players")
+@NamedQuery(
+        name = "Jugador.newTransfers",
+        query = "SELECT j FROM Jugador j WHERE j.esNuevo = true"
+)
 public class Jugador {
 
     @Id
