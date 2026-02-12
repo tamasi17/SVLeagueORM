@@ -10,6 +10,8 @@ import model.Equipo;
 import model.Partido;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import service.MarketService;
+import service.Queries;
 import util.DataLoader;
 import util.DataService;
 import util.MatchEngine;
@@ -61,6 +63,13 @@ public class SimulationV1 {
             mostrarTopAnotadores(entityManager);
 
             // Mercado de fichajes
+            MarketService marketService = new MarketService(entityManager);
+            marketService.transferMarketSimulado(daoEquipo);
+
+            // Consultas
+            Queries consultas = new Queries(entityManager, daoEquipo);
+            consultas.allQueries();
+
 
 
 
