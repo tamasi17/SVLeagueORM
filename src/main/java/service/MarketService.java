@@ -35,9 +35,14 @@ public class MarketService {
                 equipoOrigen.getJugadores().remove(jugador);
             }
 
+
             // 3. Usar el helper para añadirlo al nuevo equipo
             // Esto internamente hace: jugador.setEquipo(equipoDestino)
             equipoDestino.addJugador(jugador);
+
+            // Mark as a new incorporation for the destination team
+            jugador.setEsNuevo(true);
+
         }
     }
 
