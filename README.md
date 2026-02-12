@@ -102,6 +102,22 @@ src/main
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Expected outcome
+
+    Initial data seeding.
+    League starts, simulation logic.
+    After all teams have played each other, league standings (results)
+    Transfers market.
+    Queries (1-14) including: 
+      All teams, all players from a team, sponsors, players and sponsors of a team.
+      Average age of a team, over 23 years old by nationality.
+      Standings at the start, mid-league and at the end.
+      Best and bottom three teams.
+      Common sponsors to two teams.
+      Three CriteriaQuery based filtered results.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
@@ -198,7 +214,7 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
 @tamasi17 - [https://github.com/tamasi17](https://github.com/tamasi17/)
 
-Project Link: [https://github.com/tamasi17/SVLeagueORM](https://github.com/tamasi17/SVLeagueORM)
+Project Link - [https://github.com/tamasi17/SVLeagueORM](https://github.com/tamasi17/SVLeagueORM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
