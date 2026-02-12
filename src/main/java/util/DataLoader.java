@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.util.*;
 
 /**
- * Clase para generar la información que se utiliza en Simulacion o Main
+ * Clase para generar la información que se utiliza en las simulaciones
  * @author mati
  */
 public class DataLoader {

@@ -16,6 +16,11 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
+/**
+ * Clase que recoge las consultas (14 en total)
+ * 1 NativeQuery, 1 NamedQuery y el resto JPQL.
+ * @author mati
+ */
 public class ConsultasCompeticion {
 
     private static final Logger logger = LogManager.getLogger(ConsultasCompeticion.class);

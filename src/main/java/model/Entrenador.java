@@ -1,9 +1,12 @@
 package model;
 
 import jakarta.persistence.*;
-
 import java.util.Objects;
 
+/**
+ * Clase que define un Entrenador
+ * @author mati
+ */
 @Entity
 @Table(name = "coaches")
 public class Entrenador {
